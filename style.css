@@ -1,0 +1,848 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.battle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    box-sizing: border-box;
+    position: relative; /* 相対位置指定 */
+    height: 770px; /* 高さを十分に取る */
+    overflow: hidden; /* スクロールさせない */
+}
+
+.section h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+}
+
+/* インライン表示用ラベル */
+.inline-label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+/* 短いラベル（HP入力用） */
+.short-label {
+    display: inline-block;
+    width: 80px;
+    margin-right: 2px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+/* 短い入力欄（HP入力用） */
+.short-input {
+    width: 50px !important;
+    padding: 5px !important;
+    margin-right: 3px !important;
+}
+
+/* ミニボタン（← ボタン用） */
+.mini-button {
+    width: 30px !important;
+    height: 28px;
+    padding: 0 !important;
+    margin: 0 3px !important;
+    font-weight: normal !important;
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: middle;
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+}
+
+/* 入力欄の横並び */
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    flex-wrap: nowrap;
+}
+
+.input-with-buttons {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-buttons input {
+    width: 60%; /* ボタン用のスペースを確保 */
+    margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* 通常の入力欄 */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 110px);
+    margin-bottom: 8px;
+}
+
+/* 横並び入力欄 */
+.input-row input[type="text"],
+.input-row input[type="number"] {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 4px;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hp-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 12px 0;
+    display: none; /* 初期状態では非表示 */
+}
+
+.hp-bar-inner {
+    height: 100%;
+    width: 0%; /* デフォルトは0% */
+    background-color: green;
+    transition: width 0.3s;
+}
+
+.pokemon-selection {
+    margin-bottom: 8px;
+}
+
+#ivButtons {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.iv-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.iv-label {
+    width: 25px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.iv-btn {
+    padding: 3px 5px;
+    margin: 0 2px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #000;
+    width: 30px;
+    text-align: center;
+    height: 24px;
+    box-sizing: border-box;
+    line-height: 1;
+  }
+
+.iv-btn.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.iv-btn.other {
+    height: 24px;
+    padding: 3px 5px;
+    width: auto;
+    min-width: 40px;
+  }
+
+.iv-btn-container {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.custom-iv {
+    width: 50px;
+    height: 24px !important;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -moz-appearance: textfield;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+  }
+
+.custom-iv::-webkit-inner-spin-button, 
+.custom-iv::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* ステータス表示の間隔調整 */
+#statusLabel, #baseStats {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    text-align: center;
+    min-height: 20px;
+}
+
+#statusLabel {
+    margin-bottom: 2px;
+}
+
+#baseStats {
+    margin-bottom: 5px;
+}
+
+#baseStats div {
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#originButtons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    gap: 4px;
+}
+
+.origin-btn {
+    padding: 3px 6px;
+    margin: 0;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #000; /* 黒色のテキスト */
+    border-radius: 3px;
+    width: auto !important;
+    display: inline-block;
+    box-sizing: content-box;
+    white-space: nowrap;
+    min-width: 0;
+    max-width: none;
+    line-height: 1;
+}
+
+.origin-btn.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.moves-container {
+    margin: 6px 0;
+}
+
+#movesSelect {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 14px;
+    height: auto !important;
+    min-height: 24px;
+}
+
+/* 被ダメージフォーム */
+.damage-form {
+    margin-top: 8px;
+    border-top: 1px dashed #ccc;
+    padding-top: 8px;
+}
+
+/* チェックボックス関連 */
+#checkboxContainer {
+    margin: 2px 0;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.checkbox-group div {
+    margin-right: 8px;
+}
+
+.rank-correction {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.rank-row {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 3px;
+}
+
+.rank-label {
+    width: 75px;
+    margin-right: 3px;
+    white-space: nowrap;
+}
+
+.rank-select {
+    width: 45px;
+    font-size: 14px;
+    padding: 1px;
+}
+
+/* 被ダメージ推定ボタン */
+.damage-estimate-container {
+    margin-top: 2px;
+}
+
+#estimateIvButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.damage-calc-button {
+    margin-top: 10px;
+    background-color: #007bff;
+}
+
+.tool-info {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.damage-tips {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tips-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.tips-content {
+    font-size: 13px;
+    color: #555;
+}
+
+#estimateResult, #resultSelf, .highlighted-result {
+    margin-top: 2px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    font-weight: bold;
+}
+
+/* 結果セクションの高さも固定 */
+.results-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.tracking-checkbox-container {
+    margin: 4px 0;
+}
+
+.pokemon-dropdown {
+    position: absolute;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    display: none;
+    width: 200px;
+}
+
+.dropdown-item {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.center-text {
+    text-align: center !important;
+}
+
+.result-heading {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0066cc;
+    text-align: center;
+}
+
+.highlighted-result {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+#secondResultBlock {
+    display: none;
+}
+
+#estimateResult {
+    display: none;
+}
+
+#darkPokemonContainer {
+    display: none;
+}
+
+#badgeBoostContainer {
+    display: none;
+}
+
+#defBadgeBoostContainer {
+    display: none;
+}
+
+#darknessContainer {
+    display: none;
+}
+
+#yogaPowerContainer {
+    display: none;
+    text-align: center;
+}
+
+#harikiriContainer {
+    display: none;
+    text-align: center;
+}
+
+#shinryokuContainer {
+    display: none;
+    text-align: center;
+}
+
+#moukaContainer {
+    display: none;
+    text-align: center;
+}
+
+#gekiryuuContainer {
+    display: none;
+    text-align: center;
+}
+
+#mushiNoShiraseContainer {
+    display: none;
+    text-align: center;
+}
+
+#weatherSelect {
+    width: calc(100% - 110px);
+}
+
+#defDoubleCheckContainer {
+    display: none;
+}
+
+.spdBadgeBoostContainer {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#speedValue {
+    width: 50px;
+    height: 14px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.badge-speed-value-container {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 5px;
+}
+
+#badgeSpeedValue {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.pinchUpContainer {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.pinchUpContainer label {
+    display: flex;
+    align-items: center;
+}
+
+#pinchUp_maxHP {
+    width: 70px;
+    margin: 10px;
+}
+
+#pinchUp_currentHP {
+    width: 70px;
+    margin: 10px;
+}
+
+.pinchUp2Container {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 16px;
+    padding:0;
+    margin:0;
+}
+
+.pinchUp2Container label {
+    display: flex;
+    align-items: center;
+    padding:0;
+    margin:0;
+}
+
+#pinchUp2_maxHP, #pinchUp2_currentHP {
+    width: 70px;
+    margin: 4px;
+    margin-right: 10px;
+}
+
+.sutemiTackleContainer {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.sutemiTackleContainer label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+#sutemiTackle_maxHP, #sutemiTackle_currentHP {
+    width: 70px;
+    margin: 10px;
+}
+
+.tripleKickContainer {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .kick-buttons {
+    display: inline-flex;
+    gap: 5px;
+  }
+  
+  /* 実際のラジオボタンを非表示 */
+  .kick-buttons input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* ボタン風のラベルスタイル */
+  .kick-btn {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #000;
+    border-radius: 4px;
+    min-width: 45px;
+    text-align: center;
+    line-height: 1.2;
+    transition: all 0.15s ease;
+  }
+  
+  /* ホバー効果 */
+  .kick-btn:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+  }
+  
+  /* 選択状態 */
+  input[type="radio"]:checked + .kick-btn {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+    font-weight: bold;
+  }
+
+.nature-plus-minus-heading {
+    display: inline-block;
+}
+
+.nature-plus-minus-heading span {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nature-plus-minus-heading span:first-child {
+  background-color: #ff97c2;
+}
+
+.nature-plus-minus-heading span:last-child {
+  background-color: #8eb8ff;
+}
+
+.nature-checkbox-container {
+  display: inline-block;
+}
+
+.nature-checkbox-container span {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
+
+.nature-checkbox-container span:first-child {
+  background-color: #ffbeda;
+}
+
+.nature-checkbox-container span:last-child {
+  background-color: #bad3ff;
+}
+/* レスポンシブデザイン対応のベース設定 */
+@media (max-width: 1200px) {
+    .battle-container {
+      max-width: 100%;
+    }
+  }
+  
+  /* iPad (横画面) 対応: 768px以上1024px以下 */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .battle-container {
+      flex-wrap: wrap;
+    }
+    
+    .section {
+      min-width: calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    /* 結果セクションは横幅いっぱいに */
+    .section.results-section {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* iPhone対応: 480px以下に拡大（iPhone 14 Pro Maxも含めるため） */
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .battle-container {
+      flex-direction: column;
+    }
+    
+    .section {
+      min-width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    /* フローティングメニュー */
+    .floating-menu {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #28a745;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      display: flex !important; /* 強制表示 */
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .floating-menu-icon {
+      color: white;
+      font-size: 24px;
+    }
+    
+    .floating-menu-content {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background-color: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+      display: none;
+    }
+    
+    .floating-menu-content.active {
+      display: block;
+    }
+    
+    .menu-item {
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-bottom: 5px;
+      background-color: #f8f9fa;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    
+    .menu-item:hover {
+      background-color: #e9ecef;
+    }
+    
+    /* その他モバイル対応調整 */
+    .input-row {
+      flex-wrap: wrap;
+    }
+    
+    .inline-label {
+      width: 100%;
+      margin-bottom: 4px;
+    }
+    
+    input[type="text"], 
+    input[type="number"],
+    select {
+      width: 100%;
+    }
+    
+    .rank-correction {
+      flex-direction: column;
+    }
+    
+    .rank-row {
+      margin-bottom: 5px;
+    }
+    
+    /* 攻撃・防御ランク選択のラベルをより小さく */
+    .rank-label {
+      width: 70px;
+    }
+  }
+  
+  /* モバイル表示時以外はフローティングメニューを非表示にする */
+  @media (min-width: 481px) {
+    .floating-menu, .floating-menu-content {
+      display: none !important;
+    }
+  }

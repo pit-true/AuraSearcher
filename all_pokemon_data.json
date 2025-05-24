@@ -1,0 +1,7575 @@
+[
+  {
+    "name": "フシギダネ",
+    "basestats": [
+      45,
+      49,
+      49,
+      65,
+      65,
+      45
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "ふしぎだね",
+    "romaji": "fushigidane"
+  },
+  {
+    "name": "フシギソウ",
+    "basestats": [
+      60,
+      62,
+      63,
+      70,
+      80
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "ふしぎそう",
+    "romaji": "fushigisou"
+  },
+  {
+    "name": "フシギバナ",
+    "basestats": [
+      80,
+      82,
+      83,
+      100,
+      100,
+      80
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "ふしぎばな",
+    "romaji": "fushigibana"
+  },
+  {
+    "name": "ヒトカゲ",
+    "basestats": [
+      39,
+      52,
+      43,
+      60,
+      50,
+      65
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "ひとかげ",
+    "romaji": "hitokage"
+  },
+  {
+    "name": "リザード",
+    "basestats": [
+      58,
+      64,
+      58,
+      80,
+      65,
+      80
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "りざーど",
+    "romaji": "riza-do"
+  },
+  {
+    "name": "リザードン",
+    "basestats": [
+      78,
+      84,
+      78,
+      109,
+      85,
+      100
+    ],
+    "type": [
+      "ほのお",
+      "ひこう"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "りざーどん",
+    "romaji": "riza-don"
+  },
+  {
+    "name": "ゼニガメ",
+    "basestats": [
+      44,
+      48,
+      85,
+      50,
+      64,
+      43
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "ぜにがめ",
+    "romaji": "zenigame"
+  },
+  {
+    "name": "カメール",
+    "basestats": [
+      59,
+      64,
+      80,
+      65,
+      80,
+      58
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "かめーる",
+    "romaji": "kame-ru"
+  },
+  {
+    "name": "カメックス",
+    "basestats": [
+      79,
+      83,
+      100,
+      85,
+      105,
+      78
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "かめっくす",
+    "romaji": "kamekkusu"
+  },
+  {
+    "name": "キャタピー",
+    "basestats": [
+      45,
+      30,
+      35,
+      20,
+      20,
+      45
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "りんぷん"
+    ],
+    "hiragana": "きゃたぴー",
+    "romaji": "kyatapi-"
+  },
+  {
+    "name": "トランセル",
+    "basestats": [
+      50,
+      20,
+      55,
+      25,
+      25,
+      30
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "とらんせる",
+    "romaji": "toranseru"
+  },
+  {
+    "name": "バタフリー",
+    "basestats": [
+      60,
+      45,
+      50,
+      80,
+      80,
+      70
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "ふくがん"
+    ],
+    "hiragana": "ばたふりー",
+    "romaji": "batafuri-"
+  },
+  {
+    "name": "ビードル",
+    "basestats": [
+      40,
+      35,
+      30,
+      20,
+      20,
+      50
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "りんぷん"
+    ],
+    "hiragana": "びーどる",
+    "romaji": "bi-doru"
+  },
+  {
+    "name": "コクーン",
+    "basestats": [
+      45,
+      25,
+      50,
+      25,
+      25,
+      35
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "こくーん",
+    "romaji": "koku-n"
+  },
+  {
+    "name": "スピアー",
+    "basestats": [
+      65,
+      80,
+      40,
+      45,
+      80,
+      75
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "すぴあー",
+    "romaji": "supia-"
+  },
+  {
+    "name": "ポッポ",
+    "basestats": [
+      40,
+      45,
+      40,
+      35,
+      35,
+      56
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "ぽっぽ",
+    "romaji": "poppo"
+  },
+  {
+    "name": "ピジョン",
+    "basestats": [
+      63,
+      60,
+      55,
+      50,
+      50,
+      71
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "ぴじょん",
+    "romaji": "pijon"
+  },
+  {
+    "name": "ピジョット",
+    "basestats": [
+      83,
+      80,
+      75,
+      70,
+      70,
+      91
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "ぴじょっと",
+    "romaji": "pijotto"
+  },
+  {
+    "name": "コラッタ",
+    "basestats": [
+      30,
+      56,
+      35,
+      25,
+      35,
+      72
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "こらった",
+    "romaji": "koratta"
+  },
+  {
+    "name": "ラッタ",
+    "basestats": [
+      55,
+      81,
+      60,
+      50,
+      70,
+      97
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "らった",
+    "romaji": "ratta"
+  },
+  {
+    "name": "オニスズメ",
+    "basestats": [
+      40,
+      60,
+      30,
+      31,
+      31,
+      70
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "おにすずめ",
+    "romaji": "onisuzume"
+  },
+  {
+    "name": "オニドリル",
+    "basestats": [
+      65,
+      90,
+      65,
+      61,
+      61,
+      100
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "おにどりる",
+    "romaji": "onidoriru"
+  },
+  {
+    "name": "アーボ",
+    "basestats": [
+      35,
+      60,
+      44,
+      40,
+      54,
+      55
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "あーぼ",
+    "romaji": "a-bo"
+  },
+  {
+    "name": "アーボック",
+    "basestats": [
+      60,
+      85,
+      69,
+      65,
+      79,
+      80
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "あーぼっく",
+    "romaji": "a-bokku"
+  },
+  {
+    "name": "ピカチュウ",
+    "basestats": [
+      35,
+      55,
+      30,
+      50,
+      40,
+      90
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "ぴかちゅう",
+    "romaji": "pikachuu"
+  },
+  {
+    "name": "ライチュウ",
+    "basestats": [
+      60,
+      90,
+      55,
+      90,
+      80,
+      100
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "らいちゅう",
+    "romaji": "raichuu"
+  },
+  {
+    "name": "サンド",
+    "basestats": [
+      50,
+      75,
+      85,
+      20,
+      30,
+      40
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "すながくれ"
+    ],
+    "hiragana": "さんど",
+    "romaji": "sando"
+  },
+  {
+    "name": "サンドパン",
+    "basestats": [
+      75,
+      100,
+      110,
+      45,
+      55,
+      65
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "すながくれ"
+    ],
+    "hiragana": "さんどぱん",
+    "romaji": "sandopan"
+  },
+  {
+    "name": "ニドラン♀",
+    "basestats": [
+      55,
+      47,
+      52,
+      40,
+      40,
+      41
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "にどらん♀",
+    "romaji": "nidoran♀"
+  },
+  {
+    "name": "ニドリーナ",
+    "basestats": [
+      70,
+      62,
+      67,
+      55,
+      55,
+      56
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "にどりーな",
+    "romaji": "nidori-na"
+  },
+  {
+    "name": "ニドクイン",
+    "basestats": [
+      90,
+      82,
+      87,
+      75,
+      85,
+      76
+    ],
+    "type": [
+      "どく",
+      "じめん"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "にどくいん",
+    "romaji": "nidokuin"
+  },
+  {
+    "name": "ニドラン♂",
+    "basestats": [
+      46,
+      57,
+      40,
+      40,
+      40,
+      50
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "にどらん♂",
+    "romaji": "nidoran♂"
+  },
+  {
+    "name": "ニドリーノ",
+    "basestats": [
+      61,
+      72,
+      57,
+      55,
+      55,
+      65
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "にどりーの",
+    "romaji": "nidori-no"
+  },
+  {
+    "name": "ニドキング",
+    "basestats": [
+      81,
+      92,
+      77,
+      85,
+      75,
+      85
+    ],
+    "type": [
+      "どく",
+      "じめん"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "にどきんぐ",
+    "romaji": "nidokingu"
+  },
+  {
+    "name": "ピッピ",
+    "basestats": [
+      70,
+      45,
+      48,
+      60,
+      65,
+      35
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "ぴっぴ",
+    "romaji": "pippi"
+  },
+  {
+    "name": "ピクシー",
+    "basestats": [
+      95,
+      70,
+      73,
+      85,
+      90,
+      60
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "ぴくしー",
+    "romaji": "pikushi-"
+  },
+  {
+    "name": "ロコン",
+    "basestats": [
+      38,
+      41,
+      40,
+      50,
+      65,
+      65
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もらいび"
+    ],
+    "hiragana": "ろこん",
+    "romaji": "rokon"
+  },
+  {
+    "name": "キュウコン",
+    "basestats": [
+      73,
+      76,
+      75,
+      81,
+      100,
+      100
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もらいび"
+    ],
+    "hiragana": "きゅうこん",
+    "romaji": "kyuukon"
+  },
+  {
+    "name": "プリン",
+    "basestats": [
+      115,
+      45,
+      20,
+      45,
+      25,
+      20
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "ぷりん",
+    "romaji": "purin"
+  },
+  {
+    "name": "プクリン",
+    "basestats": [
+      140,
+      70,
+      45,
+      75,
+      50,
+      45
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "ぷくりん",
+    "romaji": "pukurin"
+  },
+  {
+    "name": "ズバット",
+    "basestats": [
+      40,
+      45,
+      35,
+      30,
+      40,
+      55
+    ],
+    "type": [
+      "どく",
+      "ひこう"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "ずばっと",
+    "romaji": "zubatto"
+  },
+  {
+    "name": "ゴルバット",
+    "basestats": [
+      75,
+      80,
+      70,
+      65,
+      75,
+      90
+    ],
+    "type": [
+      "どく",
+      "ひこう"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "ごるばっと",
+    "romaji": "gorubatto"
+  },
+  {
+    "name": "ナゾノクサ",
+    "basestats": [
+      45,
+      50,
+      55,
+      75,
+      65,
+      30
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "なぞのくさ",
+    "romaji": "nazonokusa"
+  },
+  {
+    "name": "クサイハナ",
+    "basestats": [
+      60,
+      65,
+      70,
+      85,
+      75,
+      40
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "くさいはな",
+    "romaji": "kusaihana"
+  },
+  {
+    "name": "ラフレシア",
+    "basestats": [
+      75,
+      80,
+      85,
+      100,
+      90,
+      50
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "らふれしあ",
+    "romaji": "rafureshia"
+  },
+  {
+    "name": "パラス",
+    "basestats": [
+      35,
+      70,
+      55,
+      45,
+      55,
+      25
+    ],
+    "type": [
+      "むし",
+      "くさ"
+    ],
+    "ability": [
+      "ほうし"
+    ],
+    "hiragana": "ぱらす",
+    "romaji": "parasu"
+  },
+  {
+    "name": "パラセクト",
+    "basestats": [
+      60,
+      95,
+      80,
+      60,
+      80,
+      30
+    ],
+    "type": [
+      "むし",
+      "くさ"
+    ],
+    "ability": [
+      "ほうし"
+    ],
+    "hiragana": "ぱらせくと",
+    "romaji": "parasekuto"
+  },
+  {
+    "name": "コンパン",
+    "basestats": [
+      60,
+      55,
+      50,
+      40,
+      55,
+      45
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "ふくがん"
+    ],
+    "hiragana": "こんぱん",
+    "romaji": "konpan"
+  },
+  {
+    "name": "モルフォン",
+    "basestats": [
+      70,
+      65,
+      60,
+      90,
+      75,
+      90
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "りんぷん"
+    ],
+    "hiragana": "もるふぉん",
+    "romaji": "morufon"
+  },
+  {
+    "name": "ディグダ",
+    "basestats": [
+      10,
+      55,
+      25,
+      35,
+      45,
+      95
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "すながくれ"
+    ],
+    "hiragana": "でぃぐだ",
+    "romaji": "dhiguda"
+  },
+  {
+    "name": "ダグトリオ",
+    "basestats": [
+      35,
+      80,
+      50,
+      50,
+      70,
+      120
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "すながくれ"
+    ],
+    "hiragana": "だぐとりお",
+    "romaji": "dagutorio"
+  },
+  {
+    "name": "ニャース",
+    "basestats": [
+      40,
+      45,
+      35,
+      40,
+      40,
+      90
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "ものひろい"
+    ],
+    "hiragana": "にゃーす",
+    "romaji": "nya-su"
+  },
+  {
+    "name": "ペルシアン",
+    "basestats": [
+      65,
+      70,
+      60,
+      65,
+      65,
+      115
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "じゅうなん"
+    ],
+    "hiragana": "ぺるしあん",
+    "romaji": "perushian"
+  },
+  {
+    "name": "コダック",
+    "basestats": [
+      50,
+      52,
+      48,
+      65,
+      50,
+      55
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "しめりけ"
+    ],
+    "hiragana": "こだっく",
+    "romaji": "kodakku"
+  },
+  {
+    "name": "ゴルダック",
+    "basestats": [
+      80,
+      82,
+      78,
+      95,
+      80,
+      85
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "しめりけ"
+    ],
+    "hiragana": "ごるだっく",
+    "romaji": "gorudakku"
+  },
+  {
+    "name": "マンキー",
+    "basestats": [
+      40,
+      80,
+      35,
+      35,
+      45,
+      70
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "やるき"
+    ],
+    "hiragana": "まんきー",
+    "romaji": "manki-"
+  },
+  {
+    "name": "オコリザル",
+    "basestats": [
+      65,
+      105,
+      60,
+      60,
+      70,
+      95
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "やるき"
+    ],
+    "hiragana": "おこりざる",
+    "romaji": "okorizaru"
+  },
+  {
+    "name": "ガーディ",
+    "basestats": [
+      55,
+      70,
+      45,
+      70,
+      50,
+      60
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "いかく",
+      "もらいび"
+    ],
+    "hiragana": "がーでぃ",
+    "romaji": "ga-dhi"
+  },
+  {
+    "name": "ウインディ",
+    "basestats": [
+      90,
+      110,
+      80,
+      100,
+      80,
+      95
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "いかく",
+      "もらいび"
+    ],
+    "hiragana": "ういんでぃ",
+    "romaji": "uindhi"
+  },
+  {
+    "name": "ニョロモ",
+    "basestats": [
+      40,
+      50,
+      40,
+      40,
+      40,
+      90
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "ちょすい"
+    ],
+    "hiragana": "にょろも",
+    "romaji": "nyoromo"
+  },
+  {
+    "name": "ニョロゾ",
+    "basestats": [
+      65,
+      65,
+      65,
+      50,
+      50,
+      90
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "ちょすい"
+    ],
+    "hiragana": "にょろぞ",
+    "romaji": "nyorozo"
+  },
+  {
+    "name": "ニョロボン",
+    "basestats": [
+      90,
+      95,
+      95,
+      70,
+      90,
+      70
+    ],
+    "type": [
+      "みず","かくとう"
+    ],
+    "ability": [
+      "ちょすい"
+    ],
+    "hiragana": "にょろぼん",
+    "romaji": "nyorobon"
+  },
+  {
+    "name": "ケーシィ",
+    "basestats": [
+      25,
+      20,
+      15,
+      105,
+      55,
+      90
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ",
+      "せいしんりょく"
+    ],
+    "hiragana": "けーしぃ",
+    "romaji": "ke-shiィ"
+  },
+  {
+    "name": "ユンゲラー",
+    "basestats": [
+      40,
+      35,
+      30,
+      120,
+      70,
+      105
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ",
+      "せいしんりょく"
+    ],
+    "hiragana": "ゆんげらー",
+    "romaji": "yungera-"
+  },
+  {
+    "name": "フーディン",
+    "basestats": [
+      55,
+      50,
+      45,
+      135,
+      85,
+      120
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ",
+      "せいしんりょく"
+    ],
+    "hiragana": "ふーでぃん",
+    "romaji": "fu-dhin"
+  },
+  {
+    "name": "ワンリキー",
+    "basestats": [
+      70,
+      80,
+      50,
+      35,
+      35,
+      35
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "こんじょう",
+      "こんじょう"
+    ],
+    "hiragana": "わんりきー",
+    "romaji": "wanriki-"
+  },
+  {
+    "name": "ゴーリキー",
+    "basestats": [
+      80,
+      100,
+      70,
+      50,
+      60,
+      45
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "こんじょう",
+      "こんじょう"
+    ],
+    "hiragana": "ごーりきー",
+    "romaji": "go-riki-"
+  },
+  {
+    "name": "カイリキー",
+    "basestats": [
+      90,
+      130,
+      80,
+      65,
+      85,
+      55
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "こんじょう",
+      "こんじょう"
+    ],
+    "hiragana": "かいりきー",
+    "romaji": "kairiki-"
+  },
+  {
+    "name": "マダツボミ",
+    "basestats": [
+      50,
+      75,
+      35,
+      70,
+      30,
+      40
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "まだつぼみ",
+    "romaji": "madatsubomi"
+  },
+  {
+    "name": "ウツドン",
+    "basestats": [
+      65,
+      90,
+      50,
+      85,
+      45,
+      55
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "うつどん",
+    "romaji": "utsudon"
+  },
+  {
+    "name": "ウツボット",
+    "basestats": [
+      80,
+      105,
+      65,
+      100,
+      60,
+      70
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "うつぼっと",
+    "romaji": "utsubotto"
+  },
+  {
+    "name": "メノクラゲ",
+    "basestats": [
+      40,
+      40,
+      35,
+      50,
+      100,
+      70
+    ],
+    "type": [
+      "みず",
+      "どく"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "めのくらげ",
+    "romaji": "menokurage"
+  },
+  {
+    "name": "ドククラゲ",
+    "basestats": [
+      80,
+      70,
+      65,
+      80,
+      120,
+      100
+    ],
+    "type": [
+      "みず",
+      "どく"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "どくくらげ",
+    "romaji": "dokukurage"
+  },
+  {
+    "name": "イシツブテ",
+    "basestats": [
+      40,
+      80,
+      100,
+      30,
+      30,
+      20
+    ],
+    "type": [
+      "いわ",
+      "じめん"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "いしつぶて",
+    "romaji": "ishitsubute"
+  },
+  {
+    "name": "ゴローン",
+    "basestats": [
+      55,
+      95,
+      115,
+      45,
+      45,
+      35
+    ],
+    "type": [
+      "いわ",
+      "じめん"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "ごろーん",
+    "romaji": "goro-n"
+  },
+  {
+    "name": "ゴローニャ",
+    "basestats": [
+      80,
+      110,
+      130,
+      55,
+      65,
+      45
+    ],
+    "type": [
+      "いわ",
+      "じめん"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "ごろーにゃ",
+    "romaji": "goro-nya"
+  },
+  {
+    "name": "ポニータ",
+    "basestats": [
+      50,
+      85,
+      55,
+      65,
+      65,
+      90
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "ぽにーた",
+    "romaji": "poni-ta"
+  },
+  {
+    "name": "ギャロップ",
+    "basestats": [
+      65,
+      100,
+      70,
+      80,
+      80,
+      105
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "ぎゃろっぷ",
+    "romaji": "gyaroppu"
+  },
+  {
+    "name": "ヤドン",
+    "basestats": [
+      90,
+      65,
+      65,
+      40,
+      40,
+      15
+    ],
+    "type": [
+      "みず",
+      "エスパー"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "やどん",
+    "romaji": "yadon"
+  },
+  {
+    "name": "ヤドラン",
+    "basestats": [
+      95,
+      75,
+      110,
+      100,
+      80,
+      30
+    ],
+    "type": [
+      "みず",
+      "エスパー"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "やどらん",
+    "romaji": "yadoran"
+  },
+  {
+    "name": "コイル",
+    "basestats": [
+      25,
+      35,
+      70,
+      95,
+      55,
+      45
+    ],
+    "type": [
+      "でんき",
+      "はがね"
+    ],
+    "ability": [
+      "じりょく"
+    ],
+    "hiragana": "こいる",
+    "romaji": "koiru"
+  },
+  {
+    "name": "レアコイル",
+    "basestats": [
+      50,
+      60,
+      95,
+      120,
+      70,
+      70
+    ],
+    "type": [
+      "でんき",
+      "はがね"
+    ],
+    "ability": [
+      "じりょく"
+    ],
+    "hiragana": "れあこいる",
+    "romaji": "reakoiru"
+  },
+  {
+    "name": "カモネギ",
+    "basestats": [
+      52,
+      65,
+      55,
+      58,
+      62,
+      60
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "かもねぎ",
+    "romaji": "kamonegi"
+  },
+  {
+    "name": "ドードー",
+    "basestats": [
+      35,
+      85,
+      45,
+      35,
+      35,
+      75
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "どーどー",
+    "romaji": "do-do-"
+  },
+  {
+    "name": "ドードリオ",
+    "basestats": [
+      60,
+      110,
+      70,
+      60,
+      60,
+      100
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "どーどりお",
+    "romaji": "do-dorio"
+  },
+  {
+    "name": "パウワウ",
+    "basestats": [
+      65,
+      45,
+      55,
+      45,
+      70,
+      45
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "ぱうわう",
+    "romaji": "pauwau"
+  },
+  {
+    "name": "ジュゴン",
+    "basestats": [
+      90,
+      70,
+      80,
+      70,
+      95,
+      70
+    ],
+    "type": [
+      "みず",
+      "こおり"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "じゅごん",
+    "romaji": "jugon"
+  },
+  {
+    "name": "ベトベター",
+    "basestats": [
+      80,
+      80,
+      50,
+      40,
+      50,
+      25
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "あくしゅう"
+    ],
+    "hiragana": "べとべたー",
+    "romaji": "betobeta-"
+  },
+  {
+    "name": "ベトベトン",
+    "basestats": [
+      105,
+      105,
+      75,
+      65,
+      100,
+      50
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "あくしゅう"
+    ],
+    "hiragana": "べとべとん",
+    "romaji": "betobeton"
+  },
+  {
+    "name": "シェルダー",
+    "basestats": [
+      30,
+      65,
+      100,
+      45,
+      25,
+      40
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "シェルアーマー"
+    ],
+    "hiragana": "しぇるだー",
+    "romaji": "sheruda-"
+  },
+  {
+    "name": "パルシェン",
+    "basestats": [
+      50,
+      95,
+      180,
+      85,
+      45,
+      70
+    ],
+    "type": [
+      "みず",
+      "こおり"
+    ],
+    "ability": [
+      "シェルアーマー"
+    ],
+    "hiragana": "ぱるしぇん",
+    "romaji": "parushen"
+  },
+  {
+    "name": "ゴース",
+    "basestats": [
+      30,
+      35,
+      30,
+      100,
+      35,
+      80
+    ],
+    "type": [
+      "ゴースト",
+      "どく"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "ごーす",
+    "romaji": "go-su"
+  },
+  {
+    "name": "ゴースト",
+    "basestats": [
+      45,
+      50,
+      45,
+      115,
+      55,
+      95
+    ],
+    "type": [
+      "ゴースト",
+      "どく"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "ごーすと",
+    "romaji": "go-suto"
+  },
+  {
+    "name": "ゲンガー",
+    "basestats": [
+      60,
+      65,
+      60,
+      130,
+      75,
+      110
+    ],
+    "type": [
+      "ゴースト",
+      "どく"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "げんがー",
+    "romaji": "genga-"
+  },
+  {
+    "name": "イワーク",
+    "basestats": [
+      35,
+      45,
+      160,
+      30,
+      45,
+      70
+    ],
+    "type": [
+      "いわ",
+      "じめん"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "いわーく",
+    "romaji": "iwa-ku"
+  },
+  {
+    "name": "スリープ",
+    "basestats": [
+      60,
+      48,
+      45,
+      43,
+      90,
+      42
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "ふみん"
+    ],
+    "hiragana": "すりーぷ",
+    "romaji": "suri-pu"
+  },
+  {
+    "name": "スリーパー",
+    "basestats": [
+      85,
+      73,
+      70,
+      73,
+      115,
+      67
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "ふみん"
+    ],
+    "hiragana": "すりーぱー",
+    "romaji": "suri-pa-"
+  },
+  {
+    "name": "クラブ",
+    "basestats": [
+      30,
+      105,
+      90,
+      25,
+      25,
+      50
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "くらぶ",
+    "romaji": "kurabu"
+  },
+  {
+    "name": "キングラー",
+    "basestats": [
+      55,
+      130,
+      115,
+      50,
+      50,
+      75
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "きんぐらー",
+    "romaji": "kingura-"
+  },
+  {
+    "name": "ビリリダマ",
+    "basestats": [
+      40,
+      30,
+      50,
+      55,
+      55,
+      100
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "ぼうおん"
+    ],
+    "hiragana": "びりりだま",
+    "romaji": "biriridama"
+  },
+  {
+    "name": "マルマイン",
+    "basestats": [
+      60,
+      50,
+      70,
+      80,
+      80,
+      140
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "ぼうおん"
+    ],
+    "hiragana": "まるまいん",
+    "romaji": "marumain"
+  },
+  {
+    "name": "タマタマ",
+    "basestats": [
+      60,
+      40,
+      80,
+      60,
+      45,
+      40
+    ],
+    "type": [
+      "くさ",
+      "エスパー"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "たまたま",
+    "romaji": "tamatama"
+  },
+  {
+    "name": "ナッシー",
+    "basestats": [
+      95,
+      95,
+      85,
+      125,
+      65,
+      55
+    ],
+    "type": [
+      "くさ",
+      "エスパー"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "なっしー",
+    "romaji": "nassi-"
+  },
+  {
+    "name": "カラカラ",
+    "basestats": [
+      50,
+      50,
+      95,
+      40,
+      50,
+      35
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "からから",
+    "romaji": "karakara"
+  },
+  {
+    "name": "ガラガラ",
+    "basestats": [
+      60,
+      80,
+      110,
+      50,
+      80,
+      45
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "がらがら",
+    "romaji": "garagara"
+  },
+  {
+    "name": "サワムラー",
+    "basestats": [
+      50,
+      120,
+      53,
+      35,
+      110,
+      87
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "じゅうなん"
+    ],
+    "hiragana": "さわむらー",
+    "romaji": "sawamura-"
+  },
+  {
+    "name": "エビワラー",
+    "basestats": [
+      50,
+      105,
+      79,
+      35,
+      110,
+      76
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "えびわらー",
+    "romaji": "ebiwara-"
+  },
+  {
+    "name": "ベロリンガ",
+    "basestats": [
+      90,
+      55,
+      75,
+      60,
+      75,
+      30
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "マイペース"
+    ],
+    "hiragana": "べろりんが",
+    "romaji": "beroringa"
+  },
+  {
+    "name": "ドガース",
+    "basestats": [
+      40,
+      65,
+      95,
+      60,
+      45,
+      35
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "どがーす",
+    "romaji": "doga-su"
+  },
+  {
+    "name": "マタドガス",
+    "basestats": [
+      65,
+      90,
+      120,
+      85,
+      70,
+      60
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "またどがす",
+    "romaji": "matadogasu"
+  },
+  {
+    "name": "サイホーン",
+    "basestats": [
+      80,
+      85,
+      95,
+      30,
+      30,
+      25
+    ],
+    "type": [
+      "じめん",
+      "いわ"
+    ],
+    "ability": [
+      "ひらいしん"
+    ],
+    "hiragana": "さいほーん",
+    "romaji": "saiho-n"
+  },
+  {
+    "name": "サイドン",
+    "basestats": [
+      105,
+      130,
+      120,
+      45,
+      45,
+      40
+    ],
+    "type": [
+      "じめん",
+      "いわ"
+    ],
+    "ability": [
+      "ひらいしん"
+    ],
+    "hiragana": "さいどん",
+    "romaji": "saidon"
+  },
+  {
+    "name": "ラッキー",
+    "basestats": [
+      250,
+      5,
+      5,
+      35,
+      105,
+      50
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "しぜんかいふく",
+      "てんのめぐみ"
+    ],
+    "hiragana": "らっきー",
+    "romaji": "rakki-"
+  },
+  {
+    "name": "モンジャラ",
+    "basestats": [
+      65,
+      55,
+      115,
+      100,
+      40,
+      60
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "もんじゃら",
+    "romaji": "monjara"
+  },
+  {
+    "name": "ガルーラ",
+    "basestats": [
+      105,
+      95,
+      80,
+      40,
+      80,
+      90
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "はやおき",
+      "はやおき"
+    ],
+    "hiragana": "がるーら",
+    "romaji": "garu-ra"
+  },
+  {
+    "name": "タッツー",
+    "basestats": [
+      30,
+      40,
+      70,
+      70,
+      25,
+      60
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "たっつー",
+    "romaji": "tattu-"
+  },
+  {
+    "name": "シードラ",
+    "basestats": [
+      55,
+      65,
+      95,
+      95,
+      45,
+      85
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "しーどら",
+    "romaji": "shi-dora"
+  },
+  {
+    "name": "トサキント",
+    "basestats": [
+      45,
+      67,
+      60,
+      35,
+      50,
+      63
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "とさきんと",
+    "romaji": "tosakinto"
+  },
+  {
+    "name": "アズマオウ",
+    "basestats": [
+      80,
+      92,
+      65,
+      65,
+      80,
+      68
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "あずまおう",
+    "romaji": "azumaou"
+  },
+  {
+    "name": "ヒトデマン",
+    "basestats": [
+      30,
+      45,
+      55,
+      70,
+      55,
+      85
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "はっこう"
+    ],
+    "hiragana": "ひとでまん",
+    "romaji": "hitodeman"
+  },
+  {
+    "name": "スターミー",
+    "basestats": [
+      60,
+      75,
+      85,
+      100,
+      85,
+      115
+    ],
+    "type": [
+      "みず",
+      "エスパー"
+    ],
+    "ability": [
+      "はっこう"
+    ],
+    "hiragana": "すたーみー",
+    "romaji": "suta-mi-"
+  },
+  {
+    "name": "バリヤード",
+    "basestats": [
+      40,
+      45,
+      65,
+      100,
+      120,
+      90
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "ぼうおん"
+    ],
+    "hiragana": "ばりやーど",
+    "romaji": "bariya-do"
+  },
+  {
+    "name": "ストライク",
+    "basestats": [
+      70,
+      110,
+      80,
+      55,
+      80,
+      105
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "すとらいく",
+    "romaji": "sutoraiku"
+  },
+  {
+    "name": "ルージュラ",
+    "basestats": [
+      65,
+      50,
+      35,
+      115,
+      95,
+      95
+    ],
+    "type": [
+      "こおり",
+      "エスパー"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "るーじゅら",
+    "romaji": "ru-jura"
+  },
+  {
+    "name": "エレブー",
+    "basestats": [
+      65,
+      83,
+      57,
+      95,
+      85,
+      105
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "えれぶー",
+    "romaji": "erebu-"
+  },
+  {
+    "name": "ブーバー",
+    "basestats": [
+      65,
+      95,
+      57,
+      100,
+      85,
+      93
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "ほのおのからだ"
+    ],
+    "hiragana": "ぶーばー",
+    "romaji": "bu-ba-"
+  },
+  {
+    "name": "カイロス",
+    "basestats": [
+      65,
+      125,
+      100,
+      55,
+      70,
+      85
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "かいろす",
+    "romaji": "kairosu"
+  },
+  {
+    "name": "ケンタロス",
+    "basestats": [
+      75,
+      100,
+      95,
+      40,
+      70,
+      110
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "けんたろす",
+    "romaji": "kentarosu"
+  },
+  {
+    "name": "コイキング",
+    "basestats": [
+      20,
+      10,
+      55,
+      15,
+      20,
+      80
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "こいきんぐ",
+    "romaji": "koikingu"
+  },
+  {
+    "name": "ギャラドス",
+    "basestats": [
+      95,
+      125,
+      79,
+      60,
+      100,
+      81
+    ],
+    "type": [
+      "みず",
+      "ひこう"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "ぎゃらどす",
+    "romaji": "gyaradosu"
+  },
+  {
+    "name": "ラプラス",
+    "basestats": [
+      130,
+      85,
+      80,
+      85,
+      95,
+      60
+    ],
+    "type": [
+      "みず",
+      "こおり"
+    ],
+    "ability": [
+      "ちょすい"
+    ],
+    "hiragana": "らぷらす",
+    "romaji": "rapurasu"
+  },
+  {
+    "name": "メタモン",
+    "basestats": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "じゅうなん"
+    ],
+    "hiragana": "めたもん",
+    "romaji": "metamon"
+  },
+  {
+    "name": "イーブイ",
+    "basestats": [
+      55,
+      55,
+      50,
+      45,
+      65,
+      55
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "いーぶい",
+    "romaji": "i-bui"
+  },
+  {
+    "name": "シャワーズ",
+    "basestats": [
+      130,
+      65,
+      60,
+      110,
+      95,
+      65
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "ちょすい"
+    ],
+    "hiragana": "しゃわーず",
+    "romaji": "shawa-zu"
+  },
+  {
+    "name": "サンダース",
+    "basestats": [
+      65,
+      65,
+      60,
+      110,
+      95,
+      130
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "ちくでん"
+    ],
+    "hiragana": "さんだーす",
+    "romaji": "sanda-su"
+  },
+  {
+    "name": "ブースター",
+    "basestats": [
+      65,
+      130,
+      60,
+      95,
+      110,
+      65
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もらいび"
+    ],
+    "hiragana": "ぶーすたー",
+    "romaji": "bu-suta-"
+  },
+  {
+    "name": "ポリゴン",
+    "basestats": [
+      65,
+      60,
+      70,
+      85,
+      75,
+      40
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "トレース"
+    ],
+    "hiragana": "ぽりごん",
+    "romaji": "porigon"
+  },
+  {
+    "name": "オムナイト",
+    "basestats": [
+      35,
+      40,
+      100,
+      90,
+      55,
+      35
+    ],
+    "type": [
+      "いわ",
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "おむないと",
+    "romaji": "omunaito"
+  },
+  {
+    "name": "オムスター",
+    "basestats": [
+      70,
+      60,
+      125,
+      115,
+      70,
+      55
+    ],
+    "type": [
+      "いわ",
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "おむすたー",
+    "romaji": "omusuta-"
+  },
+  {
+    "name": "カブト",
+    "basestats": [
+      30,
+      80,
+      90,
+      55,
+      45,
+      55
+    ],
+    "type": [
+      "いわ",
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "かぶと",
+    "romaji": "kabuto"
+  },
+  {
+    "name": "カブトプス",
+    "basestats": [
+      60,
+      115,
+      105,
+      65,
+      70,
+      80
+    ],
+    "type": [
+      "いわ",
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "かぶとぷす",
+    "romaji": "kabutopusu"
+  },
+  {
+    "name": "プテラ",
+    "basestats": [
+      80,
+      105,
+      65,
+      60,
+      75,
+      130
+    ],
+    "type": [
+      "いわ",
+      "ひこう"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "ぷてら",
+    "romaji": "putera"
+  },
+  {
+    "name": "カビゴン",
+    "basestats": [
+      160,
+      110,
+      65,
+      65,
+      110,
+      30
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "めんえき"
+    ],
+    "hiragana": "かびごん",
+    "romaji": "kabigon"
+  },
+  {
+    "name": "フリーザー",
+    "basestats": [
+      90,
+      85,
+      100,
+      95,
+      125,
+      85
+    ],
+    "type": [
+      "こおり",
+      "ひこう"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "ふりーざー",
+    "romaji": "furi-za-"
+  },
+  {
+    "name": "サンダー",
+    "basestats": [
+      90,
+      90,
+      85,
+      125,
+      90,
+      100
+    ],
+    "type": [
+      "でんき",
+      "ひこう"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "さんだー",
+    "romaji": "sanda-"
+  },
+  {
+    "name": "ファイヤー",
+    "basestats": [
+      90,
+      100,
+      90,
+      125,
+      85,
+      90
+    ],
+    "type": [
+      "ほのお",
+      "ひこう"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "ふぁいやー",
+    "romaji": "faiya-"
+  },
+  {
+    "name": "ミニリュウ",
+    "basestats": [
+      41,
+      64,
+      45,
+      50,
+      50,
+      50
+    ],
+    "type": [
+      "ドラゴン"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "みにりゅう",
+    "romaji": "miniryuu"
+  },
+  {
+    "name": "ハクリュー",
+    "basestats": [
+      61,
+      84,
+      65,
+      70,
+      70,
+      70
+    ],
+    "type": [
+      "ドラゴン"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "はくりゅー",
+    "romaji": "hakuryu-"
+  },
+  {
+    "name": "カイリュー",
+    "basestats": [
+      91,
+      134,
+      95,
+      100,
+      100,
+      80
+    ],
+    "type": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "かいりゅー",
+    "romaji": "kairyu-"
+  },
+  {
+    "name": "ミュウツー",
+    "basestats": [
+      106,
+      110,
+      90,
+      154,
+      90,
+      130
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "みゅうつー",
+    "romaji": "myuutsu-"
+  },
+  {
+    "name": "ミュウ",
+    "basestats": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "みゅう",
+    "romaji": "myuu"
+  },
+  {
+    "name": "チコリータ",
+    "basestats": [
+      45,
+      49,
+      65,
+      49,
+      65,
+      45
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "ちこりーた",
+    "romaji": "chikori-ta"
+  },
+  {
+    "name": "ベイリーフ",
+    "basestats": [
+      60,
+      62,
+      80,
+      63,
+      80,
+      60
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "べいりーふ",
+    "romaji": "beiri-fu"
+  },
+  {
+    "name": "メガニウム",
+    "basestats": [
+      80,
+      82,
+      100,
+      83,
+      100,
+      80
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "めがにうむ",
+    "romaji": "meganiumu"
+  },
+  {
+    "name": "ヒノアラシ",
+    "basestats": [
+      39,
+      52,
+      43,
+      60,
+      50,
+      65
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "ひのあらし",
+    "romaji": "hinoarashi"
+  },
+  {
+    "name": "マグマラシ",
+    "basestats": [
+      58,
+      64,
+      58,
+      80,
+      65,
+      80
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "まぐまらし",
+    "romaji": "magumarashi"
+  },
+  {
+    "name": "バクフーン",
+    "basestats": [
+      78,
+      84,
+      78,
+      109,
+      85,
+      100
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "ばくふーん",
+    "romaji": "bakufu-n"
+  },
+  {
+    "name": "ワニノコ",
+    "basestats": [
+      50,
+      65,
+      64,
+      44,
+      48,
+      43
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "わにのこ",
+    "romaji": "waninoko"
+  },
+  {
+    "name": "アリゲイツ",
+    "basestats": [
+      65,
+      80,
+      80,
+      59,
+      63,
+      58
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "ありげいつ",
+    "romaji": "arigeitsu"
+  },
+  {
+    "name": "オーダイル",
+    "basestats": [
+      85,
+      105,
+      100,
+      79,
+      83,
+      78
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "おーだいる",
+    "romaji": "o-dairu"
+  },
+  {
+    "name": "オタチ",
+    "basestats": [
+      35,
+      46,
+      34,
+      35,
+      45,
+      20
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "おたち",
+    "romaji": "otachi"
+  },
+  {
+    "name": "オオタチ",
+    "basestats": [
+      85,
+      76,
+      64,
+      45,
+      55,
+      90
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "おおたち",
+    "romaji": "ootachi"
+  },
+  {
+    "name": "ホーホー",
+    "basestats": [
+      60,
+      30,
+      30,
+      36,
+      56,
+      50
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "ふみん"
+    ],
+    "hiragana": "ほーほー",
+    "romaji": "ho-ho-"
+  },
+  {
+    "name": "ヨルノズク",
+    "basestats": [
+      100,
+      50,
+      50,
+      76,
+      96,
+      70
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "ふみん"
+    ],
+    "hiragana": "よるのずく",
+    "romaji": "yorunozuku"
+  },
+  {
+    "name": "レディバ",
+    "basestats": [
+      40,
+      20,
+      30,
+      40,
+      80,
+      55
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "れでぃば",
+    "romaji": "redhiba"
+  },
+  {
+    "name": "レディアン",
+    "basestats": [
+      55,
+      35,
+      50,
+      55,
+      110,
+      85
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "れでぃあん",
+    "romaji": "redhian"
+  },
+  {
+    "name": "イトマル",
+    "basestats": [
+      40,
+      60,
+      40,
+      40,
+      40,
+      30
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "いとまる",
+    "romaji": "itomaru"
+  },
+  {
+    "name": "アリアドス",
+    "basestats": [
+      70,
+      90,
+      70,
+      60,
+      60,
+      40
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "ありあどす",
+    "romaji": "ariadosu"
+  },
+  {
+    "name": "クロバット",
+    "basestats": [
+      85,
+      90,
+      80,
+      70,
+      80,
+      130
+    ],
+    "type": [
+      "どく",
+      "ひこう"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "くろばっと",
+    "romaji": "kurobatto"
+  },
+  {
+    "name": "チョンチー",
+    "basestats": [
+      75,
+      38,
+      38,
+      56,
+      56,
+      67
+    ],
+    "type": [
+      "みず",
+      "でんき"
+    ],
+    "ability": [
+      "ちくでん"
+    ],
+    "hiragana": "ちょんちー",
+    "romaji": "chonchi-"
+  },
+  {
+    "name": "ランターン",
+    "basestats": [
+      125,
+      58,
+      58,
+      76,
+      76,
+      67
+    ],
+    "type": [
+      "みず",
+      "でんき"
+    ],
+    "ability": [
+      "ちくでん"
+    ],
+    "hiragana": "らんたーん",
+    "romaji": "ranta-n"
+  },
+  {
+    "name": "ピチュー",
+    "basestats": [
+      20,
+      40,
+      15,
+      35,
+      35,
+      60
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "ぴちゅー",
+    "romaji": "pichu-"
+  },
+  {
+    "name": "ピィ",
+    "basestats": [
+      50,
+      25,
+      28,
+      45,
+      55,
+      15
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "ぴぃ",
+    "romaji": "pixi"
+  },
+  {
+    "name": "ププリン",
+    "basestats": [
+      90,
+      30,
+      15,
+      40,
+      20,
+      15
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "ぷぷりん",
+    "romaji": "pupurin"
+  },
+  {
+    "name": "トゲピー",
+    "basestats": [
+      35,
+      20,
+      65,
+      40,
+      65,
+      20
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "はりきり"
+    ],
+    "hiragana": "とげぴー",
+    "romaji": "togepi-"
+  },
+  {
+    "name": "トゲチック",
+    "basestats": [
+      55,
+      40,
+      85,
+      80,
+      105,
+      40
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "はりきり"
+    ],
+    "hiragana": "とげちっく",
+    "romaji": "togechikku"
+  },
+  {
+    "name": "ネイティ",
+    "basestats": [
+      40,
+      50,
+      45,
+      70,
+      45,
+      70
+    ],
+    "type": [
+      "エスパー",
+      "ひこう"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "ねいてぃ",
+    "romaji": "neithi"
+  },
+  {
+    "name": "ネイティオ",
+    "basestats": [
+      65,
+      75,
+      70,
+      95,
+      70,
+      95
+    ],
+    "type": [
+      "エスパー",
+      "ひこう"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "ねいてぃお",
+    "romaji": "neithio"
+  },
+  {
+    "name": "メリープ",
+    "basestats": [
+      55,
+      40,
+      40,
+      65,
+      45,
+      35
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "めりーぷ",
+    "romaji": "meri-pu"
+  },
+  {
+    "name": "モココ",
+    "basestats": [
+      70,
+      55,
+      55,
+      80,
+      60,
+      45
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "もここ",
+    "romaji": "mokoko"
+  },
+  {
+    "name": "デンリュウ",
+    "basestats": [
+      90,
+      75,
+      75,
+      115,
+      90,
+      55
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "でんりゅう",
+    "romaji": "denryuu"
+  },
+  {
+    "name": "キレイハナ",
+    "basestats": [
+      75,
+      80,
+      85,
+      90,
+      100,
+      50
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "きれいはな",
+    "romaji": "kireihana"
+  },
+  {
+    "name": "マリル",
+    "basestats": [
+      70,
+      20,
+      50,
+      20,
+      50,
+      40
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "まりる",
+    "romaji": "mariru"
+  },
+  {
+    "name": "マリルリ",
+    "basestats": [
+      100,
+      50,
+      80,
+      50,
+      80,
+      50
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "まりるり",
+    "romaji": "mariruri"
+  },
+  {
+    "name": "ウソッキー",
+    "basestats": [
+      70,
+      100,
+      115,
+      30,
+      65,
+      30
+    ],
+    "type": [
+      "いわ"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "うそっきー",
+    "romaji": "usokki-"
+  },
+  {
+    "name": "ニョロトノ",
+    "basestats": [
+      90,
+      75,
+      75,
+      90,
+      100,
+      70
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "ちょすい"
+    ],
+    "hiragana": "にょろとの",
+    "romaji": "nyorotono"
+  },
+  {
+    "name": "ハネッコ",
+    "basestats": [
+      35,
+      35,
+      40,
+      35,
+      55,
+      50
+    ],
+    "type": [
+      "くさ",
+      "ひこう"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "はねっこ",
+    "romaji": "hanekko"
+  },
+  {
+    "name": "ポポッコ",
+    "basestats": [
+      55,
+      45,
+      50,
+      45,
+      65,
+      80
+    ],
+    "type": [
+      "くさ",
+      "ひこう"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "ぽぽっこ",
+    "romaji": "popokko"
+  },
+  {
+    "name": "ワタッコ",
+    "basestats": [
+      75,
+      55,
+      70,
+      55,
+      85,
+      110
+    ],
+    "type": [
+      "くさ",
+      "ひこう"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "わたっこ",
+    "romaji": "watakko"
+  },
+  {
+    "name": "エイパム",
+    "basestats": [
+      55,
+      70,
+      55,
+      40,
+      55,
+      85
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "えいぱむ",
+    "romaji": "eipamu"
+  },
+  {
+    "name": "ヒマナッツ",
+    "basestats": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "ひまなっつ",
+    "romaji": "himanattu"
+  },
+  {
+    "name": "キマワリ",
+    "basestats": [
+      75,
+      75,
+      55,
+      105,
+      85,
+      30
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "きまわり",
+    "romaji": "kimawari"
+  },
+  {
+    "name": "ヤンヤンマ",
+    "basestats": [
+      65,
+      65,
+      45,
+      75,
+      45,
+      95
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "かそく"
+    ],
+    "hiragana": "やんやんま",
+    "romaji": "yanyanma"
+  },
+  {
+    "name": "ウパー",
+    "basestats": [
+      55,
+      45,
+      45,
+      25,
+      25,
+      15
+    ],
+    "type": [
+      "みず",
+      "じめん"
+    ],
+    "ability": [
+      "しめりけ"
+    ],
+    "hiragana": "うぱー",
+    "romaji": "upa-"
+  },
+  {
+    "name": "ヌオー",
+    "basestats": [
+      95,
+      85,
+      85,
+      65,
+      65,
+      35
+    ],
+    "type": [
+      "みず",
+      "じめん"
+    ],
+    "ability": [
+      "しめりけ"
+    ],
+    "hiragana": "ぬおー",
+    "romaji": "nuo-"
+  },
+  {
+    "name": "エーフィ",
+    "basestats": [
+      65,
+      65,
+      60,
+      130,
+      95,
+      110
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "えーふぃ",
+    "romaji": "e-fi"
+  },
+  {
+    "name": "ブラッキー",
+    "basestats": [
+      95,
+      65,
+      110,
+      60,
+      130,
+      65
+    ],
+    "type": [
+      "あく"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "ぶらっきー",
+    "romaji": "burakki-"
+  },
+  {
+    "name": "ヤミカラス",
+    "basestats": [
+      60,
+      85,
+      42,
+      85,
+      42,
+      91
+    ],
+    "type": [
+      "あく",
+      "ひこう"
+    ],
+    "ability": [
+      "ふみん"
+    ],
+    "hiragana": "やみからす",
+    "romaji": "yamikarasu"
+  },
+  {
+    "name": "ヤドキング",
+    "basestats": [
+      95,
+      75,
+      80,
+      100,
+      110,
+      30
+    ],
+    "type": [
+      "みず",
+      "エスパー"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "やどきんぐ",
+    "romaji": "yadokingu"
+  },
+  {
+    "name": "ムウマ",
+    "basestats": [
+      60,
+      60,
+      60,
+      85,
+      85,
+      85
+    ],
+    "type": [
+      "ゴースト"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "むうま",
+    "romaji": "muuma"
+  },
+  {
+    "name": "アンノーン",
+    "basestats": [
+      48,
+      72,
+      48,
+      72,
+      48,
+      48
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "あんのーん",
+    "romaji": "anno-n"
+  },
+  {
+    "name": "ソーナンス",
+    "basestats": [
+      190,
+      33,
+      58,
+      33,
+      58,
+      33
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "かげふみ"
+    ],
+    "hiragana": "そーなんす",
+    "romaji": "so-nansu"
+  },
+  {
+    "name": "キリンリキ",
+    "basestats": [
+      70,
+      80,
+      65,
+      90,
+      65,
+      85
+    ],
+    "type": [
+      "ノーマル",
+      "エスパー"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "きりんりき",
+    "romaji": "kirinriki"
+  },
+  {
+    "name": "クヌギダマ",
+    "basestats": [
+      50,
+      65,
+      90,
+      35,
+      35,
+      15
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "くぬぎだま",
+    "romaji": "kunugidama"
+  },
+  {
+    "name": "フォレトス",
+    "basestats": [
+      75,
+      90,
+      140,
+      60,
+      60,
+      40
+    ],
+    "type": [
+      "むし",
+      "はがね"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "ふぉれとす",
+    "romaji": "foretosu"
+  },
+  {
+    "name": "ノコッチ",
+    "basestats": [
+      100,
+      70,
+      70,
+      65,
+      65,
+      45
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "てんのめぐみ"
+    ],
+    "hiragana": "のこっち",
+    "romaji": "nokotti"
+  },
+  {
+    "name": "グライガー",
+    "basestats": [
+      65,
+      75,
+      105,
+      35,
+      65,
+      85
+    ],
+    "type": [
+      "じめん",
+      "ひこう"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "ぐらいがー",
+    "romaji": "guraiga-"
+  },
+  {
+    "name": "ハガネール",
+    "basestats": [
+      75,
+      85,
+      200,
+      55,
+      65,
+      30
+    ],
+    "type": [
+      "はがね",
+      "じめん"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "はがねーる",
+    "romaji": "hagane-ru"
+  },
+  {
+    "name": "ブルー",
+    "basestats": [
+      60,
+      80,
+      50,
+      40,
+      40,
+      30
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "ぶるー",
+    "romaji": "buru-"
+  },
+  {
+    "name": "グランブル",
+    "basestats": [
+      90,
+      120,
+      75,
+      60,
+      60,
+      45
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "ぐらんぶる",
+    "romaji": "guranburu"
+  },
+  {
+    "name": "ハリーセン",
+    "basestats": [
+      65,
+      95,
+      75,
+      55,
+      55,
+      85
+    ],
+    "type": [
+      "みず",
+      "どく"
+    ],
+    "ability": [
+      "どくのトゲ"
+    ],
+    "hiragana": "はりーせん",
+    "romaji": "hari-sen"
+  },
+  {
+    "name": "ハッサム",
+    "basestats": [
+      70,
+      130,
+      100,
+      55,
+      80,
+      65
+    ],
+    "type": [
+      "むし",
+      "はがね"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "はっさむ",
+    "romaji": "hassamu"
+  },
+  {
+    "name": "ツボツボ",
+    "basestats": [
+      20,
+      10,
+      230,
+      10,
+      230,
+      5
+    ],
+    "type": [
+      "むし",
+      "いわ"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "つぼつぼ",
+    "romaji": "tsubotsubo"
+  },
+  {
+    "name": "ヘラクロス",
+    "basestats": [
+      80,
+      125,
+      75,
+      40,
+      95,
+      85
+    ],
+    "type": [
+      "むし",
+      "かくとう"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "へらくろす",
+    "romaji": "herakurosu"
+  },
+  {
+    "name": "ニューラ",
+    "basestats": [
+      55,
+      95,
+      55,
+      35,
+      75,
+      115
+    ],
+    "type": [
+      "あく",
+      "こおり"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "にゅーら",
+    "romaji": "nyu-ra"
+  },
+  {
+    "name": "ヒメグマ",
+    "basestats": [
+      60,
+      80,
+      50,
+      50,
+      50,
+      40
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "ものひろい"
+    ],
+    "hiragana": "ひめぐま",
+    "romaji": "himeguma"
+  },
+  {
+    "name": "リングマ",
+    "basestats": [
+      90,
+      130,
+      75,
+      75,
+      75,
+      55
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "こんじょう"
+    ],
+    "hiragana": "りんぐま",
+    "romaji": "ringuma"
+  },
+  {
+    "name": "マグマッグ",
+    "basestats": [
+      40,
+      40,
+      40,
+      70,
+      40,
+      20
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "マグマのよろい"
+    ],
+    "hiragana": "まぐまっぐ",
+    "romaji": "magumaggu"
+  },
+  {
+    "name": "マグカルゴ",
+    "basestats": [
+      50,
+      50,
+      120,
+      80,
+      80,
+      30
+    ],
+    "type": [
+      "ほのお",
+      "いわ"
+    ],
+    "ability": [
+      "マグマのよろい"
+    ],
+    "hiragana": "まぐかるご",
+    "romaji": "magukarugo"
+  },
+  {
+    "name": "ウリムー",
+    "basestats": [
+      50,
+      50,
+      40,
+      30,
+      30,
+      50
+    ],
+    "type": [
+      "こおり",
+      "じめん"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "うりむー",
+    "romaji": "urimu-"
+  },
+  {
+    "name": "イノムー",
+    "basestats": [
+      100,
+      100,
+      80,
+      60,
+      60,
+      50
+    ],
+    "type": [
+      "こおり",
+      "じめん"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "いのむー",
+    "romaji": "inomu-"
+  },
+  {
+    "name": "サニーゴ",
+    "basestats": [
+      55,
+      55,
+      85,
+      65,
+      85,
+      35
+    ],
+    "type": [
+      "みず",
+      "いわ"
+    ],
+    "ability": [
+      "はりきり"
+    ],
+    "hiragana": "さにーご",
+    "romaji": "sani-go"
+  },
+  {
+    "name": "テッポウオ",
+    "basestats": [
+      35,
+      65,
+      35,
+      65,
+      35,
+      65
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "はりきり"
+    ],
+    "hiragana": "てっぽうお",
+    "romaji": "teppouo"
+  },
+  {
+    "name": "オクタン",
+    "basestats": [
+      75,
+      105,
+      75,
+      105,
+      75,
+      45
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "きゅうばん"
+    ],
+    "hiragana": "おくたん",
+    "romaji": "okutan"
+  },
+  {
+    "name": "デリバード",
+    "basestats": [
+      45,
+      55,
+      45,
+      65,
+      45,
+      75
+    ],
+    "type": [
+      "こおり",
+      "ひこう"
+    ],
+    "ability": [
+      "やるき"
+    ],
+    "hiragana": "でりばーど",
+    "romaji": "deriba-do"
+  },
+  {
+    "name": "マンタイン",
+    "basestats": [
+      65,
+      40,
+      70,
+      80,
+      140,
+      70
+    ],
+    "type": [
+      "みず",
+      "ひこう"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "まんたいん",
+    "romaji": "mantain"
+  },
+  {
+    "name": "エアームド",
+    "basestats": [
+      65,
+      80,
+      140,
+      40,
+      70,
+      70
+    ],
+    "type": [
+      "はがね",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "えあーむど",
+    "romaji": "ea-mudo"
+  },
+  {
+    "name": "デルビル",
+    "basestats": [
+      45,
+      60,
+      30,
+      80,
+      50,
+      65
+    ],
+    "type": [
+      "あく",
+      "ほのお"
+    ],
+    "ability": [
+      "はやおき"
+    ],
+    "hiragana": "でるびる",
+    "romaji": "derubiru"
+  },
+  {
+    "name": "ヘルガー",
+    "basestats": [
+      75,
+      90,
+      50,
+      110,
+      80,
+      95
+    ],
+    "type": [
+      "あく",
+      "ほのお"
+    ],
+    "ability": [
+      "はやおき"
+    ],
+    "hiragana": "へるがー",
+    "romaji": "heruga-"
+  },
+  {
+    "name": "キングドラ",
+    "basestats": [
+      75,
+      95,
+      95,
+      95,
+      95,
+      85
+    ],
+    "type": [
+      "みず",
+      "ドラゴン"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "きんぐどら",
+    "romaji": "kingudora"
+  },
+  {
+    "name": "ゴマゾウ",
+    "basestats": [
+      90,
+      60,
+      60,
+      40,
+      40,
+      40
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "ものひろい"
+    ],
+    "hiragana": "ごまぞう",
+    "romaji": "gomazou"
+  },
+  {
+    "name": "ドンファン",
+    "basestats": [
+      90,
+      120,
+      120,
+      60,
+      60,
+      50
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "ものひろい"
+    ],
+    "hiragana": "どんふぁん",
+    "romaji": "donfan"
+  },
+  {
+    "name": "ポリゴン2",
+    "basestats": [
+      85,
+      80,
+      90,
+      105,
+      95,
+      60
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "トレース"
+    ],
+    "hiragana": "ぽりごん2",
+    "romaji": "porigon2"
+  },
+  {
+    "name": "オドシシ",
+    "basestats": [
+      73,
+      95,
+      62,
+      85,
+      65,
+      85
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "おどしし",
+    "romaji": "odoshishi"
+  },
+  {
+    "name": "ドーブル",
+    "basestats": [
+      55,
+      20,
+      35,
+      20,
+      45,
+      75
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "マイペース"
+    ],
+    "hiragana": "どーぶる",
+    "romaji": "do-buru"
+  },
+  {
+    "name": "バルキー",
+    "basestats": [
+      35,
+      35,
+      35,
+      35,
+      35,
+      35
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "こんじょう"
+    ],
+    "hiragana": "ばるきー",
+    "romaji": "baruki-"
+  },
+  {
+    "name": "カポエラー",
+    "basestats": [
+      50,
+      95,
+      95,
+      35,
+      110,
+      70
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "かぽえらー",
+    "romaji": "kapoera-"
+  },
+  {
+    "name": "ムチュール",
+    "basestats": [
+      45,
+      30,
+      15,
+      85,
+      65,
+      65
+    ],
+    "type": [
+      "こおり",
+      "エスパー"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "むちゅーる",
+    "romaji": "muchu-ru"
+  },
+  {
+    "name": "エレキッド",
+    "basestats": [
+      45,
+      63,
+      37,
+      65,
+      55,
+      95
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "えれきっど",
+    "romaji": "erekiddo"
+  },
+  {
+    "name": "ブビィ",
+    "basestats": [
+      45,
+      75,
+      37,
+      70,
+      55,
+      83
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "ほのおのからだ"
+    ],
+    "hiragana": "ぶびぃ",
+    "romaji": "bubixi"
+  },
+  {
+    "name": "ミルタンク",
+    "basestats": [
+      95,
+      80,
+      105,
+      40,
+      70,
+      100
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "みるたんく",
+    "romaji": "mirutanku"
+  },
+  {
+    "name": "ハピナス",
+    "basestats": [
+      255,
+      10,
+      10,
+      75,
+      135,
+      55
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "しぜんかいふく"
+    ],
+    "hiragana": "はぴなす",
+    "romaji": "hapinasu"
+  },
+  {
+    "name": "ライコウ",
+    "basestats": [
+      90,
+      85,
+      75,
+      115,
+      100,
+      115
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "らいこう",
+    "romaji": "raikou"
+  },
+  {
+    "name": "エンテイ",
+    "basestats": [
+      115,
+      115,
+      85,
+      90,
+      75,
+      100
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "えんてい",
+    "romaji": "entei"
+  },
+  {
+    "name": "スイクン",
+    "basestats": [
+      100,
+      75,
+      115,
+      90,
+      115,
+      85
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "すいくん",
+    "romaji": "suikun"
+  },
+  {
+    "name": "ヨーギラス",
+    "basestats": [
+      50,
+      64,
+      50,
+      45,
+      50,
+      41
+    ],
+    "type": [
+      "いわ",
+      "じめん"
+    ],
+    "ability": [
+      "こんじょう"
+    ],
+    "hiragana": "よーぎらす",
+    "romaji": "yo-girasu"
+  },
+  {
+    "name": "サナギラス",
+    "basestats": [
+      70,
+      84,
+      70,
+      65,
+      70,
+      51
+    ],
+    "type": [
+      "いわ",
+      "じめん"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "さなぎらす",
+    "romaji": "sanagirasu"
+  },
+  {
+    "name": "バンギラス",
+    "basestats": [
+      100,
+      134,
+      110,
+      95,
+      100,
+      61
+    ],
+    "type": [
+      "いわ",
+      "あく"
+    ],
+    "ability": [
+      "すなおこし"
+    ],
+    "hiragana": "ばんぎらす",
+    "romaji": "bangirasu"
+  },
+  {
+    "name": "ルギア",
+    "basestats": [
+      106,
+      90,
+      130,
+      90,
+      154,
+      110
+    ],
+    "type": [
+      "エスパー",
+      "ひこう"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "るぎあ",
+    "romaji": "rugia"
+  },
+  {
+    "name": "ホウオウ",
+    "basestats": [
+      106,
+      130,
+      90,
+      110,
+      154,
+      90
+    ],
+    "type": [
+      "ほのお",
+      "ひこう"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "ほうおう",
+    "romaji": "houou"
+  },
+  {
+    "name": "セレビィ",
+    "basestats": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "type": [
+      "エスパー",
+      "くさ"
+    ],
+    "ability": [
+      "しぜんかいふく"
+    ],
+    "hiragana": "せれびぃ",
+    "romaji": "serebixi"
+  },
+  {
+    "name": "キモリ",
+    "basestats": [
+      40,
+      45,
+      35,
+      65,
+      55,
+      70
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "きもり",
+    "romaji": "kimori"
+  },
+  {
+    "name": "ジュプトル",
+    "basestats": [
+      50,
+      65,
+      45,
+      85,
+      65,
+      95
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "じゅぷとる",
+    "romaji": "juputoru"
+  },
+  {
+    "name": "ジュカイン",
+    "basestats": [
+      70,
+      85,
+      65,
+      105,
+      85,
+      120
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "しんりょく"
+    ],
+    "hiragana": "じゅかいん",
+    "romaji": "jukain"
+  },
+  {
+    "name": "アチャモ",
+    "basestats": [
+      45,
+      60,
+      40,
+      70,
+      50,
+      45
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "あちゃも",
+    "romaji": "achamo"
+  },
+  {
+    "name": "ワカシャモ",
+    "basestats": [
+      60,
+      85,
+      60,
+      85,
+      60,
+      55
+    ],
+    "type": [
+      "ほのお",
+      "かくとう"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "わかしゃも",
+    "romaji": "wakashamo"
+  },
+  {
+    "name": "バシャーモ",
+    "basestats": [
+      80,
+      120,
+      70,
+      110,
+      70,
+      80
+    ],
+    "type": [
+      "ほのお",
+      "かくとう"
+    ],
+    "ability": [
+      "もうか"
+    ],
+    "hiragana": "ばしゃーも",
+    "romaji": "basha-mo"
+  },
+  {
+    "name": "ミズゴロウ",
+    "basestats": [
+      50,
+      70,
+      50,
+      50,
+      50,
+      40
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "みずごろう",
+    "romaji": "mizugorou"
+  },
+  {
+    "name": "ヌマクロー",
+    "basestats": [
+      70,
+      85,
+      70,
+      60,
+      70,
+      50
+    ],
+    "type": [
+      "みず",
+      "じめん"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "ぬまくろー",
+    "romaji": "numakuro-"
+  },
+  {
+    "name": "ラグラージ",
+    "basestats": [
+      100,
+      110,
+      90,
+      85,
+      90,
+      60
+    ],
+    "type": [
+      "みず",
+      "じめん"
+    ],
+    "ability": [
+      "げきりゅう"
+    ],
+    "hiragana": "らぐらーじ",
+    "romaji": "ragura-ji"
+  },
+  {
+    "name": "ポチエナ",
+    "basestats": [
+      35,
+      55,
+      35,
+      30,
+      30,
+      35
+    ],
+    "type": [
+      "あく"
+    ],
+    "ability": [
+      "にげあし"
+    ],
+    "hiragana": "ぽちえな",
+    "romaji": "pochiena"
+  },
+  {
+    "name": "グラエナ",
+    "basestats": [
+      70,
+      90,
+      70,
+      60,
+      60,
+      70
+    ],
+    "type": [
+      "あく"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "ぐらえな",
+    "romaji": "guraena"
+  },
+  {
+    "name": "ジグザグマ",
+    "basestats": [
+      38,
+      30,
+      41,
+      30,
+      41,
+      60
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "ものひろい"
+    ],
+    "hiragana": "じぐざぐま",
+    "romaji": "jiguzaguma"
+  },
+  {
+    "name": "マッスグマ",
+    "basestats": [
+      78,
+      70,
+      61,
+      50,
+      61,
+      100
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "ものひろい"
+    ],
+    "hiragana": "まっすぐま",
+    "romaji": "massuguma"
+  },
+  {
+    "name": "ケムッソ",
+    "basestats": [
+      45,
+      45,
+      35,
+      20,
+      30,
+      20
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "りんぷん"
+    ],
+    "hiragana": "けむっそ",
+    "romaji": "kemusso"
+  },
+  {
+    "name": "カラサリス",
+    "basestats": [
+      50,
+      35,
+      55,
+      25,
+      25,
+      15
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "からさりす",
+    "romaji": "karasarisu"
+  },
+  {
+    "name": "アゲハント",
+    "basestats": [
+      60,
+      70,
+      50,
+      90,
+      50,
+      65
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "むしのしらせ"
+    ],
+    "hiragana": "あげはんと",
+    "romaji": "agehanto"
+  },
+  {
+    "name": "マユルド",
+    "basestats": [
+      50,
+      35,
+      55,
+      25,
+      25,
+      15
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "まゆるど",
+    "romaji": "mayurudo"
+  },
+  {
+    "name": "ドクケイル",
+    "basestats": [
+      60,
+      50,
+      70,
+      50,
+      90,
+      65
+    ],
+    "type": [
+      "むし",
+      "どく"
+    ],
+    "ability": [
+      "りんぷん"
+    ],
+    "hiragana": "どくけいる",
+    "romaji": "dokukeiru"
+  },
+  {
+    "name": "ハスボー",
+    "basestats": [
+      40,
+      30,
+      30,
+      40,
+      50,
+      30
+    ],
+    "type": [
+      "みず",
+      "くさ"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "はすぼー",
+    "romaji": "hasubo-"
+  },
+  {
+    "name": "ハスブレロ",
+    "basestats": [
+      60,
+      50,
+      50,
+      60,
+      70,
+      50
+    ],
+    "type": [
+      "みず",
+      "くさ"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "はすぶれろ",
+    "romaji": "hasuburero"
+  },
+  {
+    "name": "ルンパッパ",
+    "basestats": [
+      80,
+      70,
+      70,
+      90,
+      100,
+      70
+    ],
+    "type": [
+      "みず",
+      "くさ"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "るんぱっぱ",
+    "romaji": "runpappa"
+  },
+  {
+    "name": "タネボー",
+    "basestats": [
+      40,
+      40,
+      50,
+      30,
+      30,
+      30
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "たねぼー",
+    "romaji": "tanebo-"
+  },
+  {
+    "name": "コノハナ",
+    "basestats": [
+      70,
+      70,
+      40,
+      60,
+      40,
+      60
+    ],
+    "type": [
+      "くさ",
+      "あく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "このはな",
+    "romaji": "konohana"
+  },
+  {
+    "name": "ダーテング",
+    "basestats": [
+      90,
+      100,
+      60,
+      90,
+      60,
+      80
+    ],
+    "type": [
+      "くさ",
+      "あく"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "だーてんぐ",
+    "romaji": "da-tengu"
+  },
+  {
+    "name": "スバメ",
+    "basestats": [
+      40,
+      55,
+      30,
+      30,
+      30,
+      85
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "こんじょう"
+    ],
+    "hiragana": "すばめ",
+    "romaji": "subame"
+  },
+  {
+    "name": "オオスバメ",
+    "basestats": [
+      60,
+      85,
+      60,
+      50,
+      50,
+      125
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "こんじょう"
+    ],
+    "hiragana": "おおすばめ",
+    "romaji": "oosubame"
+  },
+  {
+    "name": "キャモメ",
+    "basestats": [
+      40,
+      30,
+      30,
+      55,
+      30,
+      85
+    ],
+    "type": [
+      "みず",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "きゃもめ",
+    "romaji": "kyamome"
+  },
+  {
+    "name": "ペリッパー",
+    "basestats": [
+      60,
+      50,
+      100,
+      85,
+      70,
+      65
+    ],
+    "type": [
+      "みず",
+      "ひこう"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "ぺりっぱー",
+    "romaji": "perippa-"
+  },
+  {
+    "name": "ラルトス",
+    "basestats": [
+      28,
+      25,
+      25,
+      45,
+      35,
+      40
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "らるとす",
+    "romaji": "rarutosu"
+  },
+  {
+    "name": "キルリア",
+    "basestats": [
+      38,
+      35,
+      35,
+      65,
+      55,
+      50
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "きるりあ",
+    "romaji": "kiruria"
+  },
+  {
+    "name": "サーナイト",
+    "basestats": [
+      68,
+      65,
+      65,
+      125,
+      115,
+      80
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "シンクロ"
+    ],
+    "hiragana": "さーないと",
+    "romaji": "sa-naito"
+  },
+  {
+    "name": "アメタマ",
+    "basestats": [
+      40,
+      30,
+      32,
+      50,
+      52,
+      65
+    ],
+    "type": [
+      "むし",
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "あめたま",
+    "romaji": "ametama"
+  },
+  {
+    "name": "アメモース",
+    "basestats": [
+      70,
+      60,
+      62,
+      80,
+      82,
+      60
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "あめもーす",
+    "romaji": "amemo-su"
+  },
+  {
+    "name": "キノココ",
+    "basestats": [
+      60,
+      40,
+      60,
+      40,
+      60,
+      35
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "ほうし"
+    ],
+    "hiragana": "きのここ",
+    "romaji": "kinokoko"
+  },
+  {
+    "name": "キノガッサ",
+    "basestats": [
+      60,
+      130,
+      80,
+      60,
+      60,
+      70
+    ],
+    "type": [
+      "くさ",
+      "かくとう"
+    ],
+    "ability": [
+      "ほうし"
+    ],
+    "hiragana": "きのがっさ",
+    "romaji": "kinogassa"
+  },
+  {
+    "name": "ナマケロ",
+    "basestats": [
+      60,
+      60,
+      60,
+      35,
+      35,
+      30
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "なまけ"
+    ],
+    "hiragana": "なまけろ",
+    "romaji": "namakero"
+  },
+  {
+    "name": "ヤルキモノ",
+    "basestats": [
+      80,
+      80,
+      80,
+      55,
+      55,
+      90
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "やるき"
+    ],
+    "hiragana": "やるきもの",
+    "romaji": "yarukimono"
+  },
+  {
+    "name": "ケッキング",
+    "basestats": [
+      150,
+      160,
+      100,
+      95,
+      65,
+      100
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "なまけ"
+    ],
+    "hiragana": "けっきんぐ",
+    "romaji": "kekkingu"
+  },
+  {
+    "name": "ツチニン",
+    "basestats": [
+      31,
+      45,
+      90,
+      30,
+      30,
+      40
+    ],
+    "type": [
+      "むし",
+      "じめん"
+    ],
+    "ability": [
+      "ふくがん"
+    ],
+    "hiragana": "つちにん",
+    "romaji": "tsuchinin"
+  },
+  {
+    "name": "テッカニン",
+    "basestats": [
+      61,
+      90,
+      45,
+      50,
+      50,
+      160
+    ],
+    "type": [
+      "むし",
+      "ひこう"
+    ],
+    "ability": [
+      "かそく"
+    ],
+    "hiragana": "てっかにん",
+    "romaji": "tekkanin"
+  },
+  {
+    "name": "ヌケニン",
+    "basestats": [
+      1,
+      90,
+      45,
+      30,
+      30,
+      40
+    ],
+    "type": [
+      "むし",
+      "ゴースト"
+    ],
+    "ability": [
+      "ふしぎなまもり"
+    ],
+    "hiragana": "ぬけにん",
+    "romaji": "nukenin"
+  },
+  {
+    "name": "ゴニョニョ",
+    "basestats": [
+      64,
+      51,
+      23,
+      51,
+      23,
+      28
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "ぼうおん"
+    ],
+    "hiragana": "ごにょにょ",
+    "romaji": "gonyonyo"
+  },
+  {
+    "name": "ドゴーム",
+    "basestats": [
+      84,
+      71,
+      43,
+      71,
+      43,
+      48
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "ぼうおん"
+    ],
+    "hiragana": "どごーむ",
+    "romaji": "dogo-mu"
+  },
+  {
+    "name": "バクオング",
+    "basestats": [
+      104,
+      91,
+      63,
+      91,
+      63,
+      68
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "ぼうおん"
+    ],
+    "hiragana": "ばくおんぐ",
+    "romaji": "bakuongu"
+  },
+  {
+    "name": "マクノシタ",
+    "basestats": [
+      72,
+      60,
+      30,
+      20,
+      30,
+      25
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "あついしぼう",
+      "こんじょう"
+    ],
+    "hiragana": "まくのした",
+    "romaji": "makunoshita"
+  },
+  {
+    "name": "ハリテヤマ",
+    "basestats": [
+      144,
+      120,
+      60,
+      40,
+      60,
+      50
+    ],
+    "type": [
+      "かくとう"
+    ],
+    "ability": [
+      "あついしぼう",
+      "こんじょう"
+    ],
+    "hiragana": "はりてやま",
+    "romaji": "hariteyama"
+  },
+  {
+    "name": "ルリリ",
+    "basestats": [
+      50,
+      20,
+      40,
+      20,
+      40,
+      20
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "るりり",
+    "romaji": "ruriri"
+  },
+  {
+    "name": "ノズパス",
+    "basestats": [
+      30,
+      45,
+      135,
+      45,
+      90,
+      30
+    ],
+    "type": [
+      "いわ"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "のずぱす",
+    "romaji": "nozupasu"
+  },
+  {
+    "name": "エネコ",
+    "basestats": [
+      50,
+      45,
+      45,
+      35,
+      35,
+      50
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "えねこ",
+    "romaji": "eneko"
+  },
+  {
+    "name": "エネコロロ",
+    "basestats": [
+      70,
+      65,
+      65,
+      55,
+      55,
+      70
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "メロメロボディ"
+    ],
+    "hiragana": "えねころろ",
+    "romaji": "enekororo"
+  },
+  {
+    "name": "ヤミラミ",
+    "basestats": [
+      50,
+      75,
+      75,
+      65,
+      65,
+      50
+    ],
+    "type": [
+      "あく",
+      "ゴースト"
+    ],
+    "ability": [
+      "するどいめ"
+    ],
+    "hiragana": "やみらみ",
+    "romaji": "yamirami"
+  },
+  {
+    "name": "クチート",
+    "basestats": [
+      50,
+      85,
+      85,
+      55,
+      55,
+      50
+    ],
+    "type": [
+      "はがね"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "くちーと",
+    "romaji": "kuchi-to"
+  },
+  {
+    "name": "ココドラ",
+    "basestats": [
+      50,
+      70,
+      100,
+      40,
+      40,
+      30
+    ],
+    "type": [
+      "はがね",
+      "いわ"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "ここどら",
+    "romaji": "kokodora"
+  },
+  {
+    "name": "コドラ",
+    "basestats": [
+      60,
+      90,
+      140,
+      50,
+      50,
+      40
+    ],
+    "type": [
+      "はがね",
+      "いわ"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "こどら",
+    "romaji": "kodora"
+  },
+  {
+    "name": "ボスゴドラ",
+    "basestats": [
+      70,
+      110,
+      180,
+      60,
+      60,
+      50
+    ],
+    "type": [
+      "はがね",
+      "いわ"
+    ],
+    "ability": [
+      "がんじょう"
+    ],
+    "hiragana": "ぼすごどら",
+    "romaji": "bosugodora"
+  },
+  {
+    "name": "アサナン",
+    "basestats": [
+      30,
+      40,
+      55,
+      40,
+      55,
+      60
+    ],
+    "type": [
+      "かくとう",
+      "エスパー"
+    ],
+    "ability": [
+      "ヨガパワー"
+    ],
+    "hiragana": "あさなん",
+    "romaji": "asanan"
+  },
+  {
+    "name": "チャーレム",
+    "basestats": [
+      60,
+      60,
+      75,
+      60,
+      75,
+      80
+    ],
+    "type": [
+      "かくとう",
+      "エスパー"
+    ],
+    "ability": [
+      "ヨガパワー"
+    ],
+    "hiragana": "ちゃーれむ",
+    "romaji": "cha-remu"
+  },
+  {
+    "name": "ラクライ",
+    "basestats": [
+      40,
+      45,
+      40,
+      65,
+      40,
+      65
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "らくらい",
+    "romaji": "rakurai"
+  },
+  {
+    "name": "ライボルト",
+    "basestats": [
+      70,
+      75,
+      60,
+      105,
+      60,
+      105
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "せいでんき"
+    ],
+    "hiragana": "らいぼると",
+    "romaji": "raiboruto"
+  },
+  {
+    "name": "プラスル",
+    "basestats": [
+      60,
+      50,
+      40,
+      85,
+      75,
+      95
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "プラス"
+    ],
+    "hiragana": "ぷらする",
+    "romaji": "purasuru"
+  },
+  {
+    "name": "マイナン",
+    "basestats": [
+      60,
+      40,
+      50,
+      75,
+      85,
+      95
+    ],
+    "type": [
+      "でんき"
+    ],
+    "ability": [
+      "マイナス"
+    ],
+    "hiragana": "まいなん",
+    "romaji": "mainan"
+  },
+  {
+    "name": "バルビート",
+    "basestats": [
+      65,
+      73,
+      55,
+      47,
+      75,
+      85
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "はっこう",
+      "むしのしらせ"
+    ],
+    "hiragana": "ばるびーと",
+    "romaji": "barubi-to"
+  },
+  {
+    "name": "イルミーゼ",
+    "basestats": [
+      65,
+      47,
+      55,
+      73,
+      75,
+      85
+    ],
+    "type": [
+      "むし"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "いるみーぜ",
+    "romaji": "irumi-ze"
+  },
+  {
+    "name": "ロゼリア",
+    "basestats": [
+      50,
+      60,
+      45,
+      100,
+      80,
+      65
+    ],
+    "type": [
+      "くさ",
+      "どく"
+    ],
+    "ability": [
+      "しぜんかいふく"
+    ],
+    "hiragana": "ろぜりあ",
+    "romaji": "rozeria"
+  },
+  {
+    "name": "ゴクリン",
+    "basestats": [
+      70,
+      43,
+      53,
+      43,
+      53,
+      40
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "ヘドロえき"
+    ],
+    "hiragana": "ごくりん",
+    "romaji": "gokurin"
+  },
+  {
+    "name": "マルノーム",
+    "basestats": [
+      100,
+      73,
+      83,
+      73,
+      83,
+      55
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "ヘドロえき"
+    ],
+    "hiragana": "まるのーむ",
+    "romaji": "maruno-mu"
+  },
+  {
+    "name": "キバニア",
+    "basestats": [
+      45,
+      90,
+      20,
+      65,
+      20,
+      65
+    ],
+    "type": [
+      "みず",
+      "あく"
+    ],
+    "ability": [
+      "さめはだ"
+    ],
+    "hiragana": "きばにあ",
+    "romaji": "kibania"
+  },
+  {
+    "name": "サメハダー",
+    "basestats": [
+      70,
+      120,
+      40,
+      95,
+      40,
+      95
+    ],
+    "type": [
+      "みず",
+      "あく"
+    ],
+    "ability": [
+      "さめはだ"
+    ],
+    "hiragana": "さめはだー",
+    "romaji": "samehada-"
+  },
+  {
+    "name": "ホエルコ",
+    "basestats": [
+      130,
+      70,
+      35,
+      70,
+      35,
+      60
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "みずのベール"
+    ],
+    "hiragana": "ほえるこ",
+    "romaji": "hoeruko"
+  },
+  {
+    "name": "ホエルオー",
+    "basestats": [
+      170,
+      90,
+      45,
+      90,
+      45,
+      60
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "みずのベール"
+    ],
+    "hiragana": "ほえるおー",
+    "romaji": "hoeruo-"
+  },
+  {
+    "name": "ドンメル",
+    "basestats": [
+      60,
+      60,
+      40,
+      65,
+      45,
+      35
+    ],
+    "type": [
+      "ほのお",
+      "じめん"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "どんめる",
+    "romaji": "donmeru"
+  },
+  {
+    "name": "バクーダ",
+    "basestats": [
+      70,
+      100,
+      70,
+      105,
+      75,
+      40
+    ],
+    "type": [
+      "ほのお",
+      "じめん"
+    ],
+    "ability": [
+      "マグマのよろい"
+    ],
+    "hiragana": "ばくーだ",
+    "romaji": "baku-da"
+  },
+  {
+    "name": "コータス",
+    "basestats": [
+      70,
+      85,
+      140,
+      85,
+      70,
+      20
+    ],
+    "type": [
+      "ほのお"
+    ],
+    "ability": [
+      "しろいけむり"
+    ],
+    "hiragana": "こーたす",
+    "romaji": "ko-tasu"
+  },
+  {
+    "name": "バネブー",
+    "basestats": [
+      60,
+      25,
+      35,
+      70,
+      80,
+      60
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "ばねぶー",
+    "romaji": "banebu-"
+  },
+  {
+    "name": "ブーピッグ",
+    "basestats": [
+      80,
+      45,
+      65,
+      90,
+      110,
+      80
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "ぶーぴっぐ",
+    "romaji": "bu-piggu"
+  },
+  {
+    "name": "パッチール",
+    "basestats": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "マイペース"
+    ],
+    "hiragana": "ぱっちーる",
+    "romaji": "patti-ru"
+  },
+  {
+    "name": "ナックラー",
+    "basestats": [
+      45,
+      100,
+      45,
+      45,
+      45,
+      10
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "なっくらー",
+    "romaji": "nakkura-"
+  },
+  {
+    "name": "ビブラーバ",
+    "basestats": [
+      50,
+      70,
+      50,
+      50,
+      50,
+      70
+    ],
+    "type": [
+      "じめん",
+      "ドラゴン"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "びぶらーば",
+    "romaji": "bibura-ba"
+  },
+  {
+    "name": "フライゴン",
+    "basestats": [
+      80,
+      100,
+      80,
+      80,
+      80,
+      100
+    ],
+    "type": [
+      "じめん",
+      "ドラゴン"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "ふらいごん",
+    "romaji": "furaigon"
+  },
+  {
+    "name": "サボネア",
+    "basestats": [
+      50,
+      85,
+      40,
+      85,
+      40,
+      35
+    ],
+    "type": [
+      "くさ"
+    ],
+    "ability": [
+      "すながくれ"
+    ],
+    "hiragana": "さぼねあ",
+    "romaji": "sabonea"
+  },
+  {
+    "name": "ノクタス",
+    "basestats": [
+      70,
+      115,
+      60,
+      115,
+      60,
+      55
+    ],
+    "type": [
+      "くさ",
+      "あく"
+    ],
+    "ability": [
+      "すながくれ"
+    ],
+    "hiragana": "のくたす",
+    "romaji": "nokutasu"
+  },
+  {
+    "name": "チルット",
+    "basestats": [
+      45,
+      40,
+      60,
+      40,
+      75,
+      50
+    ],
+    "type": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "ability": [
+      "しぜんかいふく"
+    ],
+    "hiragana": "ちるっと",
+    "romaji": "chirutto"
+  },
+  {
+    "name": "チルタリス",
+    "basestats": [
+      75,
+      70,
+      90,
+      70,
+      105,
+      80
+    ],
+    "type": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "ability": [
+      "しぜんかいふく"
+    ],
+    "hiragana": "ちるたりす",
+    "romaji": "chirutarisu"
+  },
+  {
+    "name": "ザングース",
+    "basestats": [
+      73,
+      115,
+      60,
+      60,
+      60,
+      90
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "めんえき"
+    ],
+    "hiragana": "ざんぐーす",
+    "romaji": "zangu-su"
+  },
+  {
+    "name": "ハブネーク",
+    "basestats": [
+      73,
+      100,
+      60,
+      100,
+      60,
+      65
+    ],
+    "type": [
+      "どく"
+    ],
+    "ability": [
+      "だっぴ"
+    ],
+    "hiragana": "はぶねーく",
+    "romaji": "habune-ku"
+  },
+  {
+    "name": "ルナトーン",
+    "basestats": [
+      70,
+      55,
+      65,
+      95,
+      85,
+      70
+    ],
+    "type": [
+      "いわ",
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "るなとーん",
+    "romaji": "runato-n"
+  },
+  {
+    "name": "ソルロック",
+    "basestats": [
+      70,
+      95,
+      85,
+      55,
+      65,
+      70
+    ],
+    "type": [
+      "いわ",
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "そるろっく",
+    "romaji": "sorurokku"
+  },
+  {
+    "name": "ドジョッチ",
+    "basestats": [
+      50,
+      48,
+      43,
+      46,
+      41,
+      60
+    ],
+    "type": [
+      "みず",
+      "じめん"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "どじょっち",
+    "romaji": "dojotti"
+  },
+  {
+    "name": "ナマズン",
+    "basestats": [
+      110,
+      78,
+      73,
+      76,
+      71,
+      60
+    ],
+    "type": [
+      "みず",
+      "じめん"
+    ],
+    "ability": [
+      "どんかん"
+    ],
+    "hiragana": "なまずん",
+    "romaji": "namazun"
+  },
+  {
+    "name": "ヘイガニ",
+    "basestats": [
+      43,
+      80,
+      65,
+      50,
+      35,
+      35
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "へいがに",
+    "romaji": "heigani"
+  },
+  {
+    "name": "シザリガー",
+    "basestats": [
+      63,
+      120,
+      85,
+      90,
+      55,
+      55
+    ],
+    "type": [
+      "みず",
+      "あく"
+    ],
+    "ability": [
+      "かいりきバサミ"
+    ],
+    "hiragana": "しざりがー",
+    "romaji": "shizariga-"
+  },
+  {
+    "name": "ヤジロン",
+    "basestats": [
+      40,
+      40,
+      55,
+      40,
+      70,
+      55
+    ],
+    "type": [
+      "じめん",
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "やじろん",
+    "romaji": "yajiron"
+  },
+  {
+    "name": "ネンドール",
+    "basestats": [
+      60,
+      70,
+      105,
+      70,
+      120,
+      75
+    ],
+    "type": [
+      "じめん",
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "ねんどーる",
+    "romaji": "nendo-ru"
+  },
+  {
+    "name": "リリーラ",
+    "basestats": [
+      66,
+      41,
+      77,
+      61,
+      87,
+      23
+    ],
+    "type": [
+      "いわ",
+      "くさ"
+    ],
+    "ability": [
+      "きゅうばん"
+    ],
+    "hiragana": "りりーら",
+    "romaji": "riri-ra"
+  },
+  {
+    "name": "ユレイドル",
+    "basestats": [
+      86,
+      81,
+      97,
+      81,
+      107,
+      43
+    ],
+    "type": [
+      "いわ",
+      "くさ"
+    ],
+    "ability": [
+      "きゅうばん"
+    ],
+    "hiragana": "ゆれいどる",
+    "romaji": "yureidoru"
+  },
+  {
+    "name": "アノプス",
+    "basestats": [
+      45,
+      95,
+      50,
+      40,
+      50,
+      75
+    ],
+    "type": [
+      "いわ",
+      "むし"
+    ],
+    "ability": [
+      "カブトアーマー"
+    ],
+    "hiragana": "あのぷす",
+    "romaji": "anopusu"
+  },
+  {
+    "name": "アーマルド",
+    "basestats": [
+      75,
+      125,
+      100,
+      70,
+      80,
+      45
+    ],
+    "type": [
+      "いわ",
+      "むし"
+    ],
+    "ability": [
+      "カブトアーマー"
+    ],
+    "hiragana": "あーまるど",
+    "romaji": "a-marudo"
+  },
+  {
+    "name": "ヒンバス",
+    "basestats": [
+      20,
+      15,
+      20,
+      10,
+      55,
+      80
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "ひんばす",
+    "romaji": "hinbasu"
+  },
+  {
+    "name": "ミロカロス",
+    "basestats": [
+      95,
+      60,
+      79,
+      100,
+      125,
+      81
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "ふしぎなうろこ"
+    ],
+    "hiragana": "みろかろす",
+    "romaji": "mirokarosu"
+  },
+  {
+    "name": "ポワルン",
+    "basestats": [
+      70,
+      70,
+      70,
+      70,
+      70,
+      70
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "てんきや"
+    ],
+    "hiragana": "ぽわるん",
+    "romaji": "powarun"
+  },
+  {
+    "name": "カクレオン",
+    "basestats": [
+      60,
+      90,
+      70,
+      60,
+      120,
+      40
+    ],
+    "type": [
+      "ノーマル"
+    ],
+    "ability": [
+      "へんしょく"
+    ],
+    "hiragana": "かくれおん",
+    "romaji": "kakureon"
+  },
+  {
+    "name": "カゲボウズ",
+    "basestats": [
+      44,
+      75,
+      35,
+      63,
+      33,
+      45
+    ],
+    "type": [
+      "ゴースト"
+    ],
+    "ability": [
+      "ふみん"
+    ],
+    "hiragana": "かげぼうず",
+    "romaji": "kagebouzu"
+  },
+  {
+    "name": "ジュペッタ",
+    "basestats": [
+      64,
+      115,
+      65,
+      83,
+      63,
+      65
+    ],
+    "type": [
+      "ゴースト"
+    ],
+    "ability": [
+      "ふみん"
+    ],
+    "hiragana": "じゅぺった",
+    "romaji": "jupetta"
+  },
+  {
+    "name": "ヨマワル",
+    "basestats": [
+      20,
+      40,
+      90,
+      30,
+      90,
+      25
+    ],
+    "type": [
+      "ゴースト"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "よまわる",
+    "romaji": "yomawaru"
+  },
+  {
+    "name": "サマヨール",
+    "basestats": [
+      40,
+      70,
+      130,
+      60,
+      130,
+      25
+    ],
+    "type": [
+      "ゴースト"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "さまよーる",
+    "romaji": "samayo-ru"
+  },
+  {
+    "name": "トロピウス",
+    "basestats": [
+      99,
+      68,
+      83,
+      72,
+      87,
+      51
+    ],
+    "type": [
+      "くさ",
+      "ひこう"
+    ],
+    "ability": [
+      "ようりょくそ"
+    ],
+    "hiragana": "とろぴうす",
+    "romaji": "toropiusu"
+  },
+  {
+    "name": "チリーン",
+    "basestats": [
+      65,
+      50,
+      70,
+      95,
+      80,
+      65
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "ちりーん",
+    "romaji": "chiri-n"
+  },
+  {
+    "name": "アブソル",
+    "basestats": [
+      65,
+      130,
+      60,
+      75,
+      60,
+      75
+    ],
+    "type": [
+      "あく"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "あぶそる",
+    "romaji": "abusoru"
+  },
+  {
+    "name": "ソーナノ",
+    "basestats": [
+      95,
+      23,
+      48,
+      23,
+      48,
+      23
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "かげふみ"
+    ],
+    "hiragana": "そーなの",
+    "romaji": "so-nano"
+  },
+  {
+    "name": "ユキワラシ",
+    "basestats": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "type": [
+      "こおり"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "ゆきわらし",
+    "romaji": "yukiwarashi"
+  },
+  {
+    "name": "オニゴーリ",
+    "basestats": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "type": [
+      "こおり"
+    ],
+    "ability": [
+      "せいしんりょく"
+    ],
+    "hiragana": "おにごーり",
+    "romaji": "onigo-ri"
+  },
+  {
+    "name": "タマザラシ",
+    "basestats": [
+      70,
+      40,
+      50,
+      55,
+      50,
+      25
+    ],
+    "type": [
+      "こおり",
+      "みず"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "たまざらし",
+    "romaji": "tamazarashi"
+  },
+  {
+    "name": "トドグラー",
+    "basestats": [
+      90,
+      60,
+      70,
+      75,
+      70,
+      45
+    ],
+    "type": [
+      "こおり",
+      "みず"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "とどぐらー",
+    "romaji": "todogura-"
+  },
+  {
+    "name": "トドゼルガ",
+    "basestats": [
+      110,
+      80,
+      90,
+      95,
+      90,
+      65
+    ],
+    "type": [
+      "こおり",
+      "みず"
+    ],
+    "ability": [
+      "あついしぼう"
+    ],
+    "hiragana": "とどぜるが",
+    "romaji": "todozeruga"
+  },
+  {
+    "name": "パールル",
+    "basestats": [
+      35,
+      64,
+      85,
+      74,
+      55,
+      32
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "シェルアーマー"
+    ],
+    "hiragana": "ぱーるる",
+    "romaji": "pa-ruru"
+  },
+  {
+    "name": "ハンテール",
+    "basestats": [
+      55,
+      104,
+      105,
+      94,
+      75,
+      52
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "はんてーる",
+    "romaji": "hante-ru"
+  },
+  {
+    "name": "サクラビス",
+    "basestats": [
+      55,
+      84,
+      105,
+      114,
+      75,
+      52
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "さくらびす",
+    "romaji": "sakurabisu"
+  },
+  {
+    "name": "ジーランス",
+    "basestats": [
+      100,
+      90,
+      130,
+      45,
+      65,
+      55
+    ],
+    "type": [
+      "みず",
+      "いわ"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "じーらんす",
+    "romaji": "ji-ransu"
+  },
+  {
+    "name": "ラブカス",
+    "basestats": [
+      43,
+      30,
+      55,
+      40,
+      65,
+      97
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "すいすい"
+    ],
+    "hiragana": "らぶかす",
+    "romaji": "rabukasu"
+  },
+  {
+    "name": "タツベイ",
+    "basestats": [
+      45,
+      75,
+      60,
+      40,
+      30,
+      50
+    ],
+    "type": [
+      "ドラゴン"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "たつべい",
+    "romaji": "tatsubei"
+  },
+  {
+    "name": "コモルー",
+    "basestats": [
+      65,
+      95,
+      100,
+      60,
+      50,
+      50
+    ],
+    "type": [
+      "ドラゴン"
+    ],
+    "ability": [
+      "いしあたま"
+    ],
+    "hiragana": "こもるー",
+    "romaji": "komoru-"
+  },
+  {
+    "name": "ボーマンダ",
+    "basestats": [
+      95,
+      135,
+      80,
+      110,
+      80,
+      100
+    ],
+    "type": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "ability": [
+      "いかく"
+    ],
+    "hiragana": "ぼーまんだ",
+    "romaji": "bo-manda"
+  },
+  {
+    "name": "ダンバル",
+    "basestats": [
+      40,
+      55,
+      80,
+      35,
+      60,
+      30
+    ],
+    "type": [
+      "はがね",
+      "エスパー"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "だんばる",
+    "romaji": "danbaru"
+  },
+  {
+    "name": "メタング",
+    "basestats": [
+      60,
+      75,
+      100,
+      55,
+      80,
+      50
+    ],
+    "type": [
+      "はがね",
+      "エスパー"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "めたんぐ",
+    "romaji": "metangu"
+  },
+  {
+    "name": "メタグロス",
+    "basestats": [
+      80,
+      135,
+      130,
+      95,
+      90,
+      70
+    ],
+    "type": [
+      "はがね",
+      "エスパー"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "めたぐろす",
+    "romaji": "metagurosu"
+  },
+  {
+    "name": "レジロック",
+    "basestats": [
+      80,
+      100,
+      200,
+      50,
+      100,
+      50
+    ],
+    "type": [
+      "いわ"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "れじろっく",
+    "romaji": "rejirokku"
+  },
+  {
+    "name": "レジアイス",
+    "basestats": [
+      80,
+      50,
+      100,
+      100,
+      200,
+      50
+    ],
+    "type": [
+      "こおり"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "れじあいす",
+    "romaji": "rejiaisu"
+  },
+  {
+    "name": "レジスチル",
+    "basestats": [
+      80,
+      75,
+      150,
+      75,
+      150,
+      50
+    ],
+    "type": [
+      "はがね"
+    ],
+    "ability": [
+      "クリアボディ"
+    ],
+    "hiragana": "れじすちる",
+    "romaji": "rejisuchiru"
+  },
+  {
+    "name": "ラティアス",
+    "basestats": [
+      80,
+      80,
+      90,
+      110,
+      130,
+      110
+    ],
+    "type": [
+      "ドラゴン",
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "らてぃあす",
+    "romaji": "rathiasu"
+  },
+  {
+    "name": "ラティオス",
+    "basestats": [
+      80,
+      90,
+      80,
+      130,
+      110,
+      110
+    ],
+    "type": [
+      "ドラゴン",
+      "エスパー"
+    ],
+    "ability": [
+      "ふゆう"
+    ],
+    "hiragana": "らてぃおす",
+    "romaji": "rathiosu"
+  },
+  {
+    "name": "カイオーガ",
+    "basestats": [
+      100,
+      100,
+      90,
+      150,
+      140,
+      90
+    ],
+    "type": [
+      "みず"
+    ],
+    "ability": [
+      "あめふらし"
+    ],
+    "hiragana": "かいおーが",
+    "romaji": "kaio-ga"
+  },
+  {
+    "name": "グラードン",
+    "basestats": [
+      100,
+      150,
+      140,
+      100,
+      90,
+      90
+    ],
+    "type": [
+      "じめん"
+    ],
+    "ability": [
+      "ひでり"
+    ],
+    "hiragana": "ぐらーどん",
+    "romaji": "gura-don"
+  },
+  {
+    "name": "レックウザ",
+    "basestats": [
+      105,
+      150,
+      90,
+      150,
+      90,
+      95
+    ],
+    "type": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "ability": [
+      "エアロック"
+    ],
+    "hiragana": "れっくうざ",
+    "romaji": "rekkuuza"
+  },
+  {
+    "name": "ジラーチ",
+    "basestats": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "type": [
+      "はがね",
+      "エスパー"
+    ],
+    "ability": [
+      "てんのめぐみ"
+    ],
+    "hiragana": "じらーち",
+    "romaji": "jira-chi"
+  },
+  {
+    "name": "デオキシス(ノーマル)",
+    "basestats": [
+      50,
+      150,
+      50,
+      150,
+      50,
+      150
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "でおきしす(のーまる)",
+    "romaji": "deokishisu(no-maru)"
+  },
+  {
+    "name": "デオキシス(アタック)",
+    "basestats": [
+      50,
+      180,
+      20,
+      180,
+      20,
+      150
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "でおきしす(あたっく)",
+    "romaji": "deokishisu(atakku)"
+  },
+  {
+    "name": "デオキシス(ディフェンス)",
+    "basestats": [
+      50,
+      70,
+      160,
+      70,
+      160,
+      90
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "でおきしす(でぃふぇんす)",
+    "romaji": "deokishisu(dhifensu)"
+  },
+  {
+    "name": "デオキシス(スピード)",
+    "basestats": [
+      50,
+      95,
+      90,
+      95,
+      90,
+      180
+    ],
+    "type": [
+      "エスパー"
+    ],
+    "ability": [
+      "プレッシャー"
+    ],
+    "hiragana": "でおきしす(すぴーど)",
+    "romaji": "deokishisu(supi-do)"
+  }
+]

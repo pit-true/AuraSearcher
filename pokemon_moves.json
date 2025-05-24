@@ -1,0 +1,2071 @@
+[
+  {
+    "name": "10まんボルト",
+    "romaji": "10manboruto",
+    "type": "でんき",
+    "power": 95,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "アイアンテール",
+    "romaji": "aiante-ru",
+    "type": "はがね",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "アイスボール",
+    "romaji": "aisubo-ru",
+    "type": "こおり",
+    "power": 30,
+    "category": "Special",
+    "class": "variable",
+    "target": 1
+  },
+  {
+    "name": "あてみなげ",
+    "romaji": "ateminage",
+    "type": "かくとう",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "あなをほる",
+    "romaji": "anaohoru",
+    "type": "じめん",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "あばれる",
+    "romaji": "abareru",
+    "type": "ノーマル",
+    "power": 90,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "あわ",
+    "romaji": "awa",
+    "type": "みず",
+    "power": 20,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "いあいぎり",
+    "romaji": "iaigiri",
+    "type": "ノーマル",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "いかり",
+    "romaji": "ikari",
+    "type": "ノーマル",
+    "power": 20,
+    "category": "Physical",
+    "class": "variable",
+    "target": 1
+  },
+  {
+    "name": "いかりのまえば",
+    "romaji": "ikarinomaeba",
+    "type": "ノーマル",
+    "category": "Physical",
+    "class": "harf",
+    "target": 1
+  },
+  {
+    "name": "いたみわけ",
+    "romaji": "itamiwake",
+    "type": "ノーマル",
+    "category": "Status",
+    "class": "itamiwake",
+    "target": 1
+  },
+  {
+    "name": "いびき",
+    "romaji": "ibiki",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "いわおとし",
+    "romaji": "iwaotosi",
+    "type": "いわ",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "いわくだき",
+    "romaji": "iwakudaki",
+    "type": "かくとう",
+    "power": 20,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "いわなだれ",
+    "romaji": "iwanadare",
+    "type": "いわ",
+    "power": 75,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ウェザーボール",
+    "romaji": "weza-bo-ru",
+    "type": "ノーマル",
+    "power": 50,
+    "category": "Physical",
+    "class": "special_case",
+    "target": 1
+  },
+  {
+    "name": "うずしお",
+    "romaji": "uzusio",
+    "type": "みず",
+    "power": 15,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "エアカッター",
+    "romaji": "eakatta-",
+    "type": "ひこう",
+    "power": 55,
+    "category": "Physical",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "エアロブラスト",
+    "romaji": "earoburasuto",
+    "type": "ひこう",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "おいうち",
+    "romaji": "oiuchi",
+    "type": "あく",
+    "power": 40,
+    "category": "Special",
+    "class": "absolute",
+    "target": 1
+  },
+  {
+    "name": "おうふくビンタ",
+    "romaji": "oufukubinta",
+    "type": "ノーマル",
+    "power": 15,
+    "category": "Physical",
+    "class": "multi_hit",
+    "target": 1
+  },
+  {
+    "name": "オーバーヒート",
+    "romaji": "o-ba-hi-to",
+    "type": "ほのお",
+    "power": 140,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "オーロラビーム",
+    "romaji": "o-rorabi-mu",
+    "type": "こおり",
+    "power": 65,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "オクタンほう",
+    "romaji": "okutanhou",
+    "type": "みず",
+    "power": 65,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "おどろかす",
+    "romaji": "odorokasu",
+    "type": "ゴースト",
+    "power": 30,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "おんがえし",
+    "romaji": "ongaesi",
+    "type": "ノーマル",
+    "power": 102,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かいりき",
+    "romaji": "kairiki",
+    "type": "ノーマル",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かえんぐるま",
+    "romaji": "kaenguruma",
+    "type": "ほのお",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かえんほうしゃ",
+    "romaji": "kaenhousya",
+    "type": "ほのお",
+    "power": 95,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かぜおこし",
+    "romaji": "kazeokosi",
+    "type": "ひこう",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かまいたち",
+    "romaji": "kamaitachi",
+    "type": "ノーマル",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "がまん",
+    "romaji": "gaman",
+    "type": "ノーマル",
+    "power": 1,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かみくだく",
+    "romaji": "kamikudaku",
+    "type": "あく",
+    "power": 80,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かみつく",
+    "romaji": "kamituku",
+    "type": "あく",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かみなり",
+    "romaji": "kaminari",
+    "type": "でんき",
+    "power": 120,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かみなりパンチ",
+    "romaji": "kaminaripanchi",
+    "type": "でんき",
+    "power": 75,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "がむしゃら",
+    "romaji": "gamusyara",
+    "type": "ノーマル",
+    "power": 1,
+    "category": "Physical",
+    "class": "variable",
+    "target": 1
+  },
+  {
+    "name": "からげんき",
+    "romaji": "karagenki",
+    "type": "ノーマル",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "からてチョップ",
+    "romaji": "karatechoppu",
+    "type": "かくとう",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "からではさむ",
+    "romaji": "karadehasamu",
+    "type": "みず",
+    "power": 35,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "からみつく",
+    "romaji": "karamituku",
+    "type": "ノーマル",
+    "power": 10,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "かわらわり",
+    "romaji": "kawarawari",
+    "type": "かくとう",
+    "power": 75,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "がんせきふうじ",
+    "romaji": "gansekifuuji",
+    "type": "いわ",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "きあいパンチ",
+    "romaji": "kiaipanchi",
+    "type": "かくとう",
+    "power": 150,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ギガドレイン",
+    "romaji": "gigadorein",
+    "type": "くさ",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "きしかいせい",
+    "romaji": "kisikaisei",
+    "type": "かくとう",
+    "power": 1,
+    "category": "Physical",
+    "class": "pinch_up",
+    "target": 1
+  },
+  {
+    "name": "きつけ",
+    "romaji": "kituke",
+    "type": "ノーマル",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "きゅうけつ",
+    "romaji": "kyuuketu",
+    "type": "むし",
+    "power": 20,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "きりさく",
+    "romaji": "kirisaku",
+    "type": "ノーマル",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ぎんいろのかぜ",
+    "romaji": "ginironokaze",
+    "type": "むし",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "クラブハンマー",
+    "romaji": "kurabuhanma-",
+    "type": "みず",
+    "power": 90,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "クロスチョップ",
+    "romaji": "kurosuchoppu",
+    "type": "かくとう",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "げきりん",
+    "romaji": "gekirin",
+    "type": "ドラゴン",
+    "power": 90,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "けたぐり",
+    "romaji": "ketaguri",
+    "type": "かくとう",
+    "power": 1,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "げんしのちから",
+    "romaji": "gensinochikara",
+    "type": "いわ",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "こうそくスピン",
+    "romaji": "kousokusupin",
+    "type": "ノーマル",
+    "power": 20,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "こごえるかぜ",
+    "romaji": "kogoerukaze",
+    "type": "こおり",
+    "power": 55,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "ゴッドバード",
+    "romaji": "goddoba-do",
+    "type": "ひこう",
+    "power": 140,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "こなゆき",
+    "romaji": "konayuki",
+    "type": "こおり",
+    "power": 40,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "コメットパンチ",
+    "romaji": "komettopanchi",
+    "type": "はがね",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ころがる",
+    "romaji": "korogaru",
+    "type": "いわ",
+    "power": 30,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "サイケこうせん",
+    "romaji": "saikekousen",
+    "type": "エスパー",
+    "power": 65,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "サイコウェーブ",
+    "romaji": "saikowe-bu",
+    "type": "エスパー",
+    "power": 1,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "サイコキネシス",
+    "romaji": "saikokinesisu",
+    "type": "エスパー",
+    "power": 90,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "サイコブースト",
+    "romaji": "saikobu-suto",
+    "type": "エスパー",
+    "power": 140,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "さわぐ",
+    "romaji": "sawagu",
+    "type": "ノーマル",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "しおふき",
+    "romaji": "siofuki",
+    "type": "みず",
+    "power": 150,
+    "category": "Special",
+    "class": "special_case",
+    "target": 2
+  },
+  {
+    "name": "シグナルビーム",
+    "romaji": "sigunarubi-mu",
+    "type": "むし",
+    "power": 75,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "じごくぐるま",
+    "romaji": "jigokuguruma",
+    "type": "かくとう",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "じしん",
+    "romaji": "jisin",
+    "type": "じめん",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "したでなめる",
+    "romaji": "sitadenameru",
+    "type": "ゴースト",
+    "power": 20,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "じたばた",
+    "romaji": "jitabata",
+    "type": "ノーマル",
+    "power": 1,
+    "category": "Physical",
+    "class": "pinch_up",
+    "target": 1
+  },
+  {
+    "name": "じばく",
+    "romaji": "jibaku",
+    "type": "ノーマル",
+    "power": 200,
+    "category": "Physical",
+    "class": "jibaku",
+    "target": 1
+  },
+  {
+    "name": "しめつける",
+    "romaji": "simetukeru",
+    "type": "ノーマル",
+    "power": 15,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "シャドーパンチ",
+    "romaji": "syado-panchi",
+    "type": "ゴースト",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "シャドーボール",
+    "romaji": "syado-bo-ru",
+    "type": "ゴースト",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "しんそく",
+    "romaji": "sinsoku",
+    "type": "ノーマル",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "じんつうりき",
+    "romaji": "jintuuriki",
+    "type": "エスパー",
+    "power": 80,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "すいとる",
+    "romaji": "suitoru",
+    "type": "くさ",
+    "power": 20,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "スカイアッパー",
+    "romaji": "sukaiappa-",
+    "type": "かくとう",
+    "power": 85,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ずつき",
+    "romaji": "zutuki",
+    "type": "ノーマル",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "すてみタックル",
+    "romaji": "sutemitakkuru",
+    "type": "ノーマル",
+    "power": 120,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "すなじごく",
+    "romaji": "sunajigoku",
+    "type": "じめん",
+    "power": 15,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "スパーク",
+    "romaji": "supa-ku",
+    "type": "でんき",
+    "power": 65,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "スピードスター",
+    "romaji": "supi-dosuta-",
+    "type": "ノーマル",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "スモッグ",
+    "romaji": "sumoggu",
+    "type": "どく",
+    "power": 20,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "せいなるほのお",
+    "romaji": "seinaruhonoo",
+    "type": "ほのお",
+    "power": 100,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ソーラービーム",
+    "romaji": "so-ra-bi-mu",
+    "type": "くさ",
+    "power": 120,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ソニックブーム",
+    "romaji": "sonikkubu-mu",
+    "type": "ノーマル",
+    "power": null,
+    "category": "Physical",
+    "class": "fixed",
+    "target": 1,
+    "fixed_value": 20
+  },
+  {
+    "name": "そらをとぶ",
+    "romaji": "soraotobu",
+    "type": "ひこう",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークアタック",
+    "romaji": "da-kuatakku",
+    "type": "ダーク",
+    "power": 35,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークウェーブ",
+    "romaji": "da-kuwe-bu",
+    "type": "ダーク",
+    "power": 50,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "ダークエンド",
+    "romaji": "da-kuendo",
+    "type": "ダーク",
+    "power": 120,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークサンダー",
+    "romaji": "da-kusanda-",
+    "type": "ダーク",
+    "power": 75,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークストーム",
+    "romaji": "da-kusuto-mu",
+    "type": "ダーク",
+    "power": 95,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "ダークハーフ",
+    "romaji": "da-kuha-fu",
+    "type": "ダーク",
+    "category": "Special",
+    "class": "harf",
+    "target": 1
+  },
+  {
+    "name": "ダークファイア",
+    "romaji": "da-kufaia",
+    "type": "ダーク",
+    "power": 75,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークブラスト",
+    "romaji": "da-kuburasuto",
+    "type": "ダーク",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークフリーズ",
+    "romaji": "da-kufuri-zu",
+    "type": "ダーク",
+    "power": 75,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークブレイク",
+    "romaji": "da-kubureiku",
+    "type": "ダーク",
+    "power": 75,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークラッシュ(Co)",
+    "romaji": "da-kurassyu(co)",
+    "type": "なし",
+    "power": 90,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークラッシュ(XD)",
+    "romaji": "da-kurassyu(xd)",
+    "type": "ダーク",
+    "power": 55,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダークレイブ",
+    "romaji": "da-kureibu",
+    "type": "ダーク",
+    "power": 70,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "たいあたり",
+    "romaji": "taiatari",
+    "type": "ノーマル",
+    "power": 35,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "だいばくはつ",
+    "romaji": "daibakuhatu",
+    "type": "ノーマル",
+    "power": 250,
+    "category": "Physical",
+    "class": "b_harf",
+    "target": 1
+  },
+  {
+    "name": "ダイビング",
+    "romaji": "daibingu",
+    "type": "みず",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "だいもんじ",
+    "romaji": "daimonji",
+    "type": "ほのお",
+    "power": 120,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "たきのぼり",
+    "romaji": "takinobori",
+    "type": "みず",
+    "power": 80,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "だくりゅう",
+    "romaji": "dakuryuu",
+    "type": "みず",
+    "power": 95,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "たたきつける",
+    "romaji": "tatakitukeru",
+    "type": "ノーマル",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "たつまき",
+    "romaji": "tatumaki",
+    "type": "ドラゴン",
+    "power": 40,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "タネマシンガン",
+    "romaji": "tanemasingan",
+    "type": "くさ",
+    "power": 10,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ダブルニードル",
+    "romaji": "daburuni-doru",
+    "type": "むし",
+    "power": 25,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "タマゴばくだん",
+    "romaji": "tamagobakudan",
+    "type": "ノーマル",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "だましうち",
+    "romaji": "damasiuchi",
+    "type": "あく",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "たまなげ",
+    "romaji": "tamanage",
+    "type": "ノーマル",
+    "power": 15,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ちきゅうなげ",
+    "romaji": "chikyuunage",
+    "type": "かくとう",
+    "power": null,
+    "category": "Physical",
+    "class": "fixed",
+    "target": 1,
+    "fixed_value": "level"
+  },
+  {
+    "name": "つつく",
+    "romaji": "tutuku",
+    "type": "ひこう",
+    "power": 35,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "つっぱり",
+    "romaji": "tuppari",
+    "type": "かくとう",
+    "power": 15,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "つのでつく",
+    "romaji": "tunodetuku",
+    "type": "ノーマル",
+    "power": 65,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "つばさでうつ",
+    "romaji": "tubasadeutu",
+    "type": "ひこう",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "つばめがえし",
+    "romaji": "tubamegaesi",
+    "type": "ひこう",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "つららばり",
+    "romaji": "turarabari",
+    "type": "こおり",
+    "power": 10,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "つるのムチ",
+    "romaji": "turunomuchi",
+    "type": "くさ",
+    "power": 35,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "でんきショック",
+    "romaji": "denkisiyokku",
+    "type": "でんき",
+    "power": 40,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "でんげきは",
+    "romaji": "dengekiha",
+    "type": "でんき",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "でんこうせっか",
+    "romaji": "denkousekka",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "でんじほう",
+    "romaji": "denjihou",
+    "type": "でんき",
+    "power": 100,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "どくどくのキバ",
+    "romaji": "dokudokunokiba",
+    "type": "どく",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "どくばり",
+    "romaji": "dokubari",
+    "type": "どく",
+    "power": 15,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "とげキャノン",
+    "romaji": "togekiyanon",
+    "type": "ノーマル",
+    "power": 20,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "とっしん",
+    "romaji": "tossin",
+    "type": "ノーマル",
+    "power": 90,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "とびげり",
+    "romaji": "tobigeri",
+    "type": "かくとう",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "とびはねる",
+    "romaji": "tobihaneru",
+    "type": "ひこう",
+    "power": 85,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "とびひざげり",
+    "romaji": "tobihizageri",
+    "type": "かくとう",
+    "power": 85,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "トライアタック",
+    "romaji": "toraiatakku",
+    "type": "ノーマル",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ドラゴンクロー",
+    "romaji": "doragonkuro-",
+    "type": "ドラゴン",
+    "power": 80,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "トリプルキック",
+    "romaji": "toripurukikku",
+    "type": "かくとう",
+    "power": 10,
+    "category": "Physical",
+    "class": "triple_kick",
+    "target": 1
+  },
+  {
+    "name": "ドリルくちばし",
+    "romaji": "dorirukuchibasi",
+    "type": "ひこう",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "どろかけ",
+    "romaji": "dorokake",
+    "type": "じめん",
+    "power": 20,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "どろぼう",
+    "romaji": "dorobou",
+    "type": "あく",
+    "power": 40,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ナイトヘッド",
+    "romaji": "naitoheddo",
+    "type": "ゴースト",
+    "power": null,
+    "category": "Physical",
+    "class": "fixed",
+    "target": 1,
+    "fixed_value": "level"
+  },
+  {
+    "name": "なみのり",
+    "romaji": "naminori",
+    "type": "みず",
+    "power": 95,
+    "category": "Special",
+    "class": "variable",
+    "target": 2
+  },
+  {
+    "name": "ニードルアーム",
+    "romaji": "ni-dorua-mu",
+    "type": "くさ",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "にどげり",
+    "romaji": "nidogeri",
+    "type": "かくとう",
+    "power": 30,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ねこだまし",
+    "romaji": "nekodamasi",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ネコにこばん",
+    "romaji": "nekonikoban",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ねっぷう",
+    "romaji": "neppuu",
+    "type": "ほのお",
+    "power": 100,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "ねんりき",
+    "romaji": "nenriki",
+    "type": "エスパー",
+    "power": 50,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "のしかかり",
+    "romaji": "nosikakari",
+    "type": "ノーマル",
+    "power": 85,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "のろい",
+    "romaji": "noroi",
+    "type": "ゴースト",
+    "power": null,
+    "category": "Status",
+    "class": "noroi",
+    "target": 1
+  },
+  {
+    "name": "ハードプラント",
+    "romaji": "ha-dopuranto",
+    "type": "くさ",
+    "power": 150,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ハイドロカノン",
+    "romaji": "haidorokanon",
+    "type": "みず",
+    "power": 150,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ハイドロポンプ",
+    "romaji": "haidoroponpu",
+    "type": "みず",
+    "power": 120,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ハイパーボイス",
+    "romaji": "haipa-boisu",
+    "type": "ノーマル",
+    "power": 90,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はかいこうせん",
+    "romaji": "hakaikousen",
+    "type": "ノーマル",
+    "power": 150,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ばかぢから",
+    "romaji": "bakajikara",
+    "type": "かくとう",
+    "power": 120,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はがねのつばさ",
+    "romaji": "haganenotubasa",
+    "type": "はがね",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はきだす",
+    "romaji": "hakidasu",
+    "type": "ノーマル",
+    "power": 100,
+    "category": "Physical",
+    "class": "special_case",
+    "target": 1
+  },
+  {
+    "name": "ばくれつパンチ",
+    "romaji": "bakuretupanchi",
+    "type": "かくとう",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はさむ",
+    "romaji": "hasamu",
+    "type": "ノーマル",
+    "power": 55,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はたきおとす",
+    "romaji": "hatakiotosu",
+    "type": "あく",
+    "power": 20,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はたく",
+    "romaji": "hataku",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はっぱカッター",
+    "romaji": "happakatta-",
+    "type": "くさ",
+    "power": 55,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "はなびらのまい",
+    "romaji": "hanabiranomai",
+    "type": "くさ",
+    "power": 70,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "バブルこうせん",
+    "romaji": "baburukousen",
+    "type": "みず",
+    "power": 65,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "はめつのねがい",
+    "romaji": "hametunonegai",
+    "type": "はがね",
+    "power": 120,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ひっかく",
+    "romaji": "hikkaku",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ひっさつまえば",
+    "romaji": "hissatumaeba",
+    "type": "ノーマル",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ひのこ",
+    "romaji": "hinoko",
+    "type": "ほのお",
+    "power": 40,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ひみつのちから",
+    "romaji": "himitunochikara",
+    "type": "ノーマル",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ピヨピヨパンチ",
+    "romaji": "piyopiyopanchi",
+    "type": "ノーマル",
+    "power": 70,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ふくろだたき",
+    "romaji": "fukurodataki",
+    "type": "あく",
+    "power": 10,
+    "category": "Special",
+    "class": "variable",
+    "target": 1
+  },
+  {
+    "name": "ふぶき",
+    "romaji": "fubuki",
+    "type": "こおり",
+    "power": 120,
+    "category": "Special",
+    "class": "standard",
+    "target": 2
+  },
+  {
+    "name": "ふみつけ",
+    "romaji": "fumituke",
+    "type": "ノーマル",
+    "power": 65,
+    "category": "Physical",
+    "class": "variable",
+    "target": 1
+  },
+  {
+    "name": "ブラストバーン",
+    "romaji": "burasutoba-n",
+    "type": "ほのお",
+    "power": 150,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ブレイククロー",
+    "romaji": "bureikukuro-",
+    "type": "ノーマル",
+    "power": 75,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ブレイズキック",
+    "romaji": "bureizukikku",
+    "type": "ほのお",
+    "power": 85,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "プレゼント",
+    "romaji": "purezento",
+    "type": "ノーマル",
+    "power": 120,
+    "category": "Physical",
+    "class": "variable",
+    "target": 1
+  },
+  {
+    "name": "ふんか",
+    "romaji": "funka",
+    "type": "ほのお",
+    "power": 150,
+    "category": "Special",
+    "class": "special_case",
+    "target": 2
+  },
+  {
+    "name": "ヘドロこうげき",
+    "romaji": "hedorokougeki",
+    "type": "どく",
+    "power": 65,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ヘドロばくだん",
+    "romaji": "hedorobakudan",
+    "type": "どく",
+    "power": 90,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ポイズンテール",
+    "romaji": "poizunte-ru",
+    "type": "どく",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ボーンラッシュ",
+    "romaji": "bo-nrassyu",
+    "type": "じめん",
+    "power": 25,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ほしがる",
+    "romaji": "hosigaru",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ホネこんぼう",
+    "romaji": "honekonbou",
+    "type": "じめん",
+    "power": 65,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ホネブーメラン",
+    "romaji": "honebu-meran",
+    "type": "じめん",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ほのおのうず",
+    "romaji": "honoonouzu",
+    "type": "ほのお",
+    "power": 15,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ほのおのパンチ",
+    "romaji": "honoonopanchi",
+    "type": "ほのお",
+    "power": 75,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ボルテッカー",
+    "romaji": "boruteka-",
+    "type": "でんき",
+    "power": 120,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "まきつく",
+    "romaji": "makituku",
+    "type": "ノーマル",
+    "power": 15,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "マグニチュード",
+    "romaji": "magunichu-do",
+    "type": "じめん",
+    "power": 150,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "マジカルリーフ",
+    "romaji": "majikaruri-fu",
+    "type": "くさ",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "マッドショット",
+    "romaji": "maddosiyotto",
+    "type": "じめん",
+    "power": 55,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "マッハパンチ",
+    "romaji": "mahhapanchi",
+    "type": "かくとう",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "まわしげり",
+    "romaji": "mawasigeri",
+    "type": "かくとう",
+    "power": 60,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ミサイルばり",
+    "romaji": "misairubari",
+    "type": "むし",
+    "power": 14,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "みずでっぽう",
+    "romaji": "mizudeppou",
+    "type": "みず",
+    "power": 40,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ミストボール",
+    "romaji": "misutobo-ru",
+    "type": "エスパー",
+    "power": 70,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "みずのはどう",
+    "romaji": "mizunohadou",
+    "type": "みず",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "みだれづき",
+    "romaji": "midarezuki",
+    "type": "ノーマル",
+    "power": 15,
+    "category": "Physical",
+    "class": "multi_hit",
+    "target": 1
+  },
+  {
+    "name": "みだれひっかき",
+    "romaji": "midarehikkaki",
+    "type": "ノーマル",
+    "power": 18,
+    "category": "Physical",
+    "class": "multi_hit",
+    "target": 1
+  },
+  {
+    "name": "みねうち",
+    "romaji": "mineuchi",
+    "type": "ノーマル",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "みらいよち",
+    "romaji": "miraiyochi",
+    "type": "なし",
+    "power": 80,
+    "category": "Special",
+    "class": "absolute",
+    "target": 1
+  },
+  {
+    "name": "メガドレイン",
+    "romaji": "megadorein",
+    "type": "くさ",
+    "power": 40,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "メガトンキック",
+    "romaji": "megatonkikku",
+    "type": "ノーマル",
+    "power": 120,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "メガトンパンチ",
+    "romaji": "megatonpanchi",
+    "type": "ノーマル",
+    "power": 80,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "メガホーン",
+    "romaji": "megaho-n",
+    "type": "むし",
+    "power": 120,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "めざめるパワー",
+    "romaji": "mezamerupawa-",
+    "type": "ノーマル",
+    "power": 70,
+    "category": "Physical",
+    "class": "special_case",
+    "target": 1
+  },
+  {
+    "name": "メタルクロー",
+    "romaji": "metarukuro-",
+    "type": "はがね",
+    "power": 50,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "やつあたり",
+    "romaji": "yatuatari",
+    "type": "ノーマル",
+    "power": 102,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ゆめくい",
+    "romaji": "yumekui",
+    "type": "エスパー",
+    "power": 100,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ようかいえき",
+    "romaji": "youkaieki",
+    "type": "どく",
+    "power": 40,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ラスターパージ",
+    "romaji": "rasuta-pa-ji",
+    "type": "エスパー",
+    "power": 70,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "リーフブレード",
+    "romaji": "ri-fubure-do",
+    "type": "くさ",
+    "power": 70,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "リベンジ",
+    "romaji": "ribenji",
+    "type": "かくとう",
+    "power": 60,
+    "category": "variable",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "りゅうのいかり",
+    "romaji": "ryuunoikari",
+    "type": "ドラゴン",
+    "power": null,
+    "category": "Special",
+    "class": "fixed",
+    "target": 1,
+    "fixed_value": 40
+  },
+  {
+    "name": "りゅうのいぶき",
+    "romaji": "ryuunoibuki",
+    "type": "ドラゴン",
+    "power": 60,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "れいとうパンチ",
+    "romaji": "reitoupanchi",
+    "type": "こおり",
+    "power": 75,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "れいとうビーム",
+    "romaji": "reitoubi-mu",
+    "type": "こおり",
+    "power": 95,
+    "category": "Special",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "れんぞくぎり",
+    "romaji": "renzokugiri",
+    "type": "むし",
+    "power": 10,
+    "category": "multi_hit",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "れんぞくパンチ",
+    "romaji": "renzokupanchi",
+    "type": "ノーマル",
+    "power": 18,
+    "category": "multi_hit",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ロケットずつき",
+    "romaji": "rokettozutuki",
+    "type": "ノーマル",
+    "power": 100,
+    "category": "Physical",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "ロックブラスト",
+    "romaji": "rokkuburasuto",
+    "type": "いわ",
+    "power": 25,
+    "category": "multi_hit",
+    "class": "standard",
+    "target": 1
+  },
+  {
+    "name": "わるあがき",
+    "romaji": "waruagaki",
+    "type": "ノーマル",
+    "power": 50,
+    "category": "Physical"
+  },
+  {
+    "name": "ダークラッシュ(自傷)",
+    "romaji": "da-kurassyu",
+    "type": "なし",
+    "category": "Status",
+    "power": 0,
+    "class": "self_damage",
+    "target": 1
+  },
+  {
+    "name": "ダークエンド(自傷)",
+    "romaji": "da-kuendo",
+    "type": "なし",
+    "category": "Status",
+    "power": 0,
+    "class": "harf",
+    "target": 1
+  },
+  {
+    "name": "とびひざげり(自傷)",
+    "romaji": "tobihizagerijisyo",
+    "type": "なし",
+    "category": "Status",
+    "power": 0,
+    "class": "harf_damage",
+    "target": 1
+  },
+  {
+    "name": "すてみタックル(反動)",
+    "romaji": "sutemitakkuruhandou",
+    "type": "なし",
+    "category": "Status",
+    "power": 0,
+    "class": "recoil",
+    "target": 1
+  },
+  {
+    "name": "こんらん",
+    "romaji": "konran",
+    "type": "なし",
+    "category": "Physical",
+    "power": 40,
+    "class": "self_damage2",
+    "target": 1
+  }
+]

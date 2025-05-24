@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オーラサーチャー君</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<!-- フローティングメニュー（モバイル表示時のみ） -->
+<div class="floating-menu" id="floatingMenu">
+  <div class="floating-menu-icon">&#9776;</div>
+</div>
+
+<div class="floating-menu-content" id="floatingMenuContent">
+  <div class="menu-item" onclick="scrollToSection('giveSection')">与ダメ計算</div>
+  <div class="menu-item" onclick="scrollToSection('receiveSection')">被ダメ計算</div>
+  <div class="menu-item" onclick="scrollToSection('resultSection')">計算結果</div>
+</div>
+
+<script>
+  // フローティングメニューの制御
+  document.addEventListener('DOMContentLoaded', function() {
+    // 要素を取得
+    const floatingMenu = document.getElementById('floatingMenu');
+    const menuContent = document.getElementById('floatingMenuContent');
+    
+    // 各セクションにIDを付与
+    const sections = document.querySelectorAll('.section');
+    if (sections.length >= 3) {
+      sections[0].id = 'giveSection';
+      sections[1].id = 'receiveSection';
+      sections[2].id = 'resultSection';
+    }
+    
+    // スクロール関数をグローバルに定義
+    window.scrollToSection = function(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        // メニューを閉じる
+        if (menuContent) {
+          menuContent.classList.remove('active');
+        }
+      }
+    };
+    
+    // メニューボタンクリック時の処理
+    if (floatingMenu) {
+      floatingMenu.addEventListener('click', function(e) {
+        e.stopPropagation(); // イベント伝播を停止
+        menuContent.classList.toggle('active');
+      });
+    }
+    
+    // メニュー外クリックで閉じる
+    document.addEventListener('click', function(event) {
+      if (menuContent && menuContent.classList.contains('active')) {
+        if (!floatingMenu.contains(event.target) && !menuContent.contains(event.target)) {
+          menuContent.classList.remove('active');
+        }
+      }
+    });
+    
+    // モバイル判定関数
+    function isMobile() {
+      return window.innerWidth <= 480; // 480px以下をモバイルとみなす
+    }
+    
+    // 与ダメ計算ボタンのイベント追加
+    const giveDamageBtn = document.querySelector('.damage-calc-button');
+    if (giveDamageBtn) {
+      // 元のonclick属性を保存
+      const originalOnclick = giveDamageBtn.getAttribute('onclick');
+      
+      // 直接新しいイベントリスナーを追加
+      giveDamageBtn.addEventListener('click', function() {
+        // 元のonclick関数を呼び出し
+        if (window.performGiveDamageCalculation) {
+          window.performGiveDamageCalculation();
+        }
+        
+        // モバイルなら結果セクションへスクロール
+        if (isMobile()) {
+          setTimeout(function() {
+            window.scrollToSection('resultSection');
+          }, 300); // 少し遅延させて計算結果が表示された後にスクロール
+        }
+      });
+    }
+    
+    // 被ダメージ推定ボタンのイベント追加（完全に新しい実装）
+    const estimateIvBtn = document.getElementById('estimateIvButton');
+    if (estimateIvBtn) {
+      // 直接イベントリスナーを追加
+      estimateIvBtn.addEventListener('click', function() {
+        // 元の関数を呼び出し
+        if (window.estimateIVFromDamage) {
+          window.estimateIVFromDamage();
+        }
+        
+        // モバイルなら結果セクションへスクロール
+        if (isMobile()) {
+          setTimeout(function() {
+            window.scrollToSection('resultSection');
+          }, 300); // 少し遅延させて計算結果が表示された後にスクロール
+        }
+      });
+    }
+  });
+</script>
+<body>
+    <h1>オーラサーチャー君</h1>
+    
+    <div class="battle-container">
+        <!-- 左側セクション: 与ダメ計算 -->
+        <div class="section" id="giveSection">
+          <h2>与ダメ計算</h2>
+          
+          <!-- 自分ポケモン選択欄 -->
+          <div class="input-row">
+              <label for="searchMyPokemon" class="inline-label">自分ポケモン:</label>
+              <input type="text" id="searchMyPokemon" list="myPokemonList" placeholder="ポケモン名を検索" onclick="showAllMyPokemon()">
+          </div>
+          <datalist id="myPokemonList"></datalist>
+          
+          <!-- レベルと攻撃値 -->
+          <div class="input-row">
+              <label for="level" class="inline-label">レベル:</label>
+              <input type="number" id="level">
+          </div>
+          
+          <div class="input-row">
+              <label for="atk" class="inline-label">A/C(実数値):</label>
+              <input type="number" id="atk">
+          </div>
+          
+          <!-- 技入力欄の修正 -->
+          <div class="input-row">
+            <label for="searchMyMove" class="inline-label">技:</label>
+            <input type="text" id="searchMyMove" placeholder="技を検索">
+          </div>
+            
+          <!-- 持ち物入力欄の追加 -->
+          <div class="input-row">
+            <label for="searchItem" class="inline-label">持ち物:</label>
+            <input type="text" id="searchItem" placeholder="持ち物を検索">
+          </div>
+          
+          <!-- 戦闘条件セクション -->
+          <div id="battleConditionsContainer">
+            <!-- 天候選択 -->
+            <div class="input-row">
+              <label for="weatherSelect" class="inline-label">天候:</label>
+              <select id="weatherSelect">
+                <option value="none">なし</option>
+                <option value="sunny">はれ</option>
+                <option value="rain">あめ</option>
+                <option value="darkness">くらやみ</option>
+                <option value="sandstorm">すなあらし</option>
+              </select>
+            </div>
+            
+          <!-- チェックボックスグループ -->
+          <div class="checkbox-group">
+            <div>
+              <label><input type="checkbox" id="wallCheck"> 壁</label>
+            </div>
+            <div>
+              <label><input type="checkbox" id="CriticalCheck"> 急所</label>
+            </div>
+            <div>
+              <label><input type="checkbox" id="burnCheck"> やけど</label>
+            </div>
+            <div class="doubleCheckContainer">
+              <label><input type="checkbox" id="doubleCheck"> ダブル半減</label>
+            </div>
+            <div id="badgeBoostContainer">
+              <label><input type="checkbox" id="badgeBoostCheck"> バッジ補正</label>
+            </div>
+          </div>
+          <!-- きしかいせい・じたばた -->
+          <div class="pinchUpContainer">
+            <label>最大HP:</label>
+            <input type="number" id="pinchUp_maxHP">
+            <label>現在HP:</label>
+            <input type="number" id="pinchUp_currentHP">
+          </div>
+          <!-- すてみタックルの反動 -->
+          <div class="sutemiTackleContainer">
+            <label>HP(被弾前):</label>
+            <input type="number" id="sutemiTackle_maxHP">
+            <label>HP(被弾後):</label>
+            <input type="number" id="sutemiTackle_currentHP">
+          </div>
+          <!-- ランク補正 -->
+          <div class="rank-correction">
+            <div class="rank-row">
+              <label for="selfAtkRank" class="rank-label">攻撃ランク:</label>
+              <select id="selfAtkRank" class="rank-select">
+                <option value="6">+6</option>
+                <option value="5">+5</option>
+                <option value="4">+4</option>
+                <option value="3">+3</option>
+                <option value="2">+2</option>
+                <option value="1">+1</option>
+                <option value="0" selected>0</option>
+                <option value="-1">-1</option>
+                <option value="-2">-2</option>
+                <option value="-3">-3</option>
+                <option value="-4">-4</option>
+                <option value="-5">-5</option>
+                <option value="-6">-6</option>
+              </select>
+            </div>
+            <div class="rank-row">
+              <label for="targetDefRank" class="rank-label">防御ランク:</label>
+              <select id="targetDefRank" class="rank-select">
+                <option value="6">+6</option>
+                <option value="5">+5</option>
+                <option value="4">+4</option>
+                <option value="3">+3</option>
+                <option value="2">+2</option>
+                <option value="1">+1</option>
+                <option value="0" selected>0</option>
+                <option value="-1">-1</option>
+                <option value="-2">-2</option>
+                <option value="-3">-3</option>
+                <option value="-4">-4</option>
+                <option value="-5">-5</option>
+                <option value="-6">-6</option>
+              </select>
+            </div>
+          </div>
+          <!-- 与ダメージ計算ボタン -->
+          <button class="damage-calc-button" id="giveDamageButton">与ダメ計算</button>
+          <!-- S実数値関連の要素 -->
+          <div class="spdBadgeBoostContainer">
+              <label>S実数値:</label>
+              <input type="number" id="speedValue">
+              <label> *バッジ補正(1.1):</label>
+              <span class="badge-speed-value-container"><span id="badgeSpeedValue"></span></span>
+          </div>
+          <!-- 各セクションのヒント情報 -->
+          <div class="tool-info">
+            <div class="tips-title">本ツールの説明</div>
+            <div class="tips-content">
+              <p><strong>概要:</strong> 出現ポケモンを特定する補助ツール。<br>いわゆるデスゴルド君の拡張版+与ダメ計算機能。</p>
+              <p><strong>対象:</strong> コロシアムの全てのダークポケモン、<br>XDの全てのダークポケモン、<br>FRLG/RSEの準伝・禁伝に対応。</p>
+              <p><strong>その他情報:</strong> XDのレベル補正考慮済。持ち物考慮済。<br>バッジ補正考慮済。正しい実数値範囲表示。</p>
+              <p><strong>製作者:</strong> <a href="https://x.com/kirisanpo_ch" target="_blank" rel="noopener noreferrer">旧Twitter</a> <a href="https://xdpoke.hatenablog.com" target="_blank" rel="noopener noreferrer">はてな</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <!-- 中央セクション: 被ダメ計算 -->
+        <div class="section" id="receiveSection">
+            <h2>被ダメ計算</h2>
+            
+            <!-- 相手ポケモン選択欄 (横並び) -->
+            <div class="input-row">
+                <label for="searchPokemon" class="inline-label">相手ポケモン:</label>
+                <div class="input-with-buttons">
+                    <input type="text" id="searchPokemon" list="pokemonList" placeholder="ポケモン名を検索" onclick="showAllPokemon()">
+                    <div id="originButtons"></div>
+                </div>
+            </div>
+            <datalist id="pokemonList"></datalist>
+            
+            <!-- レベル入力 (横並び) -->
+            <div class="input-row">
+                <label for="defLevel" class="inline-label">レベル:</label>
+                <input type="number" id="defLevel" value="50" onchange="updateLevel()">
+            </div>
+            
+            <!-- 性格選択 (横並び) -->
+            <div class="input-row">
+                <label for="searchNature" class="inline-label">性格:</label>
+                <input type="text" id="searchNature" list="natureList" placeholder="性格を選択" onclick="showAllNatures()">
+            </div>
+            <datalist id="natureList"></datalist>
+            
+            <!-- 個体値ボタン群 -->
+            <div id="ivButtons">
+                <div class="iv-row">
+                    <span class="iv-label">H:</span>
+                    <button class="iv-btn selected" data-stat="hp" data-value="31" onclick="selectIv('hp', 31, this)">31</button>
+                    <button class="iv-btn" data-stat="hp" data-value="30" onclick="selectIv('hp', 30, this)">30</button>
+                    <button class="iv-btn" data-stat="hp" data-value="0" onclick="selectIv('hp', 0, this)">0</button>
+                    <div class="iv-btn-container">
+                        <button class="iv-btn other" data-stat="hp" onclick="showCustomIv('hp', this)">その他</button>
+                        <input type="number" class="custom-iv" id="customIvHP" onblur="applyCustomIv('hp', this)">
+                    </div>
+                      <!-- 性格チェックボックス上＋－表示 -->
+                      <div class="nature-plus-minus-heading">
+                        <span>＋</span>
+                        <span>－</span>
+                  </div>
+                </div>
+                <div class="iv-row">
+                    <span class="iv-label">A:</span>
+                    <button class="iv-btn selected" data-stat="a" data-value="31" onclick="selectIv('a', 31, this)">31</button>
+                    <button class="iv-btn" data-stat="a" data-value="30" onclick="selectIv('a', 30, this)">30</button>
+                    <button class="iv-btn" data-stat="a" data-value="0" onclick="selectIv('a', 0, this)">0</button>
+                    <div class="iv-btn-container">
+                        <button class="iv-btn other" data-stat="a" onclick="showCustomIv('a', this)">その他</button>
+                        <input type="number" class="custom-iv" id="customIvA" onblur="applyCustomIv('a', this)">
+                    </div>
+                    <div class="nature-checkbox-container">
+                      <span><input type="checkbox" class="nature-plus-checkbox" data-stat="a"></span>
+                      <span><input type="checkbox" class="nature-minus-checkbox" data-stat="a"></span>
+                  </div>
+                </div>
+                <div class="iv-row">
+                    <span class="iv-label">B:</span>
+                    <button class="iv-btn selected" data-stat="b" data-value="31" onclick="selectIv('b', 31, this)">31</button>
+                    <button class="iv-btn" data-stat="b" data-value="30" onclick="selectIv('b', 30, this)">30</button>
+                    <button class="iv-btn" data-stat="b" data-value="0" onclick="selectIv('b', 0, this)">0</button>
+                    <div class="iv-btn-container">
+                        <button class="iv-btn other" data-stat="b" onclick="showCustomIv('b', this)">その他</button>
+                        <input type="number" class="custom-iv" id="customIvB" onblur="applyCustomIv('b', this)">
+                    </div>
+                    <div class="nature-checkbox-container">
+                      <span><input type="checkbox" class="nature-plus-checkbox" data-stat="b"></span>
+                      <span><input type="checkbox" class="nature-minus-checkbox" data-stat="b"></span>
+                  </div>
+                </div>
+                <div class="iv-row">
+                    <span class="iv-label">C:</span>
+                    <button class="iv-btn selected" data-stat="c" data-value="31" onclick="selectIv('c', 31, this)">31</button>
+                    <button class="iv-btn" data-stat="c" data-value="30" onclick="selectIv('c', 30, this)">30</button>
+                    <button class="iv-btn" data-stat="c" data-value="0" onclick="selectIv('c', 0, this)">0</button>
+                    <div class="iv-btn-container">
+                        <button class="iv-btn other" data-stat="c" onclick="showCustomIv('c', this)">その他</button>
+                        <input type="number" class="custom-iv" id="customIvC" onblur="applyCustomIv('c', this)">
+                    </div>
+                    <div class="nature-checkbox-container">
+                      <span><input type="checkbox" class="nature-plus-checkbox" data-stat="c"></span>
+                      <span><input type="checkbox" class="nature-minus-checkbox" data-stat="c"></span>
+                  </div>
+                </div>
+                <div class="iv-row">
+                    <span class="iv-label">D:</span>
+                    <button class="iv-btn selected" data-stat="d" data-value="31" onclick="selectIv('d', 31, this)">31</button>
+                    <button class="iv-btn" data-stat="d" data-value="30" onclick="selectIv('d', 30, this)">30</button>
+                    <button class="iv-btn" data-stat="d" data-value="0" onclick="selectIv('d', 0, this)">0</button>
+                    <div class="iv-btn-container">
+                        <button class="iv-btn other" data-stat="d" onclick="showCustomIv('d', this)">その他</button>
+                        <input type="number" class="custom-iv" id="customIvD" onblur="applyCustomIv('d', this)">
+                    </div>
+                    <div class="nature-checkbox-container">
+                      <span><input type="checkbox" class="nature-plus-checkbox" data-stat="d"></span>
+                      <span><input type="checkbox" class="nature-minus-checkbox" data-stat="d"></span>
+                  </div>
+                </div>
+                <div class="iv-row">
+                    <span class="iv-label">S:</span>
+                    <button class="iv-btn selected" data-stat="s" data-value="31" onclick="selectIv('s', 31, this)">31</button>
+                    <button class="iv-btn" data-stat="s" data-value="30" onclick="selectIv('s', 30, this)">30</button>
+                    <button class="iv-btn" data-stat="s" data-value="0" onclick="selectIv('s', 0, this)">0</button>
+                    <div class="iv-btn-container">
+                        <button class="iv-btn other" data-stat="s" onclick="showCustomIv('s', this)">その他</button>
+                        <input type="number" class="custom-iv" id="customIvS" onblur="applyCustomIv('s', this)">
+                    </div>
+                    <div class="nature-checkbox-container">
+                      <span><input type="checkbox" class="nature-plus-checkbox" data-stat="s"></span>
+                      <span><input type="checkbox" class="nature-minus-checkbox" data-stat="s"></span>
+                  </div>
+                </div>
+            </div>
+            
+            <!-- ステータス表示 -->
+            <div id="statusLabel"></div>
+            <div id="baseStats"></div>
+            
+            <!-- 特性表示 -->
+            <div id="yogaPowerContainer">
+              <label><input type="checkbox" id="yogaPowerCheck"> ヨガパワー</label>
+            </div>
+            <div id="harikiriContainer">
+              <label><input type="checkbox" id="harikiriCheck"> はりきり</label>
+            </div>
+            <div id="shinryokuContainer">
+              <label><input type="checkbox" id="shinryokuCheck"> しんりょく(発動)</label>
+            </div>
+            <div id="moukaContainer">
+              <label><input type="checkbox" id="moukaCheck"> もうか(発動)</label>
+            </div>
+            <div id="gekiryuuContainer">
+              <label><input type="checkbox" id="gekiryuuCheck"> げきりゅう(発動)</label>
+            </div>
+            <div id="mushiNoShiraseContainer">
+              <label><input type="checkbox" id="mushiNoShiraseCheck"> むしのしらせ(発動)</label>
+            </div>
+            <!-- 技リスト (最初は非表示) -->
+            <div class="moves-container">
+                <select id="movesSelect" size="4"></select>
+            </div>
+          <!-- きしかいせい・じたばた用-->
+          <div class="pinchUp2Container">
+            <label>最大HP:</label>
+            <input type="number" id="pinchUp2_maxHP">
+            <label>現在HP:</label>
+            <input type="number" id="pinchUp2_currentHP">
+          </div>
+          <!-- トリプルキック用-->
+          <div class="tripleKickContainer">
+            <div class="kick-buttons">
+              <input type="radio" id="kick1" name="triple_kick" value="10" checked>
+              <label for="kick1" class="kick-btn selected">1発目</label>    
+              <input type="radio" id="kick2" name="triple_kick" value="20">
+              <label for="kick2" class="kick-btn">2発目</label>
+              <input type="radio" id="kick3" name="triple_kick" value="30">
+              <label for="kick3" class="kick-btn">3発目</label>
+            </div>
+          </div>
+<!-- 被ダメ計算用の追加フォーム -->
+<div class="damage-form">
+    <div class="input-row">
+        <label for="searchDefPokemon" class="inline-label">自分ポケモン:</label>
+        <div class="input-with-buttons">
+            <input type="text" id="searchDefPokemon" list="myPokemonList" placeholder="ポケモン名を検索" onclick="showAllMyPokemon()">
+        </div>
+    </div>
+    
+    <div class="input-row">
+      <label for="maxHP" class="short-label">HP(被弾前):</label>
+      <input type="number" id="maxHP" class="short-input">
+      <button id="copyHPButton" class="mini-button" onclick="copyHP()">←</button>
+      <label for="currentHP" class="short-label">HP(被弾後):</label>
+      <input type="number" id="currentHP" class="short-input">
+    </div>
+    
+    <div class="input-row">
+      <label for="defValue" class="inline-label">B/D(実数値):</label>
+      <input type="number" id="defValue">
+    </div>
+    
+    <!-- チェックボックス & ランク補正 -->
+    <div id="checkboxContainer">
+      <!-- チェックボックスグループ -->
+      <div class="checkbox-group">
+        <div id="darkPokemonContainer">
+          <label><input type="checkbox" id="darkPokemonCheck"> ダークポケモン</label>
+        </div>
+        <div id="darknessContainer">
+          <label><input type="checkbox" id="darknessCheck"> くらやみ</label>
+        </div>
+        <div id="defDoubleCheckContainer">
+          <label><input type="checkbox" id="defDoubleCheck"> ダブル半減</label>
+        </div>
+        <div id="defBadgeBoostContainer">
+          <label><input type="checkbox" id="defBadgeBoostCheck"> バッジ補正</label>
+        </div>
+        <div id="criticalCheckContainer">
+          <label><input type="checkbox" id="Critical2Check"> 急所</label>
+        </div>
+      </div>
+      
+      <!-- ランク補正選択 -->
+      <div class="rank-correction">
+        <div class="rank-row">
+          <label for="atkRank" class="rank-label">攻撃ランク:</label>
+          <select id="atkRank" class="rank-select">
+            <option value="6">+6</option>
+            <option value="5">+5</option>
+            <option value="4">+4</option>
+            <option value="3">+3</option>
+            <option value="2">+2</option>
+            <option value="1">+1</option>
+            <option value="0" selected>0</option>
+            <option value="-1">-1</option>
+            <option value="-2">-2</option>
+            <option value="-3">-3</option>
+            <option value="-4">-4</option>
+            <option value="-5">-5</option>
+            <option value="-6">-6</option>
+          </select>
+        </div>
+        <div class="rank-row">
+          <label for="defRank" class="rank-label">防御ランク:</label>
+          <select id="defRank" class="rank-select">
+            <option value="6">+6</option>
+            <option value="5">+5</option>
+            <option value="4">+4</option>
+            <option value="3">+3</option>
+            <option value="2">+2</option>
+            <option value="1">+1</option>
+            <option value="0" selected>0</option>
+            <option value="-1">-1</option>
+            <option value="-2">-2</option>
+            <option value="-3">-3</option>
+            <option value="-4">-4</option>
+            <option value="-5">-5</option>
+            <option value="-6">-6</option>
+          </select>
+        </div>
+      </div>
+    </div>
+</div>
+            
+            <!-- 被ダメージ推定ボタン -->
+            <div class="damage-estimate-container">
+              <button id="estimateIvButton">被ダメから個体値推定</button>
+                
+                <!-- 絞り込み機能チェックボックス -->
+                <div id="trackingCheckboxContainer" class="tracking-checkbox-container">
+                    <label><input type="checkbox" id="trackingCheckbox" checked> 連続する結果を保持(個体絞り込み)</label>
+                </div>
+            </div>
+        </div>
+        
+      <!-- 右側セクション: 結果表示 -->
+      <div class="section results-section" id="resultSection">
+          <h2>計算結果</h2>
+          <!-- 結果表示エリア -->
+          <div id="highlightedResult" class="highlighted-result"></div>
+          <div id="secondResultBlock" class="highlighted-result second-result"></div>
+          <div id="estimateResult" class="highlighted-result"></div>
+          <!-- 各セクションのヒント情報 -->
+          <div class="damage-tips">
+            <div class="tips-title">各セクションの説明</div>
+            <div class="tips-content">
+              <p><strong>与ダメ計算:</strong> よくあるダメージ計算。<br>防御側情報は相手ポケモン名とステータス参照のため<br>被ダメ計算セクションにも入力しておくこと。</p>
+              <p><strong>被ダメ計算:</strong> 受けたダメージで個体値推定。<br>ステータス表示機能付き(おまけ)。<br>XDの場合は自分ポケモン入力は不要。<br>個体範囲絞り込み機能付き。</p>
+              <p><strong>計算結果:</strong> このセクションに計算結果が表示される。</p>
+            </div>
+            <div class="tips-title">技について</div>
+            <div class="tips-content">
+              <p><strong>ダメージ固定技:</strong> ダークハーフ(いかりのまえば)、ちきゅうなげ(ナイトヘッド)、ソニックブーム、りゅうのいかりでHPゲージの減少幅を確認可能。</p>
+              <p><strong>いたみわけ:</strong> いたみわけを選択するとA/C実数値入力欄がHP入力欄に変わるので現在HPを入力すること。<br>計算結果のHPバーの下にHPが出力される。</p>
+              <p><strong>ダークラッシュ(自傷):</strong> コロシアム用。<br>ダークラッシュで先に自傷された場合でも、<br>自傷ダメ計算→(結果を保持するにチェック)→いたみわけで大まかなHPを把握できる。</p>
+              <p><strong>ダークエンド(自傷):</strong> ダークエンドでHPの1/2を削る。<br>処理はダークハーフと同じ。</p>
+              <p><strong>とびひざげり(自傷):</strong> 最大HPの1/2のダメージを与える。ダークハーフと微妙に違う。</p>
+              <p><strong>すてみタックル(反動):</strong> 貰ったダメージの1/3を与える。</p>
+              <p><strong>こんらん:</strong> 自傷技導入ついでに実装。</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

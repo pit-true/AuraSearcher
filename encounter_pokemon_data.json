@@ -1,0 +1,1666 @@
+[
+    {
+        "name": "マクノシタ",
+        "origin": "Co",
+        "level": 30,
+        "moves": [
+            "ダークラッシュ",
+            "クロスチョップ"
+        ],
+        "hiragana": "まくのした",
+        "romaji": "makunoshita"
+    },
+    {
+        "name": "ベイリーフ",
+        "origin": "Co",
+        "item": "きせきのたね",
+        "level": 30,
+        "ability":"しんりょく",
+        "moves": [
+            "ダークラッシュ",
+            "のしかかり",
+            "はっぱカッター"
+        ],
+        "hiragana": "べいりーふ",
+        "romaji": "beiri-fu"
+    },
+    {
+        "name": "マグマラシ",
+        "origin": "Co",
+        "item": "もくたん",
+        "level": 30,
+        "ability":"もうか",
+        "moves": [
+            "ダークラッシュ",
+            "あなをほる",
+            "かえんぐるま"
+        ],
+        "hiragana": "まぐまらし",
+        "romaji": "magumarashi"
+    },
+    {
+        "name": "アリゲイツ",
+        "origin": "Co",
+        "item": "しんぴのしずく",
+        "level": 30,
+        "ability":"げきりゅう",
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "ありげいつ",
+        "romaji": "arigeitsu"
+    },
+    {
+        "name": "ヨルノズク",
+        "origin": "Co",
+        "level": 30,
+        "moves": [
+            "ダークラッシュ",
+            "そらをとぶ"
+        ],
+        "hiragana": "よるのずく",
+        "romaji": "yorunozuku"
+    },
+    {
+        "name": "モココ",
+        "origin": "Co",
+        "level": 30,
+        "moves": [
+            "ダークラッシュ",
+            "でんきショック"
+        ],
+        "hiragana": "もここ",
+        "romaji": "mokoko"
+    },
+    {
+        "name": "ポポッコ",
+        "origin": "Co",
+        "level": 30,
+        "moves": [
+            "ダークラッシュ",
+            "メガドレイン"
+        ],
+        "hiragana": "ぽぽっこ",
+        "romaji": "popoko"
+    },
+    {
+        "name": "ヌオー",
+        "origin": "Co",
+        "level": 30,
+        "moves": [
+            "ダークラッシュ",
+            "たたきつける",
+            "なみのり"
+        ],
+        "hiragana": "ぬおー",
+        "romaji": "nuo-"
+    },
+    {
+        "name": "ムウマ",
+        "origin": "Co",
+        "item": "のろいのおふだ",
+        "level": 30,
+        "moves": [
+            "ダークラッシュ",
+            "シャドーボール"
+        ],
+        "hiragana": "むうま",
+        "romaji": "muuma"
+    },
+    {
+        "name": "マグマッグ",
+        "origin": "Co",
+        "level": 30,
+        "moves": [
+            "ダークラッシュ",
+            "いわおとし",
+            "かえんほうしゃ"
+        ],
+        "hiragana": "まぐまっぐ",
+        "romaji": "magumagu"
+    },
+    {
+        "name": "オオタチ",
+        "origin": "Co",
+        "level": 33,
+        "moves": [
+            "ダークラッシュ",
+            "でんこうせっか",
+            "かいりき"
+        ],
+        "hiragana": "おおたち",
+        "romaji": "ootachi"
+    },
+    {
+        "name": "ヤンヤンマ",
+        "origin": "Co",
+        "level": 33,
+        "moves": [
+            "ダークラッシュ",
+            "さわぐ",
+            "ソニックブーム"
+        ],
+        "hiragana": "やんやんま",
+        "romaji": "yanyanma"
+    },
+    {
+        "name": "テッポウオ",
+        "origin": "Co",
+        "level": 20,
+        "ability":"はりきり",
+        "moves": [
+            "ダークラッシュ",
+            "サイケこうせん",
+            "オーロラビーム"
+        ],
+        "hiragana": "てっぽうお",
+        "romaji": "tepouo"
+    },
+    {
+        "name": "マンタイン",
+        "origin": "Co",
+        "level": 33,
+        "moves": [
+            "ダークラッシュ",
+            "バブルこうせん",
+            "とっしん"
+        ],
+        "hiragana": "まんたいん",
+        "romaji": "mantain"
+    },
+    {
+        "name": "ハリーセン",
+        "origin": "Co",
+        "item": "どくバリ",
+        "level": 33,
+        "moves": [
+            "ダークラッシュ",
+            "どくばり",
+            "なみのり"
+        ],
+        "hiragana": "はりーせん",
+        "romaji": "hari-sen"
+    },
+    {
+        "name": "アサナン",
+        "origin": "Co",
+        "item": "まがったスプーン",
+        "level": 33,
+        "ability":"ヨガパワー",
+        "moves": [
+            "ダークラッシュ",
+            "とびひざげり",
+            "ねんりき"
+        ],
+        "hiragana": "あさなん",
+        "romaji": "asanan"
+    },
+    {
+        "name": "ノコッチ",
+        "origin": "Co",
+        "level": 33,
+        "moves": [
+            "ダークラッシュ",
+            "とっしん"
+        ],
+        "hiragana": "のこっち",
+        "romaji": "nokochi"
+    },
+    {
+        "name": "チルット",
+        "origin": "Co",
+        "level": 33,
+        "moves": [
+            "ダークラッシュ",
+            "そらをとぶ"
+        ],
+        "hiragana": "ちるっと",
+        "romaji": "chiruto"
+    },
+    {
+        "name": "ウソッキー",
+        "origin": "Co",
+        "item": "かたいいわ",
+        "level": 35,
+        "moves": [
+            "ダークラッシュ",
+            "けたぐり",
+            "いわなだれ"
+        ],
+        "hiragana": "うそっきー",
+        "romaji": "usokki-"
+    },
+    {
+        "name": "カポエラー",
+        "origin": "Co",
+        "item": "くろおび",
+        "level": 38,
+        "moves": [
+            "ダークラッシュ",
+            "トリプルキック",
+            "こうそくスピン"
+        ],
+        "hiragana": "かぽえらー",
+        "romaji": "kapoera-"
+    },
+    {
+        "name": "エンテイ",
+        "origin": "Co",
+        "level": 40,
+        "moves": [
+            "ダークラッシュ",
+            "かみつく",
+            "だいもんじ"
+        ],
+        "hiragana": "えんてい",
+        "romaji": "entei"
+    },
+    {
+        "name": "レディアン",
+        "origin": "Co",
+        "level": 40,
+        "ability":"むしのしらせ",
+        "moves": [
+            "ダークラッシュ",
+            "れんぞくパンチ"
+        ],
+        "hiragana": "れでぃあん",
+        "romaji": "redhian"
+    },
+    {
+        "name": "スイクン",
+        "origin": "Co",
+        "level": 40,
+        "moves": [
+            "ダークラッシュ",
+            "かぜおこし",
+            "なみのり"
+        ],
+        "hiragana": "すいくん",
+        "romaji": "suikun"
+    },
+    {
+        "name": "グライガー",
+        "origin": "Co",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ",
+            "どくばり",
+            "きりさく"
+        ],
+        "hiragana": "ぐらいがー",
+        "romaji": "guraiga-"
+    },
+    {
+        "name": "オドシシ",
+        "origin": "Co",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ",
+            "とっしん"
+        ],
+        "hiragana": "おどしし",
+        "romaji": "odoshishi"
+    },
+    {
+        "name": "イノムー",
+        "origin": "Co",
+        "item": "やわらかいすな",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ",
+            "あなをほる",
+            "ふぶき"
+        ],
+        "hiragana": "いのむー",
+        "romaji": "inomu-"
+    },
+    {
+        "name": "ニューラ",
+        "origin": "Co",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ",
+            "みだれひっかき",
+            "こごえるかぜ"
+        ],
+        "hiragana": "にゅーら",
+        "romaji": "nyu-ra"
+    },
+    {
+        "name": "エイパム",
+        "origin": "Co",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ",
+            "スピードスター",
+            "みだれひっかき"
+        ],
+        "hiragana": "えいぱむ",
+        "romaji": "eipamu"
+    },
+    {
+        "name": "ヤミカラス",
+        "origin": "Co",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ",
+            "ナイトヘッド",
+            "そらをとぶ"
+        ],
+        "hiragana": "やみからす",
+        "romaji": "yamikarasu"
+    },
+    {
+        "name": "フォレトス",
+        "origin": "Co",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ",
+            "こうそくスピン"
+        ],
+        "hiragana": "ふぉれとす",
+        "romaji": "foretosu"
+    },
+    {
+        "name": "アリアドス",
+        "origin": "Co",
+        "item": "ぎんのこな",
+        "level": 43,
+        "ability":"むしのしらせ",
+        "moves": [
+            "ダークラッシュ",
+            "ヘドロばくだん",
+            "きゅうけつ"
+        ],
+        "hiragana": "ありあどす",
+        "romaji": "ariadosu"
+    },
+    {
+        "name": "グランブル",
+        "origin": "Co",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "ぐらんぶる",
+        "romaji": "guranburu"
+    },
+    {
+        "name": "ビブラーバ",
+        "origin": "Co",
+        "item": "りゅうのキバ",
+        "level": 43,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "びぶらーば",
+        "romaji": "bibura-ba"
+    },
+    {
+        "name": "ライコウ",
+        "origin": "Co",
+        "level": 40,
+        "moves": [
+            "ダークラッシュ",
+            "かみなり"
+        ],
+        "hiragana": "らいこう",
+        "romaji": "raikou"
+    },
+    {
+        "name": "キマワリ",
+        "origin": "Co",
+        "level": 45,
+        "moves": [
+            "ダークラッシュ",
+            "ソーラービーム"
+        ],
+        "hiragana": "きまわり",
+        "romaji": "kimawari"
+    },
+    {
+        "name": "デリバード",
+        "origin": "Co",
+        "item": "とけないこおり",
+        "ability":"はりきり",
+        "level": 45,
+        "moves": [
+            "ダークラッシュ",
+            "そらをとぶ",
+            "プレゼント"
+        ],
+        "hiragana": "でりばーど",
+        "romaji": "deriba-do"
+    },
+    {
+        "name": "ヘラクロス",
+        "origin": "Co",
+        "level": 45,
+        "moves": [
+            "ダークラッシュ",
+            "きしかいせい",
+            "かわらわり"
+        ],
+        "hiragana": "へらくろす",
+        "romaji": "herakurosu"
+    },
+    {
+        "name": "エアームド",
+        "origin": "Co",
+        "item": "するどいくちばし",
+        "level": 47,
+        "moves": [
+            "ダークラッシュ",
+            "エアカッター",
+            "はがねのつばさ"
+        ],
+        "hiragana": "えあーむど",
+        "romaji": "ea-mudo"
+    },
+    {
+        "name": "ミルタンク",
+        "origin": "Co",
+        "level": 48,
+        "ability":"あついしぼう",
+        "moves": [
+            "ダークラッシュ",
+            "のしかかり",
+            "ころがる"
+        ],
+        "hiragana": "みるたんく",
+        "romaji": "mirutanku"
+    },
+    {
+        "name": "アブソル",
+        "origin": "Co",
+        "level": 48,
+        "moves": [
+            "ダークラッシュ",
+            "きりさく",
+            "だましうち"
+        ],
+        "hiragana": "あぶそる",
+        "romaji": "abusoru"
+    },
+    {
+        "name": "ヘルガー",
+        "origin": "Co",
+        "level": 48,
+        "moves": [
+            "ダークラッシュ",
+            "かえんほうしゃ"
+        ],
+        "hiragana": "へるがー",
+        "romaji": "heruga-"
+    },
+    {
+        "name": "トロピウス",
+        "origin": "Co",
+        "level": 49,
+        "moves": [
+            "ダークラッシュ",
+            "マジカルリーフ",
+            "そらをとぶ"
+        ],
+        "hiragana": "とろぴうす",
+        "romaji": "toropiusu"
+    },
+    {
+        "name": "メタグロス",
+        "origin": "Co",
+        "item": "メタルコート",
+        "level": 50,
+        "moves": [
+            "ダークラッシュ",
+            "メタルクロー",
+            "サイコキネシス"
+        ],
+        "hiragana": "めたぐろす",
+        "romaji": "metagurosu"
+    },
+    {
+        "name": "バンギラス",
+        "origin": "Co",
+        "level": 55,
+        "moves": [
+            "ダークラッシュ",
+            "かみなり",
+            "いわなだれ",
+            "ふぶき"
+        ],
+        "hiragana": "ばんぎらす",
+        "romaji": "bangirasu"
+    },
+    {
+        "name": "ドーブル",
+        "origin": "Co",
+        "level": 45,
+        "moves": [
+            "ダークラッシュ",
+            "おうふくビンタ",
+            "アイアンテール"
+        ],
+        "hiragana": "どーぶる",
+        "romaji": "do-buru"
+    },
+    {
+        "name": "リングマ",
+        "origin": "Co",
+        "level": 45,
+        "moves": [
+            "ダークラッシュ",
+            "したでなめる",
+            "きりさく"
+        ],
+        "hiragana": "りんぐま",
+        "romaji": "ringuma"
+    },
+    {
+        "name": "ツボツボ",
+        "origin": "Co",
+        "level": 45,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "つぼつぼ",
+        "romaji": "tsubotsubo"
+    },
+    {
+        "name": "トゲチック",
+        "origin": "Co",
+        "level": 20,
+        "ability":"はりきり",
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "とげちっく",
+        "romaji": "togechiku"
+    },
+    {
+        "name": "ヒメグマ",
+        "origin": "XD",
+        "level": 11,
+        "add_level": 0,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "ひめぐま",
+        "romaji": "himeguma"
+    },
+    {
+        "name": "レディバ",
+        "origin": "XD",
+        "level": 10,
+        "add_level": 1,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "れでぃば",
+        "romaji": "redhiba"
+    },
+    {
+        "name": "ポチエナ",
+        "origin": "XD",
+        "level": 10,
+        "add_level": 1,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "ぽちえな",
+        "romaji": "pochiena"
+    },
+    {
+        "name": "デルビル",
+        "origin": "XD",
+        "level": 17,
+        "add_level": 0,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "でるびる",
+        "romaji": "derubiru"
+    },
+    {
+        "name": "タマザラシ",
+        "origin": "XD",
+        "level": 17,
+        "add_level": 0,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "たまざらし",
+        "romaji": "tamazarashi"
+    },
+    {
+        "name": "ヤジロン",
+        "origin": "XD",
+        "level": 17,
+        "add_level": 0,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "やじろん",
+        "romaji": "yajiron"
+    },
+    {
+        "name": "メリープ",
+        "origin": "XD",
+        "level": 17,
+        "add_level": 0,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "めりーぷ",
+        "romaji": "meri-pu"
+    },
+    {
+        "name": "ゴクリン",
+        "origin": "XD",
+        "level": 17,
+        "add_level": 0,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "ごくりん",
+        "romaji": "gokurin"
+    },
+    {
+        "name": "タネボー",
+        "origin": "XD",
+        "level": 17,
+        "add_level": 0,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "たねぼー",
+        "romaji": "tanebo-"
+    },
+    {
+        "name": "イトマル",
+        "origin": "XD",
+        "level": 14,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "いとまる",
+        "romaji": "itomaru"
+    },
+    {
+        "name": "ドンメル",
+        "origin": "XD",
+        "level": 14,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "どんめる",
+        "romaji": "donmeru"
+    },
+    {
+        "name": "キバニア",
+        "origin": "XD",
+        "level": 15,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "きばにあ",
+        "romaji": "kibania"
+    },
+    {
+        "name": "キノココ",
+        "origin": "XD",
+        "level": 15,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "きのここ",
+        "romaji": "kinokoko"
+    },
+    {
+        "name": "エネコロロ",
+        "origin": "XD",
+        "level": 18,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ",
+            "ダークウェーブ"
+        ],
+        "hiragana": "えねころろ",
+        "romaji": "enekororo"
+    },
+    {
+        "name": "ビリリダマ",
+        "origin": "XD",
+        "level": 19,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "びりりだま",
+        "romaji": "biriridama"
+    },
+    {
+        "name": "マクノシタ",
+        "origin": "XD",
+        "level": 18,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "まくのした",
+        "romaji": "makunoshita"
+    },
+    {
+        "name": "ロコン",
+        "origin": "XD",
+        "level": 18,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "ろこん",
+        "romaji": "rokon"
+    },
+    {
+        "name": "ヨマワル",
+        "origin": "XD",
+        "level": 19,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "よまわる",
+        "romaji": "yomawaru"
+    },
+    {
+        "name": "ラルトス",
+        "origin": "XD",
+        "level": 20,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "らるとす",
+        "romaji": "rarutosu"
+    },
+    {
+        "name": "クチート",
+        "origin": "XD",
+        "level": 22,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ",
+            "ダークウェーブ"
+        ],
+        "hiragana": "くちーと",
+        "romaji": "kuchi-to"
+    },
+    {
+        "name": "ユキワラシ",
+        "origin": "XD",
+        "level": 20,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "ゆきわらし",
+        "romaji": "yukiwarashi"
+    },
+    {
+        "name": "クヌギダマ",
+        "origin": "XD",
+        "level": 20,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "くぬぎだま",
+        "romaji": "kunugidama"
+    },
+    {
+        "name": "ネイティ",
+        "origin": "XD",
+        "level": 22,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "ねいてぃ",
+        "romaji": "neithi"
+    },
+    {
+        "name": "ロゼリア",
+        "origin": "XD",
+        "level": 22,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "ろぜりあ",
+        "romaji": "rozeria"
+    },
+    {
+        "name": "ニャース",
+        "origin": "XD",
+        "level": 22,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "にゃーす",
+        "romaji": "nya-su"
+    },
+    {
+        "name": "ウリムー",
+        "origin": "XD",
+        "level": 22,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック",
+            "ダークウェーブ"
+        ],
+        "hiragana": "うりむー",
+        "romaji": "urimu-"
+    },
+    {
+        "name": "オニスズメ",
+        "origin": "XD",
+        "level": 22,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック",
+            "ダークウェーブ"
+        ],
+        "hiragana": "おにすずめ",
+        "romaji": "onisuzume"
+    },
+    {
+        "name": "ベトベター",
+        "origin": "XD",
+        "level": 23,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "べとべたー",
+        "romaji": "betobeta-"
+    },
+    {
+        "name": "パウワウ",
+        "origin": "XD",
+        "level": 23,
+        "add_level": 4,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "ぱうわう",
+        "romaji": "pauwau"
+    },
+    {
+        "name": "ルナトーン",
+        "origin": "XD",
+        "level": 25,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "るなとーん",
+        "romaji": "runato-n"
+    },
+    {
+        "name": "ザングース",
+        "origin": "XD",
+        "level": 28,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "ざんぐーす",
+        "romaji": "zangu-su"
+    },
+    {
+        "name": "ノズパス",
+        "origin": "XD",
+        "level": 26,
+        "add_level": 3,
+        "moves": [
+            "ダークウェーブ"
+        ],
+        "hiragana": "のずぱす",
+        "romaji": "nozupasu"
+    },
+    {
+        "name": "パラス",
+        "origin": "XD",
+        "level": 28,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "ぱらす",
+        "romaji": "parasu"
+    },
+    {
+        "name": "ガーディ",
+        "origin": "XD",
+        "level": 28,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック",
+            "ダークウェーブ"
+        ],
+        "hiragana": "がーでぃ",
+        "romaji": "ga-dhi"
+    },
+    {
+        "name": "シェルダー",
+        "origin": "XD",
+        "level": 29,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "しぇるだー",
+        "romaji": "sheruda-"
+    },
+    {
+        "name": "スピアー",
+        "origin": "XD",
+        "level": 30,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "すぴあー",
+        "romaji": "supia-"
+    },
+    {
+        "name": "ピジョン",
+        "origin": "XD",
+        "level": 30,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "ぴじょん",
+        "romaji": "pijon"
+    },
+    {
+        "name": "モンジャラ",
+        "origin": "XD",
+        "level": 30,
+        "add_level": 3,
+        "moves": [
+            "ダークレイブ"
+        ],
+        "hiragana": "もんじゃら",
+        "romaji": "monjara"
+    },
+    {
+        "name": "バタフリー",
+        "origin": "XD",
+        "level": 30,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "ばたふりー",
+        "romaji": "batafuri-"
+    },
+    {
+        "name": "レアコイル",
+        "origin": "XD",
+        "level": 30,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "れあこいる",
+        "romaji": "reakoiru"
+    },
+    {
+        "name": "モルフォン",
+        "origin": "XD",
+        "level": 32,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "もるふぉん",
+        "romaji": "morufon"
+    },
+    {
+        "name": "ウツドン",
+        "origin": "XD",
+        "level": 32,
+        "add_level": 3,
+        "moves": [
+            "ダークレイブ"
+        ],
+        "hiragana": "うつどん",
+        "romaji": "utsudon"
+    },
+    {
+        "name": "アーボック",
+        "origin": "XD",
+        "level": 33,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ",
+            "ダークハーフ"
+        ],
+        "hiragana": "あーぼっく",
+        "romaji": "a-bokku"
+    },
+    {
+        "name": "オコリザル",
+        "origin": "XD",
+        "level": 34,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ",
+            "ダークストーム"
+        ],
+        "hiragana": "おこりざる",
+        "romaji": "okorizaru"
+    },
+    {
+        "name": "スリーパー",
+        "origin": "XD",
+        "level": 34,
+        "add_level": 3,
+        "moves": [
+            "ダークストーム"
+        ],
+        "hiragana": "すりーぱー",
+        "romaji": "suri-pa-"
+    },
+    {
+        "name": "ラッタ",
+        "origin": "XD",
+        "level": 0,
+        "add_level": 0,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "らった",
+        "romaji": "ratta"
+    },
+    {
+        "name": "ゴルダック",
+        "origin": "XD",
+        "level": 33,
+        "add_level": 3,
+        "moves": [
+            "ダークレイブ"
+        ],
+        "hiragana": "ごるだっく",
+        "romaji": "gorudakku"
+    },
+    {
+        "name": "ヤミラミ",
+        "origin": "XD",
+        "level": 33,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "やみらみ",
+        "romaji": "yamirami"
+    },
+    {
+        "name": "ドードリオ",
+        "origin": "XD",
+        "level": 34,
+        "add_level": 3,
+        "moves": [
+            "ダークアタック"
+        ],
+        "hiragana": "どーどりお",
+        "romaji": "do-dorio"
+    },
+    {
+        "name": "カモネギ",
+        "origin": "XD",
+        "level": 36,
+        "add_level": 3,
+        "moves": [
+            "ダークブレイク"
+        ],
+        "hiragana": "かもねぎ",
+        "romaji": "kamonegi"
+    },
+    {
+        "name": "チルタリス",
+        "origin": "XD",
+        "level": 36,
+        "add_level": 3,
+        "moves": [
+            "ダークブレイク",
+            "ダークレイブ"
+        ],
+        "hiragana": "ちるたりす",
+        "romaji": "chirutarisu"
+    },
+    {
+        "name": "ガルーラ",
+        "origin": "XD",
+        "level": 35,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "がるーら",
+        "romaji": "garu-ra"
+    },
+    {
+        "name": "ジュペッタ",
+        "origin": "XD",
+        "level": 37,
+        "add_level": 2,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "じゅぺった",
+        "romaji": "jupeta"
+    },
+    {
+        "name": "ブーバー",
+        "origin": "XD",
+        "level": 36,
+        "add_level": 3,
+        "moves": [
+            "ダークレイブ",
+            "ダークラッシュ"
+        ],
+        "hiragana": "ぶーばー",
+        "romaji": "bu-ba-"
+    },
+    {
+        "name": "カイロス",
+        "origin": "XD",
+        "level": 35,
+        "add_level": 3,
+        "moves": [
+            "ダークブレイク"
+        ],
+        "hiragana": "かいろす",
+        "romaji": "kairosu"
+    },
+    {
+        "name": "マグカルゴ",
+        "origin": "XD",
+        "level": 38,
+        "add_level": 2,
+        "moves": [
+            "ダークレイブ"
+        ],
+        "hiragana": "まぐかるご",
+        "romaji": "magukarugo"
+    },
+    {
+        "name": "ギャロップ",
+        "origin": "XD",
+        "level": 40,
+        "add_level": 1,
+        "moves": [
+            "ダークレイブ"
+        ],
+        "hiragana": "ぎゃろっぷ",
+        "romaji": "gyaroppu"
+    },
+    {
+        "name": "エビワラー",
+        "origin": "XD",
+        "level": 38,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "えびわらー",
+        "romaji": "ebiwara-"
+    },
+    {
+        "name": "サワムラー",
+        "origin": "XD",
+        "level": 38,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ",
+            "ダークハーフ"
+        ],
+        "hiragana": "さわむらー",
+        "romaji": "sawamura-"
+    },
+    {
+        "name": "ベロリンガ",
+        "origin": "XD",
+        "level": 38,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ",
+            "ダークパニック"
+        ],
+        "hiragana": "べろりんが",
+        "romaji": "beroringa"
+    },
+    {
+        "name": "ストライク",
+        "origin": "XD",
+        "level": 40,
+        "add_level": 3,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "すとらいく",
+        "romaji": "sutoraiku"
+    },
+    {
+        "name": "ラッキー",
+        "origin": "XD",
+        "level": 39,
+        "add_level": 3,
+        "moves": [
+            "ダークレイブ"
+        ],
+        "hiragana": "らっきー",
+        "romaji": "rakki-"
+    },
+    {
+        "name": "ソルロック",
+        "origin": "XD",
+        "level": 41,
+        "add_level": 3,
+        "moves": [
+            "ダークレイブ"
+        ],
+        "hiragana": "そるろっく",
+        "romaji": "sorurokku"
+    },
+    {
+        "name": "スターミー",
+        "origin": "XD",
+        "level": 41,
+        "add_level": 3,
+        "moves": [
+            "ダークストーム",
+            "ダークブレイク"
+        ],
+        "hiragana": "すたーみー",
+        "romaji": "suta-mi-"
+    },
+    {
+        "name": "エレブー",
+        "origin": "XD",
+        "level": 43,
+        "add_level": 3,
+        "moves": [
+            "ダークブレイク",
+            "ダークハーフ",
+            "ダークストーム"
+        ],
+        "hiragana": "えれぶー",
+        "romaji": "erebu-"
+    },
+    {
+        "name": "オオスバメ",
+        "origin": "XD",
+        "level": 43,
+        "add_level": 3,
+        "moves": [
+            "ダークブレイク",
+            "ダークハーフ"
+        ],
+        "hiragana": "おおすばめ",
+        "romaji": "oosubame"
+    },
+    {
+        "name": "カビゴン",
+        "origin": "XD",
+        "level": 43,
+        "add_level": 3,
+        "moves": [
+            "ダークエンド"
+        ],
+        "hiragana": "かびごん",
+        "romaji": "kabigon"
+    },
+    {
+        "name": "ニョロボン",
+        "origin": "XD",
+        "level": 42,
+        "add_level": 3,
+        "moves": [
+            "ダークストーム",
+            "ダークラッシュ"
+        ],
+        "hiragana": "にょろぼん",
+        "romaji": "nyorobon"
+    },
+    {
+        "name": "バリヤード",
+        "origin": "XD",
+        "level": 42,
+        "add_level": 3,
+        "moves": [
+            "ダークストーム"
+        ],
+        "hiragana": "ばりやーど",
+        "romaji": "bariya-do"
+    },
+    {
+        "name": "ダグトリオ",
+        "origin": "XD",
+        "level": 40,
+        "add_level": 3,
+        "moves": [
+            "ダークブレイク"
+        ],
+        "hiragana": "だぐとりお",
+        "romaji": "dagutorio"
+    },
+    {
+        "name": "ライボルト",
+        "origin": "XD",
+        "level": 44,
+        "add_level": 3,
+        "moves": [
+            "ダークエンド"
+        ],
+        "hiragana": "らいぼると",
+        "romaji": "raiboruto"
+    },
+    {
+        "name": "ボーマンダ",
+        "origin": "XD",
+        "level": 50,
+        "add_level": 1,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "ぼーまんだ",
+        "romaji": "bo-manda"
+    },
+    {
+        "name": "ガラガラ",
+        "origin": "XD",
+        "item": "ふといホネ",
+        "level": 44,
+        "add_level": 3,
+        "moves": [
+            "ダークエンド"
+        ],
+        "hiragana": "がらがら",
+        "romaji": "garagara"
+    },
+    {
+        "name": "ラプラス",
+        "origin": "XD",
+        "level": 44,
+        "add_level": 3,
+        "moves": [
+            "ダークストーム"
+        ],
+        "hiragana": "らぷらす",
+        "romaji": "rapurasu"
+    },
+    {
+        "name": "ルギア",
+        "origin": "XD",
+        "level": 50,
+        "add_level": 3,
+        "moves": [
+            "ダークブラスト",
+            "ダークストーム"
+        ],
+        "hiragana": "るぎあ",
+        "romaji": "rugia"
+    },
+    {
+        "name": "サンダー",
+        "origin": "XD",
+        "level": 50,
+        "add_level": 0,
+        "moves": [
+            "ダークサンダー",
+            "ダークラッシュ"
+        ],
+        "hiragana": "さんだー",
+        "romaji": "sanda-"
+    },
+    {
+        "name": "ファイヤー",
+        "origin": "XD",
+        "level": 50,
+        "add_level": 0,
+        "moves": [
+            "ダークファイア",
+            "ダークラッシュ"
+        ],
+        "hiragana": "ふぁいやー",
+        "romaji": "faiya-"
+    },
+    {
+        "name": "フリーザー",
+        "origin": "XD",
+        "level": 50,
+        "add_level": 0,
+        "moves": [
+            "ダークフリーズ",
+            "ダークラッシュ"
+        ],
+        "hiragana": "ふりーざー",
+        "romaji": "furi-za-"
+    },
+    {
+        "name": "ケンタロス",
+        "origin": "XD",
+        "level": 46,
+        "add_level": 1,
+        "moves": [
+            "ダークラッシュ"
+        ],
+        "hiragana": "けんたろす",
+        "romaji": "kentarosu"
+    },
+    {
+        "name": "サイドン",
+        "origin": "XD",
+        "level": 46,
+        "add_level": 1,
+        "moves": [
+            "ダークエンド"
+        ],
+        "hiragana": "さいどん",
+        "romaji": "saidon"
+    },
+    {
+        "name": "ナッシー",
+        "origin": "XD",
+        "level": 46,
+        "add_level": 1,
+        "moves": [
+            "ダークストーム",
+            "ダークエンド"
+        ],
+        "hiragana": "なっしー",
+        "romaji": "nasshi-"
+    },
+    {
+        "name": "カイリュー",
+        "origin": "XD",
+        "level": 55,
+        "add_level": 2,
+        "moves": [
+            "ダークラッシュ",
+            "ダークストーム"
+        ],
+        "hiragana": "かいりゅー",
+        "romaji": "kairyu-"
+    },
+    {
+        "name": "グラードン",
+        "origin": "Em",
+        "level": 70,
+        "moves": [
+            "だいもんじ",
+            "ソーラービーム"
+        ],
+        "hiragana": "ぐらーどん",
+        "romaji": "gura-don"
+    },
+    {
+        "name": "カイオーガ",
+        "origin": "Em",
+        "level": 70,
+        "moves": [
+            "ハイドロポンプ",
+            "すてみタックル"
+        ],
+        "hiragana": "かいおーが",
+        "romaji": "kaio-ga"
+    },
+    {
+        "name": "グラードン",
+        "origin": "RS",
+        "level": 45,
+        "moves": [
+            "だいもんじ",
+            "きりさく",
+            "じしん"
+        ],
+        "hiragana": "ぐらーどん",
+        "romaji": "gura-don"
+    },
+    {
+        "name": "カイオーガ",
+        "origin": "RS",
+        "level": 45,
+        "moves": [
+            "ハイドロポンプ",
+            "れいとうビーム",
+            "のしかかり"
+        ],
+        "hiragana": "かいおーが",
+        "romaji": "kaio-ga"
+    },
+    {
+        "name": "レックウザ",
+        "origin": "RSE",
+        "level": 70,
+        "moves": [
+            "そらをとぶ",
+            "げきりん",
+            "しんそく"
+        ],
+        "hiragana": "れっくうざ",
+        "romaji": "rekkuuza"
+    },
+    {
+        "name": "レジロック",
+        "origin": "RSE",
+        "level": 40,
+        "moves": [
+            "いわおとし",
+            "じならし",
+            "ばかぢから",
+            "げんしのちから"
+        ],
+        "hiragana": "れじろっく",
+        "romaji": "rejirokku"
+    },
+    {
+        "name": "レジアイス",
+        "origin": "RSE",
+        "level": 40,
+        "moves": [
+            "こごえるかぜ",
+            "ばかぢから",
+            "げんしのちから"
+        ],
+        "hiragana": "れじあいす",
+        "romaji": "rejiaisu"
+    },
+    {
+        "name": "レジスチル",
+        "origin": "RSE",
+        "level": 40,
+        "moves": [
+            "メタルクロー",
+            "ばかぢから",
+            "げんしのちから"
+        ],
+        "hiragana": "れじすちる",
+        "romaji": "rejisuchiru"
+    },
+    {
+        "name": "ラティオス",
+        "origin": "Em",
+        "item": "こころのしずく",
+        "level": 50,
+        "moves": [
+            "サイコキネシス",
+            "ミストボール"
+        ],
+        "hiragana": "らてぃおす",
+        "romaji": "rathiosu"
+    },
+    {
+        "name": "ラティアス",
+        "origin": "Em",
+        "item": "こころのしずく",
+        "level": 50,
+        "moves": [
+            "サイコキネシス",
+            "ミストボール"
+        ],
+        "hiragana": "らてぃあす",
+        "romaji": "rathiasu"
+    },
+    {
+        "name": "サンダー",
+        "origin": "FRLG",
+        "level": 50,
+        "moves": [
+            "ドリルくちばし"
+        ],
+        "hiragana": "さんだー",
+        "romaji": "sanda-"
+    },
+    {
+        "name": "ファイヤー",
+        "origin": "FRLG",
+        "level": 50,
+        "moves": [
+            "ほのおのうず",
+            "かえんほうしゃ"
+        ],
+        "hiragana": "ふぁいやー",
+        "romaji": "faiya-"
+    },
+    {
+        "name": "フリーザー",
+        "origin": "FRLG",
+        "level": 50,
+        "moves": [
+            "れいとうビーム"
+        ],
+        "hiragana": "ふりーざー",
+        "romaji": "furi-za-"
+    },
+    {
+        "name": "ミュウツー",
+        "origin": "FRLG",
+        "level": 70,
+        "moves": [
+            "サイコキネシス",
+            "じこさいせい"
+        ],
+        "hiragana": "みゅうつー",
+        "romaji": "myuutu-"
+    }
+]
