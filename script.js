@@ -1,4 +1,4 @@
-﻿// ========================
+// ========================
 // 1. グローバル変数定義
 // ========================
 
@@ -4048,47 +4048,50 @@ function findStatByDamage(targetDamage, defValue, level, power, category, moveTy
     let max = 999;
     let bestStat = null;
     let iterations = 0;
-  
-    while (min <= max && iterations < 20) {  // 無限ループ防止
-      iterations++;
-      const mid = Math.floor((min + max) / 2);
-  
-      // 基本的なダメージ計算（補正なし）
-      const A = Math.floor(level * 2 / 5) + 2;
-      const effAttack = Math.floor(mid * (atkRank >= 0 ? (2 + atkRank) / 2 : 2 / (2 - atkRank)));
-      const effDefense = Math.floor(defValue * (defRank >= 0 ? (2 + defRank) / 2 : 2 / (2 - defRank)));
-  
-      const B = Math.floor((effAttack * power * A) / effDefense);
-      const C = Math.floor(B / 50);
-      const D = C + 2;
-  
-      // 乱数補正のみ適用（85%～100%）
-      const minDamage = Math.floor(D * 0.85);
-      const maxDamage = D;
-  
-      // 判定条件
-      if (isForMinDamage) {
-        // 最小ダメージが目標以下になる最大の攻撃値を求める
-        if (minDamage <= targetDamage) {
-          bestStat = mid;
-          min = mid + 1;  // より大きい攻撃値を探す
-        } else {
-          max = mid - 1;
+
+    while (min <= max && iterations < 20) {
+        iterations++;
+        const mid = Math.floor((min + max) / 2);
+        
+        // 基本的なダメージ計算（アイテム補正なし）
+        const A = Math.floor(level * 2 / 5) + 2;
+        const effAttack = Math.floor(mid * (atkRank >= 0 ? (2 + atkRank) / 2 : 2 / (2 - atkRank)));
+        const effDefense = Math.floor(defValue * (defRank >= 0 ? (2 + defRank) / 2 : 2 / (2 - defRank)));
+
+        const B = Math.floor((effAttack * power * A) / effDefense);
+        const C = Math.floor(B / 50);
+        const D = C + 2;
+
+        // 乱数補正のみ適用（85%～100%）
+        const minDamage = Math.floor(D * 0.85);
+        const maxDamage = D;
+
+        // デバッグ（A実数値91付近で詳細確認）
+        if (mid >= 89 && mid <= 93) {
+            console.log(`A実数値${mid}: ダメージ${minDamage}～${maxDamage}`);
         }
-      } else {
-        // 最大ダメージが目標以上になる最小の攻撃値を求める
-        if (maxDamage >= targetDamage) {
-          bestStat = mid;
-          max = mid - 1;  // より小さい攻撃値を探す
+
+        // 判定条件
+        if (isForMinDamage) {
+            if (minDamage <= targetDamage) {
+                bestStat = mid;
+                min = mid + 1;
+            } else {
+                max = mid - 1;
+            }
         } else {
-          min = mid + 1;
+            if (maxDamage >= targetDamage) {
+                bestStat = mid;
+                max = mid - 1;
+            } else {
+                min = mid + 1;
+            }
         }
-      }
     }
-  
+
     const result = bestStat || min;
     return result;
-  }
+}
   
   // 最大ダメージが目標以上になる最小の攻撃値を求める
   const minStat = calculatePureAttackStat(targetDamage, false);
@@ -4359,7 +4362,6 @@ function estimateIVFromDamage() {
     }, 1.0);
     
     typeMultiplier *= typeEffect;
-    console.log(`タイプ相性: ×${typeEffect}`);
   }
 
   // きしかいせい・じたばた
@@ -4420,7 +4422,7 @@ function estimateIVFromDamage() {
 
   let minBaseStat = statRange.min;
   let maxBaseStat = statRange.max;
-
+console.log('初期実数値範囲:', minBaseStat, '～', maxBaseStat);
   // ステータス直接補正の計算
   let statModifier = 1.0;
 
@@ -5109,7 +5111,7 @@ if (moveType === "ダーク" && isDarkPokemon) {
   }, 1.0);
   
   if (typeEff !== 1.0) {
-    boosterText += `<br><span ${boosterStyle}>[タイプ相性: ダメージ×${typeEff.toFixed(1)}]</span>`;
+    boosterText += `<br><span ${boosterStyle}>[タイプ相性: ×${typeEff.toFixed(1)}]</span>`;
   }
 }
 
