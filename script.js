@@ -3445,7 +3445,7 @@ function calculateDamage(attack, defenseValue, level, powerValue, categoryType, 
   else if (defenderTypes.length > 0) {
     // 通常のタイプ相性計算（ダーク技以外）
     typeEffectiveness = defenderTypes.reduce((effectiveness, defType) => {
-      if (typeMultiplierData[moveType] && typeMultiplierData[moveType][defType]) {
+      if (typeMultiplierData[moveType] && typeMultiplierData[moveType][defType] !== undefined) {
         return effectiveness * typeMultiplierData[moveType][defType];
       }
       return effectiveness;
@@ -4257,15 +4257,15 @@ function estimateIVFromDamage() {
   // アイテム情報取得
   let itemModifier = 1.0;
   let itemPowerModifier = 1.0;
-  
+
   if (currentItem) {
-    // アイテムとタイプが一致するか
-    if (currentItem.type && currentItem.type === moveType) {
-      itemPowerModifier = 1.1;
-    }
-    
-    // 直接ステータスに影響するアイテム
-    if (currentItem.timing === "attackMod") {
+    if (currentItem.type) {
+      // タイプ一致の威力上昇アイテム（まがったスプーン等）: 一度だけ適用
+      if (currentItem.type === moveType && currentItem.timing === "attackMod") {
+        itemPowerModifier = isPhysical ? (currentItem.a || 1.0) : (currentItem.c || 1.0);
+      }
+    } else if (currentItem.timing === "attackMod") {
+      // タイプに依存せず実数値を直接補正するアイテム（こだわりハチマキ等）
       if (isPhysical && currentItem.a) {
         itemModifier = currentItem.a;
       } else if (!isPhysical && currentItem.c) {
@@ -4355,7 +4355,7 @@ function estimateIVFromDamage() {
   // 通常のタイプ相性
   else if (defenderTypes.length > 0) {
     let typeEffect = defenderTypes.reduce((eff, defType) => {
-      if (typeMultiplierData[moveType] && typeMultiplierData[moveType][defType]) {
+      if (typeMultiplierData[moveType] && typeMultiplierData[moveType][defType] !== undefined) {
         return eff * typeMultiplierData[moveType][defType];
       }
       return eff;
@@ -5104,7 +5104,7 @@ if (moveType === "ダーク" && isDarkPokemon) {
 } else if (defenderTypes.length > 0) {
   // 通常のタイプ相性
   const typeEff = defenderTypes.reduce((eff, defType) => {
-    if (typeMultiplierData[moveType] && typeMultiplierData[moveType][defType]) {
+    if (typeMultiplierData[moveType] && typeMultiplierData[moveType][defType] !== undefined) {
       return eff * typeMultiplierData[moveType][defType];
     }
     return eff;
