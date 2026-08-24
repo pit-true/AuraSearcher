@@ -5051,7 +5051,7 @@ if (isMushiNoShirase && moveType === "むし") {
 // アイテム補正
 if (currentItem) {
   if (currentItem.type && currentItem.type === moveType) {
-    boosterText += `<br><span ${boosterStyle}>[${currentItem.name}: ${isPhysical ? "A" : "C"}×${itemModifier.toFixed(1)}]</span>`;
+    boosterText += `<br><span ${boosterStyle}>[${currentItem.name}: ${isPhysical ? "A" : "C"}×${itemPowerModifier.toFixed(1)}]</span>`;
   }
 }
 
