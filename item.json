@@ -56,9 +56,9 @@
     "romaji":"kuroobi"
   },
   {
-    "name": "くろいメガネ", 
-    "type": "あく", 
-    "a": 1.1,
+    "name": "くろいメガネ",
+    "type": "あく",
+    "c": 1.1,
     "timing": "attackMod",
     "description": "あくタイプの技の威力が1.1倍になる",
     "romaji":"kuroimegane"
