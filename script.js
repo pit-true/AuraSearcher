@@ -2667,21 +2667,9 @@ function showMoves() {
     // 技情報を検索
     const moveInfo = moveData.find(m => m.name === selectedMove);
 
-    // 被ダメ計算側のダブル半減チェックボックス処理
-    const defDoubleCheckContainer = document.getElementById('defDoubleCheckContainer');
-    const defDoubleCheck = document.getElementById('defDoubleCheck');
-    
-    if (defDoubleCheckContainer && defDoubleCheck) {
-      if (moveInfo && moveInfo.target == 2) {
-        // 全体技の場合は表示してチェックを入れる
-        defDoubleCheckContainer.style.display = 'block';
-        defDoubleCheck.checked = true;
-      } else {
-        // それ以外の場合は非表示にしてチェックを外す
-        defDoubleCheckContainer.style.display = 'none';
-        defDoubleCheck.checked = false;
-      }
-    }
+    // 被ダメ計算側のダブル半減チェックボックス処理（急所の隣に常時表示し、
+    // コロシアム/XD(基本2vs2ダブル)かつ全体技のときだけ既定でオンにする）
+    updateDefDoubleCheckDisplay(selectedMove);
 
     // きしかいせい・じたばた用の表示
     if (moveInfo && moveInfo.class === "pinch_up") {
@@ -2701,21 +2689,19 @@ function showMoves() {
 function updateDefDoubleCheckDisplay(moveName) {
   // 技情報を検索
   const moveInfo = findMoveInfo(moveName);
-  
+
   // 被ダメ計算側のダブル半減チェックボックス処理
   const defDoubleCheckContainer = document.getElementById('defDoubleCheckContainer');
   const defDoubleCheck = document.getElementById('defDoubleCheck');
-  
+
   if (defDoubleCheckContainer && defDoubleCheck) {
-    if (moveInfo && moveInfo.target == 2) {
-      // 全体技の場合は表示してチェックを入れる
-      defDoubleCheckContainer.style.display = 'block';
-      defDoubleCheck.checked = true;
-    } else {
-      // それ以外の場合は非表示にしてチェックを外す
-      defDoubleCheckContainer.style.display = 'none';
-      defDoubleCheck.checked = false;
-    }
+    // 急所の隣に常時表示（与ダメ計算側と同様、手動でも切り替えられるようにする）
+    defDoubleCheckContainer.style.display = 'block';
+
+    // コロシアム/XDのダークポケモン戦は基本2vs2ダブルのため、全体技なら既定でオンにする。
+    // RSE/FRLGの野生エンカウントは通常シングルバトルなので既定はオフ(手動でオン可)。
+    const isColosseumOrXD = (currentOrigin === 'Co' || currentOrigin === 'XD');
+    defDoubleCheck.checked = !!(moveInfo && moveInfo.target == 2 && isColosseumOrXD);
   }
 }
 // ========================
@@ -3369,17 +3355,21 @@ function calculateDamage(attack, defenseValue, level, powerValue, categoryType, 
     D = Math.floor(D * 0.5);
   }
   
-  // 壁補正
+  // ダブルバトルかどうか（壁補正・範囲補正のどちらでも使うため先に取得しておく）
+  const isDoubleBattle = document.getElementById('doubleCheck') && document.getElementById('doubleCheck').checked;
+
+  // 急所かどうか（急所は壁を貫通するため先に取得しておく）
+  const isCritical = document.getElementById('CriticalCheck') && document.getElementById('CriticalCheck').checked;
+
+  // 壁補正（急所は壁[リフレクター/ひかりのかべ]を貫通するため急所時は適用しない）
   const hasWall = document.getElementById('wallCheck') && document.getElementById('wallCheck').checked;
 
-  if (hasWall) {
+  if (hasWall && !isCritical) {
     const wallDiv = isDoubleBattle ? 1.5 : 2;
     D = Math.floor(D / wallDiv);
   }
-  
+
   // 範囲補正（全体技）
-  const isDoubleBattle = document.getElementById('doubleCheck') && document.getElementById('doubleCheck').checked;
-  
   const targetType = moveInfo ? moveInfo.target || 1 : 1;
   if (targetType === 2 && isDoubleBattle) {
     D = Math.floor(D / 2);
@@ -3405,7 +3395,6 @@ function calculateDamage(attack, defenseValue, level, powerValue, categoryType, 
   D += 2;
 
   // 急所
-  const isCritical = document.getElementById('CriticalCheck') && document.getElementById('CriticalCheck').checked;
   if (isCritical) {
     D = Math.floor(D * 2);
   }
@@ -4080,7 +4069,8 @@ function findStatByDamage(targetDamage, defValue, level, power, category, moveTy
         // 「+2」より前に適用される補正（与ダメ計算/3genDamageCalculatorの順序に合わせる）
         if (isBurned) D = Math.floor(D * 0.5);
         if (isDoubleReduced) D = Math.floor(D * 0.5);
-        if (hasWall) D = Math.floor(D * wallFactor);
+        // 急所は壁(リフレクター/ひかりのかべ)を貫通する（Gen3の仕様）ため急所時は壁補正を無視
+        if (hasWall && !isCritical) D = Math.floor(D * wallFactor);
         if (weatherMultiplier !== 1.0) D = Math.floor(D * weatherMultiplier);
 
         D += 2;
@@ -4516,6 +4506,15 @@ console.log('初期実数値範囲:', minBaseStat, '～', maxBaseStat);
   if (maxBaseStat > theoreticalMaxStat) {
     console.log(`最大実数値が理論上の最大値を超えているため、${theoreticalMaxStat}に制限します`);
     maxBaseStat = theoreticalMaxStat;
+  }
+
+  // 逆算範囲が理論上あり得る実数値の範囲(0V下降補正～31V上昇補正)と重ならない場合、
+  // 上のクランプは下限しか引き上げない/上限しか引き下げないため min > max の壊れた範囲になる。
+  // 入力(ダメージ・防御実数値・レベル等)が理論的に矛盾している可能性が高いケースだが、
+  // 表示が壊れる(個体値が空欄になる)のを避けるため理論境界に丸めて一点に潰す。
+  if (minBaseStat > maxBaseStat) {
+    console.log(`逆算範囲が理論上の実数値範囲(${theoreticalMinStat}～${theoreticalMaxStat})と重ならないため境界値に丸めます。入力値を確認してください。`);
+    minBaseStat = maxBaseStat = (maxBaseStat < theoreticalMinStat) ? theoreticalMinStat : theoreticalMaxStat;
   }
 
   // 補正込みの実数値範囲
