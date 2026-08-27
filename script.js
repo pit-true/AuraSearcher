@@ -16,6 +16,8 @@ let currentPokemonMoves = [];
 let currentOrigin = "";
 let currentMyPokemonName = "";
 let currentMyPokemonTypes = [];
+let currentMyPokemonName2 = "";
+let currentMyPokemonTypes2 = [];
 let currentItem = null;
 
 // 能力値情報
@@ -1290,8 +1292,9 @@ function filterDropdown(searchText, dataSource, dropdown, inputElement) {
 }
 
 // HPをコピーする関数
-function copyHP() {
-  document.getElementById('maxHP').value = document.getElementById('currentHP').value;
+function copyHP(allyIndex) {
+  const n = allyIndex || 1;
+  document.getElementById('maxHP' + n).value = document.getElementById('currentHP' + n).value;
 }
 
 // 検索キーワードでポケモンをフィルタリングする関数
@@ -1675,6 +1678,52 @@ function selectMyPokemon() {
     
     //console.log("入力欄同期:", exactMatchPokemon.name);
   }
+}
+
+// 自分②(コロシアム/XDの2vs2で追加された2体目)のポケモン選択処理。
+// 自分①(searchDefPokemon/selectMyPokemon)とは独立してタイプ情報のみ保持する。
+function selectMyPokemonSlot(allyIndex) {
+  if (allyIndex === 1) {
+    selectMyPokemon();
+    return;
+  }
+  const input = document.getElementById('searchDefPokemon2');
+  const pokemonName = input ? input.value : '';
+
+  if (!pokemonName) {
+    currentMyPokemonName2 = "";
+    currentMyPokemonTypes2 = [];
+    return;
+  }
+
+  let exactMatchPokemon = allPokemonData.find(p => p.name === pokemonName);
+  if (!exactMatchPokemon) {
+    exactMatchPokemon = allPokemonData.find(p => p.hiragana && p.hiragana === pokemonName);
+  }
+  if (!exactMatchPokemon) {
+    const lowerInputText = pokemonName.toLowerCase();
+    exactMatchPokemon = allPokemonData.find(p => p.romaji && p.romaji.toLowerCase() === lowerInputText);
+  }
+
+  if (exactMatchPokemon) {
+    currentMyPokemonName2 = exactMatchPokemon.name;
+    currentMyPokemonTypes2 = exactMatchPokemon.type
+      ? (Array.isArray(exactMatchPokemon.type) ? exactMatchPokemon.type : [exactMatchPokemon.type])
+      : [];
+  }
+}
+
+// 自分①/②どちらが今回受けた側かの切り替え(枠全体をクリックで選択)。
+// 蓄積中の絞り込み結果はここでは一切リセットしない(相手は単一のため、
+// 自分①が受けても②が受けても同じ相手への観測として合算され続ける)。
+function handleAllyPickChange() {
+  // 現状は選択状態の切り替えのみ。CSSの:has()で枠のハイライトが自動的に更新される。
+}
+
+// 現在選択中の自分側スロット番号(1 or 2)を返す
+function getActiveAllyIndex() {
+  const radio2 = document.getElementById('targetAllyPick2');
+  return (radio2 && radio2.checked) ? 2 : 1;
 }
 
 // 性格選択時の処理
@@ -3814,9 +3863,9 @@ function performGiveDamageCalculation() {
 
     // ランク補正を取得
     atkRank = parseInt(document.getElementById('atkRank').value) || 0;
-    
-    // 防御ランク補正を取得
-    defRank = parseInt(document.getElementById('defRank').value) || 0;
+
+    // 防御ランク補正を取得(自傷技は相手自身の防御なので自分①/②の選択には依存しない。自分①のランクを使用)
+    defRank = parseInt(document.getElementById('defRank1').value) || 0;
 
     // 結果表示書き換え
     attackerName = defenderName;
@@ -4136,10 +4185,14 @@ function estimateIVFromDamage() {
   const estimateResult = document.getElementById('estimateResult');
   const highlightedResult = document.getElementById('highlightedResult');
  
-  // ランク補正の値を取得
-  const atkRank = parseInt(document.getElementById('atkRank').value || 0);
-  const defRank = parseInt(document.getElementById('defRank').value || 0);
-  
+  // ランク補正の値を取得（相手は物理/特殊で独立。コロシアム/XDは常時ダブルのため
+  // 自分側は①②どちらが受けたかで対象を切り替える）
+  const atkRankRaw = parseInt(document.getElementById('atkRank').value || 0);
+  const spAtkRankRaw = parseInt(document.getElementById('spAtkRank').value || 0);
+  const activeAllyIndex = getActiveAllyIndex();
+  const defRankRaw = parseInt(document.getElementById('defRank' + activeAllyIndex).value || 0);
+  const spDefRankRaw = parseInt(document.getElementById('spDefRank' + activeAllyIndex).value || 0);
+
   // 各種チェック状態取得
   const isDarkPokemon = document.getElementById('darkPokemonCheck') && document.getElementById('darkPokemonCheck').checked;
   const isDarknessActive = document.getElementById('darknessCheck') && document.getElementById('darknessCheck').checked;
@@ -4151,18 +4204,16 @@ function estimateIVFromDamage() {
     if (highlightedResult) highlightedResult.style.display = 'none';
     return;
   }
-  
-  // 入力値の取得と検証
-  const maxHP = parseInt(document.getElementById('maxHP').value) || 0;
-  const currentHP = parseInt(document.getElementById('currentHP').value) || 0;
-  let defValue = parseInt(document.getElementById('defValue').value) || 0;
+
+  // 入力値の取得と検証（受けた側=自分①/②のHP・実数値）
+  const maxHP = parseInt(document.getElementById('maxHP' + activeAllyIndex).value) || 0;
+  const currentHP = parseInt(document.getElementById('currentHP' + activeAllyIndex).value) || 0;
+  const defValueBRaw = parseInt(document.getElementById('defValueB' + activeAllyIndex).value) || 0;
+  const defValueDRaw = parseInt(document.getElementById('defValueD' + activeAllyIndex).value) || 0;
 
   // 受けたダメージを計算
   let damage = maxHP - currentHP;
-  
-  // ダメージ情報の定義
-  const damageInfo = `防:${defValue} ダ:${damage}`;
-  
+
   // ダメージ0以下のエラー処理
   if (damage <= 0) {
     if (estimateResult) estimateResult.innerHTML = "ダメージが0以下です";
@@ -4200,6 +4251,14 @@ function estimateIVFromDamage() {
   const categoryJP = category === "Physical" ? "物理" : "特殊";
   const isPhysical = category === "Physical";
 
+  // 物理/特殊に応じてランク・実数値を確定（相手=攻撃側、自分①/②=防御側）
+  const atkRank = isPhysical ? atkRankRaw : spAtkRankRaw;
+  const defRank = isPhysical ? defRankRaw : spDefRankRaw;
+  let defValue = isPhysical ? defValueBRaw : defValueDRaw;
+
+  // ダメージ情報の定義
+  const damageInfo = `防:${defValue} ダ:${damage}`;
+
   // レベル情報
   const level = parseInt(document.getElementById('defLevel').value) || 50;
   const attackerLevel = hasAddLevel ? level + currentAddLevel : level;
@@ -4212,9 +4271,13 @@ function estimateIVFromDamage() {
     attackerTypes = Array.isArray(pokemonInfo.type) ? pokemonInfo.type : [pokemonInfo.type];
   }
 
-  // 防御側（自分側）のタイプ情報を取得
+  // 防御側（自分①/②のうち今回受けた側）のタイプ情報を取得
   let defenderTypes = [];
-  if (currentMyPokemonName && currentMyPokemonTypes.length > 0) {
+  if (activeAllyIndex === 2) {
+    if (currentMyPokemonName2 && currentMyPokemonTypes2.length > 0) {
+      defenderTypes = currentMyPokemonTypes2;
+    }
+  } else if (currentMyPokemonName && currentMyPokemonTypes.length > 0) {
     defenderTypes = currentMyPokemonTypes;
   }
 
