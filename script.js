@@ -5452,7 +5452,8 @@ let defPokemonDropdownInitialized = false;
 function attemptDefPokemonInitialization() {
   // すでに初期化済みの場合は何もしない
   if (defPokemonDropdownInitialized) return;
-    initializeDefPokemonDropdown();
+    initializeDefPokemonDropdown(1);
+    initializeDefPokemonDropdown(2);
     defPokemonDropdownInitialized = true;
     // 初期化成功したのでインターバルをクリア
     clearInterval(initializationInterval);
@@ -5470,23 +5471,44 @@ setTimeout(function() {
 }, 10000);
 
 // 被ダメ計算の自分ポケモンドロップダウンを初期化する関数
-function initializeDefPokemonDropdown() {
-  
+// allyIndex: 1=自分①(searchDefPokemon, 従来通りcurrentMyPokemonName/Typesと与ダメ側にも同期)
+//            2=自分②(searchDefPokemon2, currentMyPokemonName2/Types2のみ更新。与ダメ側とは同期しない)
+function initializeDefPokemonDropdown(allyIndex) {
+  allyIndex = allyIndex || 1;
+  const inputId = allyIndex === 2 ? 'searchDefPokemon2' : 'searchDefPokemon';
+  const dropdownId = allyIndex === 2 ? 'defPokemonDropdown2' : 'defPokemonDropdown';
+
   // 入力欄の取得
-  const defPokemonInput = document.getElementById('searchDefPokemon');
+  const defPokemonInput = document.getElementById(inputId);
   if (!defPokemonInput) {
-    console.error('被ダメ計算の自分ポケモン入力欄が見つかりません');
+    console.error('被ダメ計算の自分ポケモン入力欄が見つかりません: ' + inputId);
     return;
   }
-  
+
+  // 選択時にどのグローバル変数を更新するかを一元化
+  function applySelectedPokemon(pokemon) {
+    defPokemonInput.value = pokemon.name;
+    const types = pokemon.type ? (Array.isArray(pokemon.type) ? pokemon.type : [pokemon.type]) : [];
+    if (allyIndex === 2) {
+      currentMyPokemonName2 = pokemon.name;
+      currentMyPokemonTypes2 = types;
+    } else {
+      if (typeof currentMyPokemonName !== 'undefined') currentMyPokemonName = pokemon.name;
+      if (typeof currentMyPokemonTypes !== 'undefined') currentMyPokemonTypes = types;
+      // 与ダメ側の入力欄も更新(自分①のみ、従来通り)
+      const mainPokemonInput = document.getElementById('searchMyPokemon');
+      if (mainPokemonInput) mainPokemonInput.value = pokemon.name;
+    }
+  }
+
   // ドロップダウンの作成（既存のものがあれば削除）
-  let defDropdown = document.getElementById('defPokemonDropdown');
+  let defDropdown = document.getElementById(dropdownId);
   if (defDropdown) {
     defDropdown.parentNode.removeChild(defDropdown);
   }
   
   defDropdown = document.createElement('div');
-  defDropdown.id = 'defPokemonDropdown';
+  defDropdown.id = dropdownId;
   defDropdown.className = 'pokemon-dropdown';
   defDropdown.style.position = 'absolute';
   defDropdown.style.display = 'none';
@@ -5553,32 +5575,13 @@ function initializeDefPokemonDropdown() {
         
         // クリックイベント
         item.addEventListener('click', function() {
-          defPokemonInput.value = pokemon.name;
+          applySelectedPokemon(pokemon);
           defDropdown.style.display = 'none';
-          
-          // ポケモンデータの更新
-          if (typeof currentMyPokemonName !== 'undefined') {
-            currentMyPokemonName = pokemon.name;
-          }
-          
-          if (typeof currentMyPokemonTypes !== 'undefined') {
-            if (pokemon.type) {
-              currentMyPokemonTypes = Array.isArray(pokemon.type) ? pokemon.type : [pokemon.type];
-            } else {
-              currentMyPokemonTypes = [];
-            }
-          }
-      
-          // 与ダメ側の入力欄も更新
-          const mainPokemonInput = document.getElementById('searchMyPokemon');
-          if (mainPokemonInput) {
-            mainPokemonInput.value = pokemon.name;
-          }
         });
-        
+
         defDropdown.appendChild(item);
       });
-      
+
       // 「もっと見る」オプション
       if (uniquePokemon.length > 20) {
         const moreItem = document.createElement('div');
@@ -5688,32 +5691,13 @@ function initializeDefPokemonDropdown() {
           
           // クリックイベント
           item.addEventListener('click', function() {
-            defPokemonInput.value = pokemon.name;
+            applySelectedPokemon(pokemon);
             defDropdown.style.display = 'none';
-            
-            // ポケモンデータの更新
-            if (typeof currentMyPokemonName !== 'undefined') {
-              currentMyPokemonName = pokemon.name;
-            }
-            
-            if (typeof currentMyPokemonTypes !== 'undefined') {
-              if (pokemon.type) {
-                currentMyPokemonTypes = Array.isArray(pokemon.type) ? pokemon.type : [pokemon.type];
-              } else {
-                currentMyPokemonTypes = [];
-              }
-            }
-            
-            // 与ダメ側の入力欄も更新
-            const mainPokemonInput = document.getElementById('searchMyPokemon');
-            if (mainPokemonInput) {
-              mainPokemonInput.value = pokemon.name;
-            }
           });
-          
+
           defDropdown.appendChild(item);
         });
-        
+
         // 「もっと見る」オプション
         if (uniqueFilteredPokemon.length > 20) {
           const moreItem = document.createElement('div');
