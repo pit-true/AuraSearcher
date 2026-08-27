@@ -4038,10 +4038,25 @@ function calculateTheoreticalStat(baseStat, iv, level, natureModifier) {
 }
 
 // 実数値範囲推定関数
+// targetDamage には観測ダメージそのもの（totalModifier等で割り戻していない値）を渡すこと。
+// STAB・タイプ相性・アイテム等の補正は、実際の与ダメ計算(calculateDamage/3genDamageCalculator)と
+// 同じ順序・floorタイミングでここで直接適用し、最後に乱数(85%~100%)レンジを掛けて観測値と比較する。
 function findStatByDamage(targetDamage, defValue, level, power, category, moveType,
-  attackerTypes, defenderTypes, isDarkPokemon, atkRank, defRank) {
-  
-  // 補正なしダメージ計算関数を直接定義して使用
+  attackerTypes, defenderTypes, isDarkPokemon, atkRank, defRank, modifiers = {}) {
+
+  const {
+    itemAttackMultiplier = 1.0, // タイプ一致アイテム(まがったスプーン等)。実数値に対して式の前に乗算
+    isStab = false,
+    abilityPowerBoost = 1.0,    // しんりょく/もうか/げきりゅう/むしのしらせ
+    isDoubleReduced = false,
+    hasWall = false,
+    wallFactor = 0.5,
+    isBurned = false,
+    weatherMultiplier = 1.0,
+    typeMultiplier = 1.0,
+    isCritical = false
+  } = modifiers;
+
   function calculatePureAttackStat(targetDamage, isForMinDamage = false) {
     // 二分探索
     let min = 1;
@@ -4052,24 +4067,31 @@ function findStatByDamage(targetDamage, defValue, level, power, category, moveTy
     while (min <= max && iterations < 20) {
         iterations++;
         const mid = Math.floor((min + max) / 2);
-        
-        // 基本的なダメージ計算（アイテム補正なし）
-        const A = Math.floor(level * 2 / 5) + 2;
-        const effAttack = Math.floor(mid * (atkRank >= 0 ? (2 + atkRank) / 2 : 2 / (2 - atkRank)));
+
+        // アイテムによる実数値補正（与ダメ計算と同じく、式に入れる前に適用）
+        let effAttack = Math.floor(mid * itemAttackMultiplier);
+        effAttack = Math.floor(effAttack * (atkRank >= 0 ? (2 + atkRank) / 2 : 2 / (2 - atkRank)));
         const effDefense = Math.floor(defValue * (defRank >= 0 ? (2 + defRank) / 2 : 2 / (2 - defRank)));
 
+        const A = Math.floor(level * 2 / 5) + 2;
         const B = Math.floor((effAttack * power * A) / effDefense);
-        const C = Math.floor(B / 50);
-        const D = C + 2;
+        let D = Math.floor(B / 50) + 2;
 
-        // 乱数補正のみ適用（85%～100%）
-        const minDamage = Math.floor(D * 0.85);
+        // 与ダメ計算と同じ順序で各種補正をfloorしながら適用
+        if (isBurned) D = Math.floor(D * 0.5);
+        if (hasWall) D = Math.floor(D * wallFactor);
+        if (isDoubleReduced) D = Math.floor(D * 0.5);
+        if (weatherMultiplier !== 1.0) D = Math.floor(D * weatherMultiplier);
+        if (abilityPowerBoost !== 1.0) D = Math.floor(D * abilityPowerBoost);
+        if (isStab) D = Math.floor(D * 1.5);
+        if (typeMultiplier !== 1.0) D = Math.floor(D * typeMultiplier);
+        if (isCritical) D = Math.floor(D * 2);
+
+        D = Math.max(1, D);
+
+        // 乱数補正を最後に適用（85%～100%）
+        const minDamage = Math.max(1, Math.floor(D * 0.85));
         const maxDamage = D;
-
-        // デバッグ（A実数値91付近で詳細確認）
-        if (mid >= 89 && mid <= 93) {
-            console.log(`A実数値${mid}: ダメージ${minDamage}～${maxDamage}`);
-        }
 
         // 判定条件
         if (isForMinDamage) {
@@ -4092,13 +4114,13 @@ function findStatByDamage(targetDamage, defValue, level, power, category, moveTy
     const result = bestStat || min;
     return result;
 }
-  
+
   // 最大ダメージが目標以上になる最小の攻撃値を求める
   const minStat = calculatePureAttackStat(targetDamage, false);
-  
+
   // 最小ダメージが目標以下になる最大の攻撃値を求める
   const maxStat = calculatePureAttackStat(targetDamage, true);
-  
+
   return {
     min: minStat,
     max: maxStat
@@ -4410,14 +4432,32 @@ function estimateIVFromDamage() {
 
   console.log(`理論上の実数値範囲: ${theoreticalMinAttack}～${theoreticalMaxAttack}`);
 
-  // 補正を考慮してダメージを逆算用に調整
-  // タイプ相性とその他の補正を両方適用
-  const adjustedDamage = Math.round(damage / (totalModifier * typeMultiplier));
-
-  // 実数値範囲を求める（補正除去後のダメージで計算）
+  // 実数値範囲を求める（観測ダメージそのものを渡し、補正はfindStatByDamage内で
+  // 与ダメ計算と同じ順序・floorタイミングで適用する。事前に割り戻すと丸め誤差で
+  // 正しい実数値が範囲から漏れることがあるため、ここでは割り戻さない）
   const statRange = findStatByDamage(
-    adjustedDamage, defValue, attackerLevel, power, category, moveType,
-    attackerTypes, defenderTypes, isDarkPokemon, atkRank, defRank
+    damage, defValue, attackerLevel, power, category, moveType,
+    attackerTypes, defenderTypes, isDarkPokemon, atkRank, defRank,
+    {
+      itemAttackMultiplier: itemPowerModifier,
+      isStab: attackerTypes.includes(moveType),
+      abilityPowerBoost: ((isShinryoku && moveType === "くさ") ||
+        (isMouka && moveType === "ほのお") ||
+        (isGekiryuu && moveType === "みず") ||
+        (isMushiNoShirase && moveType === "むし")) ? 1.5 : 1.0,
+      isDoubleReduced,
+      hasWall,
+      wallFactor: isDoubleBattle ? 0.67 : 0.5,
+      isBurned: isBurned && isPhysical,
+      weatherMultiplier:
+        ((weather === 'sunny' && moveType === 'ほのお') ||
+         (weather === 'rain' && moveType === 'みず') ||
+         (weather === 'darkness' && moveType === 'ダーク')) ? 1.5 :
+        ((weather === 'sunny' && moveType === 'みず') ||
+         (weather === 'rain' && moveType === 'ほのお')) ? 0.5 : 1.0,
+      typeMultiplier,
+      isCritical
+    }
   );
 
   let minBaseStat = statRange.min;
