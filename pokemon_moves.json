@@ -625,7 +625,7 @@
     "power": 100,
     "category": "Physical",
     "class": "standard",
-    "target": 2
+    "target": 1
   },
   {
     "name": "したでなめる",
@@ -1725,7 +1725,7 @@
     "power": 150,
     "category": "Physical",
     "class": "standard",
-    "target": 2
+    "target": 1
   },
   {
     "name": "マジカルリーフ",
