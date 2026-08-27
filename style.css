@@ -30,8 +30,9 @@ h1 {
     max-width: 380px;
     box-sizing: border-box;
     position: relative; /* 相対位置指定 */
-    height: 770px; /* 高さを十分に取る */
-    overflow: hidden; /* スクロールさせない */
+    min-height: 770px; /* 最低限の高さは確保しつつ */
+    height: auto; /* 内容量に応じて縦に伸びる(ボタン等の見切れ防止) */
+    overflow: visible;
 }
 
 .section h2 {
@@ -561,6 +562,7 @@ button:hover {
 }
 
 .ally-slot-head {
+    position: relative;
     font-weight: bold;
     margin-bottom: 6px;
     display: flex;
@@ -568,10 +570,14 @@ button:hover {
     gap: 6px;
 }
 
+/* ラジオボタンは機能(枠全体クリックでの選択)だけ残し、見た目上は非表示にする */
 .ally-slot-head input[type="radio"] {
-    width: 15px;
-    height: 15px;
-    accent-color: #2980ff;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    pointer-events: none;
 }
 
 .ally-slot-head input[type="text"] {
