@@ -4074,18 +4074,22 @@ function findStatByDamage(targetDamage, defValue, level, power, category, moveTy
         const effDefense = Math.floor(defValue * (defRank >= 0 ? (2 + defRank) / 2 : 2 / (2 - defRank)));
 
         const A = Math.floor(level * 2 / 5) + 2;
-        const B = Math.floor((effAttack * power * A) / effDefense);
-        let D = Math.floor(B / 50) + 2;
+        let D = Math.floor((effAttack * power * A) / effDefense);
+        D = Math.floor(D / 50);
 
-        // 与ダメ計算と同じ順序で各種補正をfloorしながら適用
+        // 「+2」より前に適用される補正（与ダメ計算/3genDamageCalculatorの順序に合わせる）
         if (isBurned) D = Math.floor(D * 0.5);
-        if (hasWall) D = Math.floor(D * wallFactor);
         if (isDoubleReduced) D = Math.floor(D * 0.5);
+        if (hasWall) D = Math.floor(D * wallFactor);
         if (weatherMultiplier !== 1.0) D = Math.floor(D * weatherMultiplier);
+
+        D += 2;
+
+        // 「+2」より後に適用される補正（急所→特性技威力補正→STAB→タイプ相性の順）
+        if (isCritical) D = Math.floor(D * 2);
         if (abilityPowerBoost !== 1.0) D = Math.floor(D * abilityPowerBoost);
         if (isStab) D = Math.floor(D * 1.5);
         if (typeMultiplier !== 1.0) D = Math.floor(D * typeMultiplier);
-        if (isCritical) D = Math.floor(D * 2);
 
         D = Math.max(1, D);
 
