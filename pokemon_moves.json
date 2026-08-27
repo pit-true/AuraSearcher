@@ -130,7 +130,7 @@
     "power": 75,
     "category": "Physical",
     "class": "standard",
-    "target": 1
+    "target": 2
   },
   {
     "name": "ウェザーボール",
@@ -625,7 +625,7 @@
     "power": 100,
     "category": "Physical",
     "class": "standard",
-    "target": 1
+    "target": 2
   },
   {
     "name": "したでなめる",
@@ -1725,7 +1725,7 @@
     "power": 150,
     "category": "Physical",
     "class": "standard",
-    "target": 1
+    "target": 2
   },
   {
     "name": "マジカルリーフ",

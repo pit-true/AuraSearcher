@@ -4518,6 +4518,15 @@ console.log('初期実数値範囲:', minBaseStat, '～', maxBaseStat);
     maxBaseStat = theoreticalMaxStat;
   }
 
+  // 逆算範囲が理論上あり得る実数値の範囲(0V下降補正～31V上昇補正)と重ならない場合、
+  // 上のクランプは下限しか引き上げない/上限しか引き下げないため min > max の壊れた範囲になる。
+  // 入力(ダメージ・防御実数値・レベル等)が理論的に矛盾している可能性が高いケースだが、
+  // 表示が壊れる(個体値が空欄になる)のを避けるため理論境界に丸めて一点に潰す。
+  if (minBaseStat > maxBaseStat) {
+    console.log(`逆算範囲が理論上の実数値範囲(${theoreticalMinStat}～${theoreticalMaxStat})と重ならないため境界値に丸めます。入力値を確認してください。`);
+    minBaseStat = maxBaseStat = (maxBaseStat < theoreticalMinStat) ? theoreticalMinStat : theoreticalMaxStat;
+  }
+
   // 補正込みの実数値範囲
   minStat = minBaseStat;
   maxStat = maxBaseStat;
