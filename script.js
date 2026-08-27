@@ -2068,6 +2068,23 @@ function selectPokemonVariant(pokemon) {
     document.getElementById('darkPokemonCheck').checked = false;
     document.getElementById('darknessCheck').checked = false;
   }
+
+  // 自分②(2vs2ダブル対応)はコロシアム/XDのダークポケモン戦のみ必要。
+  // FRLG/RSEの準伝・禁伝等は通常1vs1のため自分②は不要。
+  const allySlot2 = document.getElementById('allySlot2');
+  if (allySlot2) {
+    const isColosseumOrXD = (currentOrigin === 'Co' || currentOrigin === 'XD');
+    allySlot2.style.display = isColosseumOrXD ? 'block' : 'none';
+    if (!isColosseumOrXD) {
+      // 非表示にする際は選択を自分①に戻し、②の入力もクリアしておく
+      const targetAllyPick1 = document.getElementById('targetAllyPick1');
+      if (targetAllyPick1) targetAllyPick1.checked = true;
+      const searchDefPokemon2 = document.getElementById('searchDefPokemon2');
+      if (searchDefPokemon2) searchDefPokemon2.value = '';
+      currentMyPokemonName2 = "";
+      currentMyPokemonTypes2 = [];
+    }
+  }
   // ヨガパワーチェックボックスの表示制御
   if (yogaPowerContainer) {
     const hasYogaPower = pokemon.ability && pokemon.ability === 'ヨガパワー';
