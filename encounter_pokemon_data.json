@@ -5,7 +5,8 @@
         "level": 30,
         "moves": [
             "ダークラッシュ",
-            "クロスチョップ"
+            "クロスチョップ",
+            "とっしん"
         ],
         "hiragana": "まくのした",
         "romaji": "makunoshita"
@@ -15,7 +16,7 @@
         "origin": "Co",
         "item": "きせきのたね",
         "level": 30,
-        "ability":"しんりょく",
+        "ability": "しんりょく",
         "moves": [
             "ダークラッシュ",
             "のしかかり",
@@ -29,7 +30,7 @@
         "origin": "Co",
         "item": "もくたん",
         "level": 30,
-        "ability":"もうか",
+        "ability": "もうか",
         "moves": [
             "ダークラッシュ",
             "あなをほる",
@@ -43,9 +44,11 @@
         "origin": "Co",
         "item": "しんぴのしずく",
         "level": 30,
-        "ability":"げきりゅう",
+        "ability": "げきりゅう",
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "かみつく",
+            "なみのり"
         ],
         "hiragana": "ありげいつ",
         "romaji": "arigeitsu"
@@ -147,7 +150,7 @@
         "name": "テッポウオ",
         "origin": "Co",
         "level": 20,
-        "ability":"はりきり",
+        "ability": "はりきり",
         "moves": [
             "ダークラッシュ",
             "サイケこうせん",
@@ -186,7 +189,7 @@
         "origin": "Co",
         "item": "まがったスプーン",
         "level": 33,
-        "ability":"ヨガパワー",
+        "ability": "ヨガパワー",
         "moves": [
             "ダークラッシュ",
             "とびひざげり",
@@ -259,7 +262,7 @@
         "name": "レディアン",
         "origin": "Co",
         "level": 40,
-        "ability":"むしのしらせ",
+        "ability": "むしのしらせ",
         "moves": [
             "ダークラッシュ",
             "れんぞくパンチ"
@@ -357,7 +360,8 @@
         "level": 43,
         "moves": [
             "ダークラッシュ",
-            "こうそくスピン"
+            "こうそくスピン",
+            "がまん"
         ],
         "hiragana": "ふぉれとす",
         "romaji": "foretosu"
@@ -367,7 +371,7 @@
         "origin": "Co",
         "item": "ぎんのこな",
         "level": 43,
-        "ability":"むしのしらせ",
+        "ability": "むしのしらせ",
         "moves": [
             "ダークラッシュ",
             "ヘドロばくだん",
@@ -393,7 +397,9 @@
         "item": "りゅうのキバ",
         "level": 43,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "すなじごく",
+            "りゅうのいぶき"
         ],
         "hiragana": "びぶらーば",
         "romaji": "bibura-ba"
@@ -404,7 +410,8 @@
         "level": 40,
         "moves": [
             "ダークラッシュ",
-            "かみなり"
+            "かみなり",
+            "でんこうせっか"
         ],
         "hiragana": "らいこう",
         "romaji": "raikou"
@@ -424,7 +431,7 @@
         "name": "デリバード",
         "origin": "Co",
         "item": "とけないこおり",
-        "ability":"はりきり",
+        "ability": "はりきり",
         "level": 45,
         "moves": [
             "ダークラッシュ",
@@ -463,7 +470,7 @@
         "name": "ミルタンク",
         "origin": "Co",
         "level": 48,
-        "ability":"あついしぼう",
+        "ability": "あついしぼう",
         "moves": [
             "ダークラッシュ",
             "のしかかり",
@@ -562,7 +569,8 @@
         "origin": "Co",
         "level": 45,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "がまん"
         ],
         "hiragana": "つぼつぼ",
         "romaji": "tsubotsubo"
@@ -571,7 +579,7 @@
         "name": "トゲチック",
         "origin": "Co",
         "level": 20,
-        "ability":"はりきり",
+        "ability": "はりきり",
         "moves": [
             "ダークラッシュ"
         ],
@@ -584,7 +592,9 @@
         "level": 11,
         "add_level": 0,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "したでなめる",
+            "メタルクロー"
         ],
         "hiragana": "ひめぐま",
         "romaji": "himeguma"
@@ -595,7 +605,8 @@
         "level": 10,
         "add_level": 1,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "つばめがえし"
         ],
         "hiragana": "れでぃば",
         "romaji": "redhiba"
@@ -606,7 +617,8 @@
         "level": 10,
         "add_level": 1,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "どくどくのキバ"
         ],
         "hiragana": "ぽちえな",
         "romaji": "pochiena"
@@ -617,7 +629,8 @@
         "level": 17,
         "add_level": 0,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "ひのこ"
         ],
         "hiragana": "でるびる",
         "romaji": "derubiru"
@@ -628,7 +641,9 @@
         "level": 17,
         "add_level": 0,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "みずでっぽう",
+            "どろかけ"
         ],
         "hiragana": "たまざらし",
         "romaji": "tamazarashi"
@@ -639,7 +654,9 @@
         "level": 17,
         "add_level": 0,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "どろかけ",
+            "サイケこうせん"
         ],
         "hiragana": "やじろん",
         "romaji": "yajiron"
@@ -650,7 +667,8 @@
         "level": 17,
         "add_level": 0,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "でんきショック"
         ],
         "hiragana": "めりーぷ",
         "romaji": "meri-pu"
@@ -661,7 +679,8 @@
         "level": 17,
         "add_level": 0,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "ヘドロこうげき"
         ],
         "hiragana": "ごくりん",
         "romaji": "gokurin"
@@ -672,7 +691,9 @@
         "level": 17,
         "add_level": 0,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "タネマシンガン",
+            "ひみつのちから"
         ],
         "hiragana": "たねぼー",
         "romaji": "tanebo-"
@@ -683,7 +704,9 @@
         "level": 14,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "シグナルビーム",
+            "ナイトヘッド"
         ],
         "hiragana": "いとまる",
         "romaji": "itomaru"
@@ -694,7 +717,9 @@
         "level": 14,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "あなをほる",
+            "ひのこ"
         ],
         "hiragana": "どんめる",
         "romaji": "donmeru"
@@ -705,7 +730,8 @@
         "level": 15,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "かみつく"
         ],
         "hiragana": "きばにあ",
         "romaji": "kibania"
@@ -716,7 +742,8 @@
         "level": 15,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "メガドレイン"
         ],
         "hiragana": "きのここ",
         "romaji": "kinokoko"
@@ -728,7 +755,8 @@
         "add_level": 3,
         "moves": [
             "ダークラッシュ",
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "でんげきは"
         ],
         "hiragana": "えねころろ",
         "romaji": "enekororo"
@@ -739,7 +767,9 @@
         "level": 19,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "スパーク",
+            "スピードスター"
         ],
         "hiragana": "びりりだま",
         "romaji": "biriridama"
@@ -750,7 +780,9 @@
         "level": 18,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "つっぱり",
+            "がんせきふうじ"
         ],
         "hiragana": "まくのした",
         "romaji": "makunoshita"
@@ -761,7 +793,9 @@
         "level": 18,
         "add_level": 3,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "ひのこ",
+            "あなをほる"
         ],
         "hiragana": "ろこん",
         "romaji": "rokon"
@@ -783,7 +817,8 @@
         "level": 20,
         "add_level": 3,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "ねんりき"
         ],
         "hiragana": "らるとす",
         "romaji": "rarutosu"
@@ -795,7 +830,8 @@
         "add_level": 3,
         "moves": [
             "ダークラッシュ",
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "はさむ"
         ],
         "hiragana": "くちーと",
         "romaji": "kuchi-to"
@@ -806,7 +842,9 @@
         "level": 20,
         "add_level": 3,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "かみつく",
+            "こごえるかぜ"
         ],
         "hiragana": "ゆきわらし",
         "romaji": "yukiwarashi"
@@ -828,7 +866,9 @@
         "level": 22,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "ナイトヘッド",
+            "つばめがえし"
         ],
         "hiragana": "ねいてぃ",
         "romaji": "neithi"
@@ -850,7 +890,9 @@
         "level": 22,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "ネコにこばん",
+            "かみつく"
         ],
         "hiragana": "にゃーす",
         "romaji": "nya-su"
@@ -862,7 +904,8 @@
         "add_level": 3,
         "moves": [
             "ダークアタック",
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "マッドショット"
         ],
         "hiragana": "うりむー",
         "romaji": "urimu-"
@@ -874,7 +917,8 @@
         "add_level": 3,
         "moves": [
             "ダークアタック",
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "つばめがえし"
         ],
         "hiragana": "おにすずめ",
         "romaji": "onisuzume"
@@ -885,7 +929,8 @@
         "level": 23,
         "add_level": 3,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "シャドーパンチ"
         ],
         "hiragana": "べとべたー",
         "romaji": "betobeta-"
@@ -896,7 +941,8 @@
         "level": 23,
         "add_level": 4,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "れいとうビーム"
         ],
         "hiragana": "ぱうわう",
         "romaji": "pauwau"
@@ -907,7 +953,8 @@
         "level": 25,
         "add_level": 3,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "がんせきふうじ"
         ],
         "hiragana": "るなとーん",
         "romaji": "runato-n"
@@ -918,7 +965,8 @@
         "level": 28,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "ブレイククロー"
         ],
         "hiragana": "ざんぐーす",
         "romaji": "zangu-su"
@@ -929,7 +977,8 @@
         "level": 26,
         "add_level": 3,
         "moves": [
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "いわなだれ"
         ],
         "hiragana": "のずぱす",
         "romaji": "nozupasu"
@@ -940,7 +989,9 @@
         "level": 28,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "きりさく",
+            "みねうち"
         ],
         "hiragana": "ぱらす",
         "romaji": "parasu"
@@ -952,7 +1003,9 @@
         "add_level": 3,
         "moves": [
             "ダークアタック",
-            "ダークウェーブ"
+            "ダークウェーブ",
+            "かみつく",
+            "とっしん"
         ],
         "hiragana": "がーでぃ",
         "romaji": "ga-dhi"
@@ -963,7 +1016,9 @@
         "level": 29,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "なみのり",
+            "オーロラビーム"
         ],
         "hiragana": "しぇるだー",
         "romaji": "sheruda-"
@@ -974,7 +1029,8 @@
         "level": 30,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "ダブルニードル"
         ],
         "hiragana": "すぴあー",
         "romaji": "supia-"
@@ -985,7 +1041,8 @@
         "level": 30,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "はがねのつばさ"
         ],
         "hiragana": "ぴじょん",
         "romaji": "pijon"
@@ -1007,7 +1064,8 @@
         "level": 30,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "つばめがえし"
         ],
         "hiragana": "ばたふりー",
         "romaji": "batafuri-"
@@ -1018,7 +1076,8 @@
         "level": 30,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "かみなり"
         ],
         "hiragana": "れあこいる",
         "romaji": "reakoiru"
@@ -1029,7 +1088,8 @@
         "level": 32,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "サイコキネシス"
         ],
         "hiragana": "もるふぉん",
         "romaji": "morufon"
@@ -1040,7 +1100,8 @@
         "level": 32,
         "add_level": 3,
         "moves": [
-            "ダークレイブ"
+            "ダークレイブ",
+            "ヘドロばくだん"
         ],
         "hiragana": "うつどん",
         "romaji": "utsudon"
@@ -1052,7 +1113,8 @@
         "add_level": 3,
         "moves": [
             "ダークラッシュ",
-            "ダークハーフ"
+            "ダークハーフ",
+            "かみつく"
         ],
         "hiragana": "あーぼっく",
         "romaji": "a-bokku"
@@ -1064,7 +1126,8 @@
         "add_level": 3,
         "moves": [
             "ダークラッシュ",
-            "ダークストーム"
+            "ダークストーム",
+            "きしかいせい"
         ],
         "hiragana": "おこりざる",
         "romaji": "okorizaru"
@@ -1075,7 +1138,8 @@
         "level": 34,
         "add_level": 3,
         "moves": [
-            "ダークストーム"
+            "ダークストーム",
+            "シャドーボール"
         ],
         "hiragana": "すりーぱー",
         "romaji": "suri-pa-"
@@ -1083,10 +1147,11 @@
     {
         "name": "ラッタ",
         "origin": "XD",
-        "level": 0,
+        "level": 34,
         "add_level": 0,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "ひっさつまえば"
         ],
         "hiragana": "らった",
         "romaji": "ratta"
@@ -1097,7 +1162,8 @@
         "level": 33,
         "add_level": 3,
         "moves": [
-            "ダークレイブ"
+            "ダークレイブ",
+            "かわらわり"
         ],
         "hiragana": "ごるだっく",
         "romaji": "gorudakku"
@@ -1119,7 +1185,8 @@
         "level": 34,
         "add_level": 3,
         "moves": [
-            "ダークアタック"
+            "ダークアタック",
+            "トライアタック"
         ],
         "hiragana": "どーどりお",
         "romaji": "do-dorio"
@@ -1130,7 +1197,8 @@
         "level": 36,
         "add_level": 3,
         "moves": [
-            "ダークブレイク"
+            "ダークブレイク",
+            "つばめがえし"
         ],
         "hiragana": "かもねぎ",
         "romaji": "kamonegi"
@@ -1142,7 +1210,8 @@
         "add_level": 3,
         "moves": [
             "ダークブレイク",
-            "ダークレイブ"
+            "ダークレイブ",
+            "つばめがえし"
         ],
         "hiragana": "ちるたりす",
         "romaji": "chirutarisu"
@@ -1153,7 +1222,8 @@
         "level": 35,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "ピヨピヨパンチ"
         ],
         "hiragana": "がるーら",
         "romaji": "garu-ra"
@@ -1164,7 +1234,9 @@
         "level": 37,
         "add_level": 2,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "シャドーボール",
+            "のろい"
         ],
         "hiragana": "じゅぺった",
         "romaji": "jupeta"
@@ -1176,7 +1248,8 @@
         "add_level": 3,
         "moves": [
             "ダークレイブ",
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "かみなりパンチ"
         ],
         "hiragana": "ぶーばー",
         "romaji": "bu-ba-"
@@ -1187,7 +1260,9 @@
         "level": 35,
         "add_level": 3,
         "moves": [
-            "ダークブレイク"
+            "ダークブレイク",
+            "みねうち",
+            "じごくぐるま"
         ],
         "hiragana": "かいろす",
         "romaji": "kairosu"
@@ -1198,7 +1273,9 @@
         "level": 38,
         "add_level": 2,
         "moves": [
-            "ダークレイブ"
+            "ダークレイブ",
+            "じしん",
+            "かえんほうしゃ"
         ],
         "hiragana": "まぐかるご",
         "romaji": "magukarugo"
@@ -1209,7 +1286,8 @@
         "level": 40,
         "add_level": 1,
         "moves": [
-            "ダークレイブ"
+            "ダークレイブ",
+            "かえんほうしゃ"
         ],
         "hiragana": "ぎゃろっぷ",
         "romaji": "gyaroppu"
@@ -1220,7 +1298,8 @@
         "level": 38,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "スカイアッパー"
         ],
         "hiragana": "えびわらー",
         "romaji": "ebiwara-"
@@ -1232,7 +1311,8 @@
         "add_level": 3,
         "moves": [
             "ダークラッシュ",
-            "ダークハーフ"
+            "ダークハーフ",
+            "メガトンキック"
         ],
         "hiragana": "さわむらー",
         "romaji": "sawamura-"
@@ -1244,7 +1324,8 @@
         "add_level": 3,
         "moves": [
             "ダークラッシュ",
-            "ダークパニック"
+            "ダークパニック",
+            "ころがる"
         ],
         "hiragana": "べろりんが",
         "romaji": "beroringa"
@@ -1255,7 +1336,9 @@
         "level": 40,
         "add_level": 3,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "ぎんいろのかぜ",
+            "きりさく"
         ],
         "hiragana": "すとらいく",
         "romaji": "sutoraiku"
@@ -1325,7 +1408,9 @@
         "level": 43,
         "add_level": 3,
         "moves": [
-            "ダークエンド"
+            "ダークエンド",
+            "のろい",
+            "のしかかり"
         ],
         "hiragana": "かびごん",
         "romaji": "kabigon"
@@ -1337,7 +1422,8 @@
         "add_level": 3,
         "moves": [
             "ダークストーム",
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "かわらわり"
         ],
         "hiragana": "にょろぼん",
         "romaji": "nyorobon"
@@ -1348,7 +1434,8 @@
         "level": 42,
         "add_level": 3,
         "moves": [
-            "ダークストーム"
+            "ダークストーム",
+            "かみなりパンチ"
         ],
         "hiragana": "ばりやーど",
         "romaji": "bariya-do"
@@ -1359,7 +1446,8 @@
         "level": 40,
         "add_level": 3,
         "moves": [
-            "ダークブレイク"
+            "ダークブレイク",
+            "トライアタック"
         ],
         "hiragana": "だぐとりお",
         "romaji": "dagutorio"
@@ -1370,7 +1458,8 @@
         "level": 44,
         "add_level": 3,
         "moves": [
-            "ダークエンド"
+            "ダークエンド",
+            "かみつく"
         ],
         "hiragana": "らいぼると",
         "romaji": "raiboruto"
@@ -1381,7 +1470,8 @@
         "level": 50,
         "add_level": 1,
         "moves": [
-            "ダークラッシュ"
+            "ダークラッシュ",
+            "つばめがえし"
         ],
         "hiragana": "ぼーまんだ",
         "romaji": "bo-manda"
@@ -1393,7 +1483,8 @@
         "level": 44,
         "add_level": 3,
         "moves": [
-            "ダークエンド"
+            "ダークエンド",
+            "いわなだれ"
         ],
         "hiragana": "がらがら",
         "romaji": "garagara"
@@ -1404,7 +1495,8 @@
         "level": 44,
         "add_level": 3,
         "moves": [
-            "ダークストーム"
+            "ダークストーム",
+            "ふぶき"
         ],
         "hiragana": "らぷらす",
         "romaji": "rapurasu"
