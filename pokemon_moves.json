@@ -1002,7 +1002,7 @@
     "type": "くさ",
     "power": 10,
     "category": "Special",
-    "class": "standard",
+    "class": "multi_hit",
     "target": 1
   },
   {
@@ -1038,7 +1038,7 @@
     "type": "ノーマル",
     "power": 15,
     "category": "Physical",
-    "class": "standard",
+    "class": "multi_hit",
     "target": 1
   },
   {
@@ -1174,7 +1174,7 @@
     "type": "ノーマル",
     "power": 20,
     "category": "Physical",
-    "class": "standard",
+    "class": "multi_hit",
     "target": 1
   },
   {
@@ -1769,7 +1769,7 @@
     "type": "むし",
     "power": 14,
     "category": "Physical",
-    "class": "standard",
+    "class": "multi_hit",
     "target": 1
   },
   {
@@ -1985,7 +1985,7 @@
     "romaji": "renzokugiri",
     "type": "むし",
     "power": 10,
-    "category": "multi_hit",
+    "category": "Physical",
     "class": "standard",
     "target": 1
   },
@@ -1994,8 +1994,8 @@
     "romaji": "renzokupanchi",
     "type": "ノーマル",
     "power": 18,
-    "category": "multi_hit",
-    "class": "standard",
+    "category": "Physical",
+    "class": "multi_hit",
     "target": 1
   },
   {
@@ -2012,8 +2012,8 @@
     "romaji": "rokkuburasuto",
     "type": "いわ",
     "power": 25,
-    "category": "multi_hit",
-    "class": "standard",
+    "category": "Physical",
+    "class": "multi_hit",
     "target": 1
   },
   {
