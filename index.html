@@ -409,38 +409,133 @@
           <div class="tripleKickContainer">
             <div class="kick-buttons">
               <input type="radio" id="kick1" name="triple_kick" value="10" checked>
-              <label for="kick1" class="kick-btn selected">1発目</label>    
+              <label for="kick1" class="kick-btn selected">1発目</label>
               <input type="radio" id="kick2" name="triple_kick" value="20">
               <label for="kick2" class="kick-btn">2発目</label>
               <input type="radio" id="kick3" name="triple_kick" value="30">
               <label for="kick3" class="kick-btn">3発目</label>
             </div>
           </div>
-<!-- 被ダメ計算用の追加フォーム -->
+
+          <!-- 相手(攻撃側)のランク補正。コロシアム/XDは常時ダブルのため物理/特殊を独立管理 -->
+          <div class="rank-correction">
+            <div class="rank-row">
+              <label for="atkRank" class="rank-label">攻撃ランク:</label>
+              <select id="atkRank" class="rank-select">
+                <option value="6">+6</option>
+                <option value="5">+5</option>
+                <option value="4">+4</option>
+                <option value="3">+3</option>
+                <option value="2">+2</option>
+                <option value="1">+1</option>
+                <option value="0" selected>0</option>
+                <option value="-1">-1</option>
+                <option value="-2">-2</option>
+                <option value="-3">-3</option>
+                <option value="-4">-4</option>
+                <option value="-5">-5</option>
+                <option value="-6">-6</option>
+              </select>
+            </div>
+            <div class="rank-row">
+              <label for="spAtkRank" class="rank-label">特攻ランク:</label>
+              <select id="spAtkRank" class="rank-select">
+                <option value="6">+6</option>
+                <option value="5">+5</option>
+                <option value="4">+4</option>
+                <option value="3">+3</option>
+                <option value="2">+2</option>
+                <option value="1">+1</option>
+                <option value="0" selected>0</option>
+                <option value="-1">-1</option>
+                <option value="-2">-2</option>
+                <option value="-3">-3</option>
+                <option value="-4">-4</option>
+                <option value="-5">-5</option>
+                <option value="-6">-6</option>
+              </select>
+            </div>
+          </div>
+
+<!-- 被ダメ計算用の追加フォーム(コロシアム/XDは常時2vs2ダブルのため自分側は①②の2体分を保持) -->
 <div class="damage-form">
-    <div class="input-row">
-        <label for="searchDefPokemon" class="inline-label">自分ポケモン:</label>
-        <div class="input-with-buttons">
-            <input type="text" id="searchDefPokemon" list="myPokemonList" placeholder="ポケモン名を検索" onclick="showAllMyPokemon()">
+
+    <label class="ally-slot" id="allySlot1">
+      <div class="ally-slot-head">
+        <input type="radio" name="targetAllyPick" id="targetAllyPick1" value="1" checked onchange="handleAllyPickChange()">
+        <span class="ally-slot-num">自分ポケモン①</span>
+        <input type="text" id="searchDefPokemon" list="myPokemonList" placeholder="味方一匹目を入力" onclick="showAllMyPokemon()">
+      </div>
+      <div class="ally-hp-row">
+        <label for="maxHP1" class="short-label">被弾前HP:</label>
+        <input type="number" id="maxHP1" class="short-input">
+        <button id="copyHPButton1" class="mini-button" type="button" onclick="copyHP(1)">←</button>
+        <label for="currentHP1" class="short-label">被弾後HP:</label>
+        <input type="number" id="currentHP1" class="short-input">
+      </div>
+      <div class="ally-stat-grid">
+        <div><label for="defValueB1">B実数値:</label><input type="number" id="defValueB1"></div>
+        <div><label for="defValueD1">D実数値:</label><input type="number" id="defValueD1"></div>
+        <div>
+          <label for="defRank1">防御ランク:</label>
+          <select id="defRank1" class="rank-select">
+            <option value="6">+6</option><option value="5">+5</option><option value="4">+4</option>
+            <option value="3">+3</option><option value="2">+2</option><option value="1">+1</option>
+            <option value="0" selected>0</option><option value="-1">-1</option><option value="-2">-2</option>
+            <option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option>
+          </select>
         </div>
-    </div>
-    
-    <div class="input-row">
-      <label for="maxHP" class="short-label">HP(被弾前):</label>
-      <input type="number" id="maxHP" class="short-input">
-      <button id="copyHPButton" class="mini-button" onclick="copyHP()">←</button>
-      <label for="currentHP" class="short-label">HP(被弾後):</label>
-      <input type="number" id="currentHP" class="short-input">
-    </div>
-    
-    <div class="input-row">
-      <label for="defValue" class="inline-label">B/D(実数値):</label>
-      <input type="number" id="defValue">
-    </div>
-    
-    <!-- チェックボックス & ランク補正 -->
+        <div>
+          <label for="spDefRank1">特防ランク:</label>
+          <select id="spDefRank1" class="rank-select">
+            <option value="6">+6</option><option value="5">+5</option><option value="4">+4</option>
+            <option value="3">+3</option><option value="2">+2</option><option value="1">+1</option>
+            <option value="0" selected>0</option><option value="-1">-1</option><option value="-2">-2</option>
+            <option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option>
+          </select>
+        </div>
+      </div>
+    </label>
+
+    <label class="ally-slot" id="allySlot2">
+      <div class="ally-slot-head">
+        <input type="radio" name="targetAllyPick" id="targetAllyPick2" value="2" onchange="handleAllyPickChange()">
+        <span class="ally-slot-num">自分ポケモン②</span>
+        <input type="text" id="searchDefPokemon2" list="myPokemonList" placeholder="味方二匹目を入力" oninput="selectMyPokemonSlot(2)">
+      </div>
+      <div class="ally-hp-row">
+        <label for="maxHP2" class="short-label">被弾前HP:</label>
+        <input type="number" id="maxHP2" class="short-input">
+        <button id="copyHPButton2" class="mini-button" type="button" onclick="copyHP(2)">←</button>
+        <label for="currentHP2" class="short-label">被弾後HP:</label>
+        <input type="number" id="currentHP2" class="short-input">
+      </div>
+      <div class="ally-stat-grid">
+        <div><label for="defValueB2">B実数値:</label><input type="number" id="defValueB2"></div>
+        <div><label for="defValueD2">D実数値:</label><input type="number" id="defValueD2"></div>
+        <div>
+          <label for="defRank2">防御ランク:</label>
+          <select id="defRank2" class="rank-select">
+            <option value="6">+6</option><option value="5">+5</option><option value="4">+4</option>
+            <option value="3">+3</option><option value="2">+2</option><option value="1">+1</option>
+            <option value="0" selected>0</option><option value="-1">-1</option><option value="-2">-2</option>
+            <option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option>
+          </select>
+        </div>
+        <div>
+          <label for="spDefRank2">特防ランク:</label>
+          <select id="spDefRank2" class="rank-select">
+            <option value="6">+6</option><option value="5">+5</option><option value="4">+4</option>
+            <option value="3">+3</option><option value="2">+2</option><option value="1">+1</option>
+            <option value="0" selected>0</option><option value="-1">-1</option><option value="-2">-2</option>
+            <option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option>
+          </select>
+        </div>
+      </div>
+    </label>
+
+    <!-- チェックボックス(相手・場の状態。従来通り単一) -->
     <div id="checkboxContainer">
-      <!-- チェックボックスグループ -->
       <div class="checkbox-group">
         <div id="darkPokemonContainer">
           <label><input type="checkbox" id="darkPokemonCheck"> ダークポケモン</label>
@@ -458,53 +553,13 @@
           <label><input type="checkbox" id="defDoubleCheck"> ダブル半減</label>
         </div>
       </div>
-      
-      <!-- ランク補正選択 -->
-      <div class="rank-correction">
-        <div class="rank-row">
-          <label for="atkRank" class="rank-label">攻撃ランク:</label>
-          <select id="atkRank" class="rank-select">
-            <option value="6">+6</option>
-            <option value="5">+5</option>
-            <option value="4">+4</option>
-            <option value="3">+3</option>
-            <option value="2">+2</option>
-            <option value="1">+1</option>
-            <option value="0" selected>0</option>
-            <option value="-1">-1</option>
-            <option value="-2">-2</option>
-            <option value="-3">-3</option>
-            <option value="-4">-4</option>
-            <option value="-5">-5</option>
-            <option value="-6">-6</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <label for="defRank" class="rank-label">防御ランク:</label>
-          <select id="defRank" class="rank-select">
-            <option value="6">+6</option>
-            <option value="5">+5</option>
-            <option value="4">+4</option>
-            <option value="3">+3</option>
-            <option value="2">+2</option>
-            <option value="1">+1</option>
-            <option value="0" selected>0</option>
-            <option value="-1">-1</option>
-            <option value="-2">-2</option>
-            <option value="-3">-3</option>
-            <option value="-4">-4</option>
-            <option value="-5">-5</option>
-            <option value="-6">-6</option>
-          </select>
-        </div>
-      </div>
     </div>
 </div>
-            
+
             <!-- 被ダメージ推定ボタン -->
             <div class="damage-estimate-container">
               <button id="estimateIvButton">被ダメから個体値推定</button>
-                
+
                 <!-- 絞り込み機能チェックボックス -->
                 <div id="trackingCheckboxContainer" class="tracking-checkbox-container">
                     <label><input type="checkbox" id="trackingCheckbox" checked> 連続する結果を保持(個体絞り込み)</label>

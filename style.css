@@ -30,8 +30,9 @@ h1 {
     max-width: 380px;
     box-sizing: border-box;
     position: relative; /* 相対位置指定 */
-    height: 770px; /* 高さを十分に取る */
-    overflow: hidden; /* スクロールさせない */
+    min-height: 770px; /* 最低限の高さは確保しつつ */
+    height: auto; /* 内容量に応じて縦に伸びる(ボタン等の見切れ防止) */
+    overflow: visible;
 }
 
 .section h2 {
@@ -535,6 +536,106 @@ button:hover {
 
 #defDoubleCheckContainer {
     display: none;
+}
+
+/* 自分①②(コロシアム/XDの2vs2ダブル対応): 枠全体をクリックして選択できるカードUI */
+.ally-slot {
+    display: block;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color .12s, background-color .12s;
+}
+
+.ally-slot:has(input[type="radio"]:checked) {
+    border-color: #2980ff;
+    background: #f4f9ff;
+}
+
+.ally-slot input,
+.ally-slot select,
+.ally-slot button {
+    cursor: auto;
+}
+
+.ally-slot-head {
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ラジオボタンは機能(枠全体クリックでの選択)だけ残し、見た目上は非表示にする */
+.ally-slot-head input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    pointer-events: none;
+}
+
+.ally-slot-head input[type="text"] {
+    flex: 0 1 33%;
+    min-width: 0;
+    font-size: 13px;
+    padding: 4px 6px;
+}
+
+.ally-hp-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.ally-hp-row label {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-right: 2px;
+}
+
+.ally-hp-row input {
+    width: 46px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.ally-hp-row .mini-button {
+    width: 24px !important;
+    height: 24px !important;
+    padding: 0 !important;
+}
+
+.ally-stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 10px;
+}
+
+.ally-stat-grid > div {
+    display: flex;
+    align-items: center;
+}
+
+.ally-stat-grid label {
+    width: auto;
+    margin-right: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.ally-stat-grid input,
+.ally-stat-grid select {
+    flex: 1;
+    min-width: 0;
+    padding: 3px;
+    font-size: 12px;
 }
 
 .spdBadgeBoostContainer {
