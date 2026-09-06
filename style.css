@@ -724,6 +724,15 @@ button:hover {
     margin: 10px;
 }
 
+.multiHitContainer {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
 .tripleKickContainer {
     display: inline-block;
     margin-top: 5px;

@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.pinchUpContainer').style.display = 'none';
   document.querySelector('.pinchUp2Container').style.display = 'none';
   document.querySelector('.tripleKickContainer').style.display = 'none';
+  document.querySelector('.multiHitContainer').style.display = 'none';
   document.querySelector('.sutemiTackleContainer').style.display = 'none';
   selectNature();
   
@@ -2749,6 +2750,11 @@ function showMoves() {
     } else {
       document.querySelector('.tripleKickContainer').style.display = 'none';
     }
+    // 連続技(2~5回技)用のヒット回数選択の表示
+    const multiHitContainer = document.querySelector('.multiHitContainer');
+    if (multiHitContainer) {
+      multiHitContainer.style.display = (moveInfo && moveInfo.class === "multi_hit") ? 'flex' : 'none';
+    }
   });
 }
 // 被ダメ計算セクションのダブル半減チェックボックスの表示状態を更新する関数
@@ -4109,7 +4115,9 @@ function findStatByDamage(targetDamage, defValue, level, power, category, moveTy
     isBurned = false,
     weatherMultiplier = 1.0,
     typeMultiplier = 1.0,
-    isCritical = false
+    isCritical = false,
+    hits = 1 // 連続技(2~5回攻撃): 受けた回数。各ヒットは同じ実数値で独立に乱数(85~100%)を振るため、
+             // 合計ダメージの取りうる範囲は「1発分の範囲 × 回数」として扱う
   } = modifiers;
 
   function calculatePureAttackStat(targetDamage, isForMinDamage = false) {
@@ -4149,9 +4157,9 @@ function findStatByDamage(targetDamage, defValue, level, power, category, moveTy
 
         D = Math.max(1, D);
 
-        // 乱数補正を最後に適用（85%～100%）
-        const minDamage = Math.max(1, Math.floor(D * 0.85));
-        const maxDamage = D;
+        // 乱数補正を最後に適用（85%～100%）。連続技は1発分の範囲を回数倍する
+        const minDamage = Math.max(1, Math.floor(D * 0.85)) * hits;
+        const maxDamage = D * hits;
 
         // 判定条件
         if (isForMinDamage) {
@@ -4490,6 +4498,14 @@ function estimateIVFromDamage() {
     const selectedKick = document.querySelector('input[name="triple_kick"]:checked');
     power = parseInt(selectedKick.value);
   }
+
+  // 連続技(2~5回攻撃): 受けた回数分をまとめて1回の被ダメとして扱う
+  let hits = 1;
+  if (moveClass === "multi_hit") {
+    const multiHitCountEl = document.getElementById('multiHitCount');
+    hits = multiHitCountEl ? (parseInt(multiHitCountEl.value) || 1) : 1;
+  }
+
   // 各補正の詳細を表示
   let debugModifiers = [];
   if (attackerTypes.includes(moveType)) debugModifiers.push('タイプ一致×1.5');
@@ -4530,7 +4546,8 @@ function estimateIVFromDamage() {
         ((weather === 'sunny' && moveType === 'みず') ||
          (weather === 'rain' && moveType === 'ほのお')) ? 0.5 : 1.0,
       typeMultiplier,
-      isCritical
+      isCritical,
+      hits
     }
   );
 
@@ -5148,6 +5165,9 @@ if(document.querySelector('.pinchUp2Container').style.display === 'flex'){
     }
     movePowerText = `:威力${power}`;
   }
+}
+if (moveClass === "multi_hit") {
+  movePowerText += `(${hits}回ヒット分の合計ダメージとして計算)`;
 }
 const displayMoveNameWithPower = `(${displayMoveName}${movePowerText}/${categoryJP})`;
 

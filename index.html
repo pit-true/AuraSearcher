@@ -416,6 +416,16 @@
               <label for="kick3" class="kick-btn">3発目</label>
             </div>
           </div>
+          <!-- 連続技(2~5回攻撃)用: 受けた回数を選択 -->
+          <div class="multiHitContainer">
+            <label for="multiHitCount" class="inline-label">受けた回数:</label>
+            <select id="multiHitCount">
+              <option value="2">2回</option>
+              <option value="3" selected>3回</option>
+              <option value="4">4回</option>
+              <option value="5">5回</option>
+            </select>
+          </div>
 
           <!-- 相手(攻撃側)のランク補正。コロシアム/XDは常時ダブルのため物理/特殊を独立管理 -->
           <div class="rank-correction">
